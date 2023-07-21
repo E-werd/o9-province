@@ -3,12 +3,12 @@ from PIL import ImageColor
 
 class ColorBase:
     '''Container class for individual colors'''
-    def __init__(self, name: str, rgb: tuple(int, int, int)) -> None:
+    def __init__(self, name: str, rgb: tuple) -> None:
         '''Container class for individual colors
         :name: Friendly name for color
         :rgb: 3-element tuple (r, g, b) for color'''
         self.name: str = name
-        self.rgb: tuple(int, int, int) = rgb
+        self.rgb: tuple = rgb
         # Update this when class properties change!
         self.__s: dict = {"name": self.name, "rgb": self.rgb}
 
@@ -25,7 +25,7 @@ class Color:
         all_colors: dict = ImageColor.colormap.items() # Get list of colors from PIL
         converted: dict[str, ColorBase] = {} # Declare, initialize dict
 
-        def hex_to_rgb(hex: str) -> tuple(int, int, int):
+        def hex_to_rgb(hex: str) -> tuple:
             '''Convert color hex to rgb. Returns tuple(int, int, int)'''
             h = hex.lstrip('#') # Remove pound
             return tuple(int(h[i:i+2], base=16) for i in (0, 2, 4)) # Convert each group of 2 from hexadecimal to base16
@@ -101,7 +101,7 @@ class Player:
 
 class Province:
     '''Class for working with provinces'''
-    def __init__(self, name: str, level: LevelBase, pos: list[int, int]=[0, 0]):
+    def __init__(self, name: str, level: LevelBase, pos: tuple = (0, 0)):
         '''Class for working with provinces
         :name: Friendly name for province
         :level: Level of province
@@ -109,7 +109,7 @@ class Province:
         self.name: str = name
         self.level: LevelBase = level
         self.owner: Player = None
-        self.pos_xy: list[int, int] = pos
+        self.pos_xy: tuple = pos
         # Update this when class properties change!
         self.__s: dict = {"name": self.name, "level": self.level, "owner": self.owner, "pos_xy": self.pos_xy}
 
@@ -149,25 +149,26 @@ class Region:
 
 # Examples
 ## Create a player list, a player object, and add the object to the list
-#players: list[Player] = []
-#player1: Player = Player(name="player1", snowflake=8008135, color=Color.list["orange"])
-#players.append(player1)
+# players: list[Player] = []
+# player1: Player = Player(name="player1", snowflake=8008135, color=Color.list["orange"])
+# players.append(player1)
 
 ## Create a province object, a region object, add province to region, and add owner to province
-#alk: Province = Province(name="alk", level=Level.level1)
-#usa: Region = Region(name="usa")
-#usa.add_province(alk)
-#usa.provinces[alk.name].update_owner(player1)
+# alk: Province = Province(name="alk", level=Level.level1)
+# usa: Region = Region(name="usa")
+# usa.add_province(alk)
+# usa.provinces[alk.name].update_owner(player1)
 
 ## Print representations of region, player list
-#print(f"{usa.provinces[alk.name].get_color().rgb}")
-#print(usa)
-#print(players)
+# print(f"{usa.provinces[alk.name].get_color().rgb}")
+# print(f"Region: {usa}")
+# print(f"Players: {players}")
 
 ## Get a random color, print name and rgb representation
-#color: ColorBase = random.choice(Color.list)
-#print(f"{color.name}: {color.rgb}")
+# import random
+# color: ColorBase = random.choice(list(Color.list.values()))
+# print(f"random color: {color}")
 
 ## For all colors, print name and rgb representation
-#for color in Color.list:
-#    print(f"{Color.list[color].name}: {Color.list[color].rgb}")
+# for color in Color.list:
+#     print(f"{Color.list[color]}")
