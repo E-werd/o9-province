@@ -1,0 +1,84 @@
+{ "regions": {
+    "R1": {
+        "ALK": {
+            "x": 360,
+            "y": 30,
+            "level": "level1"
+            }, 
+        "ALI": {
+            "x": 720,
+            "y": 160,
+            "level": "level1"
+            },
+        "YNW": {
+            "x": 840,
+            "y": 30,
+            "level": "level1"
+            },
+        "BCO": {
+            "x": 830,
+            "y": 200,
+            "level": "level2"
+            },
+        "VAI": {
+            "x": 830,
+            "y": 305,
+            "level": "level1"
+            }
+        },
+    "R2": {
+        "ART": {
+            "x": 1000,
+            "y": 200,
+            "level": "level1"
+            }, 
+        "SKW": {
+            "x": 1200,
+            "y": 200,
+            "level": "level1"
+            },
+        "NUN": {
+            "x": 1200,
+            "y": 50,
+            "level": "level1"
+            },
+        "MNT": {
+            "x": 1300,
+            "y": 200,
+            "level": "level1"
+            },
+        "ONT": {
+            "x": 1450,
+            "y": 250,
+            "level": "level2"
+            }
+        },
+    "R3": {
+        "NQU": {
+            "x": 1650,
+            "y": 100,
+            "level": "level1"
+            }, 
+        "LBD": {
+            "x": 1850,
+            "y": 250,
+            "level": "level1"
+            },
+        "QUE": {
+            "x": 1700,
+            "y": 300,
+            "level": "level2"
+            },
+        "NFO": {
+            "x": 1930,
+            "y": 320,
+            "level": "level1"
+            },
+        "NOS": {
+            "x": 1770,
+            "y": 360,
+            "level": "level2"
+            }
+        }
+    }
+}

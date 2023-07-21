@@ -1,0 +1,7 @@
+__pycache__
+.vscode
+.env
+cache
+*.txt
+test*.py
+notes.md

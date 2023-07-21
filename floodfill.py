@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from PIL import Image
 import numpy as np
 from scipy.ndimage import measurements
@@ -37,7 +36,7 @@ def flood_fill(input_image_path, output_image_path, seed_point, new_color):
 
 
 
-x = 900
-y = 200
-# Usage example
-flood_fill('image.png', 'colored_world_map.png', (x, y), (255, 0, 0))  # RGB for red
+# x = 900
+# y = 200
+# # Usage example
+# flood_fill('image.png', 'colored_world_map.png', (x, y), (255, 0, 0))  # RGB for red
