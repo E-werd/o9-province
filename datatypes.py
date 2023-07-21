@@ -3,12 +3,12 @@ from PIL import ImageColor
 
 class ColorBase:
     '''Container class for individual colors'''
-    def __init__(self, name: str, rgb: list[int, int, int]) -> None:
+    def __init__(self, name: str, rgb: tuple(int, int, int)) -> None:
         '''Container class for individual colors
         :name: Friendly name for color
-        :rgb: 3-element list [r, g, b] for color'''
+        :rgb: 3-element tuple (r, g, b) for color'''
         self.name: str = name
-        self.rgb: list[int, int, int] = rgb
+        self.rgb: tuple(int, int, int) = rgb
         # Update this when class properties change!
         self.__s: dict = {"name": self.name, "rgb": self.rgb}
 
@@ -25,19 +25,19 @@ class Color:
         all_colors: dict = ImageColor.colormap.items() # Get list of colors from PIL
         converted: dict[str, ColorBase] = {} # Declare, initialize dict
 
-        def hex_to_rgb(hex: str) -> list[int, int, int]:
-            '''Convert color hex to rgb'''
+        def hex_to_rgb(hex: str) -> tuple(int, int, int):
+            '''Convert color hex to rgb. Returns tuple(int, int, int)'''
             h = hex.lstrip('#') # Remove pound
-            return list(int(h[i:i+2], base=16) for i in (0, 2, 4)) # Convert each group of 2 from hexadecimal to base16
+            return tuple(int(h[i:i+2], base=16) for i in (0, 2, 4)) # Convert each group of 2 from hexadecimal to base16
 
         for color in all_colors: # Loop through list of colors
             converted.update({color[0]: ColorBase(name=color[0], rgb=hex_to_rgb(color[1]))}) # Create color object, add to dict
 
         return converted # Return dict
     
-    level1: ColorBase = ColorBase(name="level1", rgb=[0, 178, 0])
-    level2: ColorBase = ColorBase(name="level2", rgb=[0, 127, 0])
-    level3: ColorBase = ColorBase(name="level3", rgb=[0, 76, 0])
+    level1: ColorBase = ColorBase(name="level1", rgb=(0, 178, 0))
+    level2: ColorBase = ColorBase(name="level2", rgb=(0, 127, 0))
+    level3: ColorBase = ColorBase(name="level3", rgb=(0, 76, 0))
     list: dict[str, ColorBase] = get_colors()
 
     # Return a dict/json compatible string representation of this object.
