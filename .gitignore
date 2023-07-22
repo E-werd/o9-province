@@ -5,3 +5,5 @@ cache
 *.txt
 test*.py
 notes.md
+.idea/*
+venv/*
