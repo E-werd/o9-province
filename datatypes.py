@@ -1,5 +1,5 @@
 # External
-import logging, json
+import logging
 from PIL import ImageColor
 
 class ColorBase:
@@ -13,7 +13,6 @@ class ColorBase:
     
     def __repr__(self) -> str: return self.__str__() # Printable representation
     def __str__(self) -> str: return str(self.__dict__) # String representation
-
 
 class Color:
     '''Static class for colors.'''
@@ -155,29 +154,3 @@ class Region:
    
     def __repr__(self) -> str: return self.__str__() # Printable representation
     def __str__(self) -> str: return str(self.__dict__) # String representation
-
-# Examples
-## Create a player list, a player object, and add the object to the list
-# players: list[Player] = []
-# player1: Player = Player(name="player1", snowflake=8008135, color=Color.list["orange"])
-# players.append(player1)
-
-## Create a province object, a region object, add province to region, and add owner to province
-# alk: Province = Province(name="alk", level=Level.level1)
-# usa: Region = Region(name="usa")
-# usa.add_province(alk)
-# usa.provinces[alk.name].update_owner(player1)
-
-## Print representations of region, player list
-# print(f"{usa.provinces[alk.name].get_color().rgb}")
-# print(f"Region: {usa}")
-# print(f"Players: {players}")
-
-## Get a random color, print name and rgb representation
-# import random
-# color: ColorBase = random.choice(list(Color.list.values()))
-# print(f"random color: {color}")
-
-## For all colors, print name and rgb representation
-# for color in Color.list:
-#     print(f"{Color.list[color]}")

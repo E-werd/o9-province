@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # External
-import logging, sys
+import logging, sys, jsons
 from dotenv import load_dotenv
 from os import getenv
 # Internal
@@ -74,7 +74,7 @@ class Main:
 
         #print(f"Regions: {regions}")
         for reg in regions:
-            print(f"Region: {regions[reg]}\n")
+            print(f"Region: {jsons.dumps(regions[reg])}\n")
 
 # Starting point
 if __name__ == "__main__":
