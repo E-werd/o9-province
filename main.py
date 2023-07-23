@@ -6,7 +6,7 @@ from os import getenv
 # Internal
 from datatypes import (ColorBase, Color, LevelBase, Level, Player, Province, Region)
 from data import Data
-from game import Game
+from map import Map
 
 class Main:
     '''Main class to run o9-province'''
@@ -24,9 +24,9 @@ class Main:
         # Setup logging
         self.__set_logging()
 
-        # Setup data and game
+        # Setup data and map
         self.data: Data = Data(file=self.FILE, source=Data.Source.json)
-        self.game: Game = Game(file=self.data)
+        self.map: Map = Map(in_image=self.IMAGE)
 
     def __load_env(self) -> bool:
         '''Loads from .env using dotenv'''
@@ -48,10 +48,25 @@ class Main:
 
     def start(self) -> None:
         '''Main loop'''
-        x = 900
-        y = 200
-        # Usage example
-        self.game.fill('image.png', 'colored_world_map.png', (x, y), (255, 0, 0))  # RGB for red
+        player1: Player = Player(name="player1", snowflake=8008135, color=Color.list["orange"])
+
+        regions: dict[str, Region] = {}
+        provinces: dict[str, Province] = {}
+        for reg in self.data.data:
+            regions.update({reg: Region(name=reg)})
+            for prov in self.data.data[reg]:
+                level = Level.list[self.data.data[reg][prov]["level"]]
+                x = self.data.data[reg][prov]["x"]
+                y = self.data.data[reg][prov]["y"]
+                provinces.update({prov: Province(name=prov,level=level,pos=(x,y))})
+                regions[reg].add_province(provinces[prov])
+                provinces[prov].update_owner(owner=player1)
+
+        for prov in provinces.keys():
+            provinces[prov].update_owner(owner=player1)
+            self.map.fill(seed_point=provinces[prov].pos_xy, new_color=provinces[prov].get_color().rgb)
+
+        self.map.write_image()
 
 # Starting point
 if __name__ == "__main__":

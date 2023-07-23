@@ -8,14 +8,16 @@ class ColorBase:
         :name: Friendly name for color
         :rgb: 3-element tuple (r, g, b) for color'''
         self.name: str = name
-        self.rgb: tuple = rgb
-        # Update this when class properties change!
-        self.__s: dict = {"name": self.name, "rgb": self.rgb}
+        self.rgb: tuple = rgb    
 
     # Return a dict/json compatible string representation of this object.
+    def __get_dict(self) -> dict:
+        # Update this when class properties change!
+        return {"name": self.name, "rgb": self.rgb}
+
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__s # Dictionary representation
-    def __str__(self) -> str: return str(self.__s) # String representation
+    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
+    def __str__(self) -> str: return str(self.__get_dict()) # String representation
 
 
 class Color:
@@ -26,7 +28,7 @@ class Color:
         converted: dict[str, ColorBase] = {} # Declare, initialize dict
 
         def hex_to_rgb(hex: str) -> tuple:
-            '''Convert color hex to rgb. Returns tuple(int, int, int)'''
+            '''Convert color hex to rgb. Returns tuple'''
             h = hex.lstrip('#') # Remove pound
             return tuple(int(h[i:i+2], base=16) for i in (0, 2, 4)) # Convert each group of 2 from hexadecimal to base16
 
@@ -41,11 +43,13 @@ class Color:
     list: dict[str, ColorBase] = get_colors()
 
     # Return a dict/json compatible string representation of this object.
+    def __get_dict(self) -> dict:
     # Update this when class properties change!
-    __s: dict = {"level1": level1, "level2": level2, "level3": level3, "list": list}
+        {"level1": self.level1, "level2": self.level2, "level3": self.level3, "list": list}
+
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__s # Dictionary representation
-    def __str__(self) -> str: return str(self.__s) # String representation
+    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
+    def __str__(self) -> str: return str(self.__get_dict()) # String representation
 
 class LevelBase:
     '''Container class for individual levels'''
@@ -59,26 +63,31 @@ class LevelBase:
         self.cost: int = cost
         self.product: int = product
         self.color: ColorBase = color
-        # Update this when class properties change!
-        self.__s: dict = {"name": self.name, "cost": self.cost, "product": self.product, "color": self.color}
     
     # Return a dict/json compatible string representation of this object.
+    def __get_dict(self) -> dict:
+        # Update this when class properties change!
+        return {"name": self.name, "cost": self.cost, "product": self.product, "color": self.color}
+    
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__s # Dictionary representation
-    def __str__(self) -> str: return str(self.__s) # String representation
+    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
+    def __str__(self) -> str: return str(self.__get_dict()) # String representation
 
 class Level:
     '''Static class for levels, will be used as a property of Province'''
     level1: LevelBase = LevelBase(name="level1", cost=5, product=1, color=Color.level1)
     level2: LevelBase = LevelBase(name="level2", cost=10, product=3, color=Color.level2)
     level3: LevelBase = LevelBase(name="level3", cost=15, product=5, color=Color.level3)
+    list: dict[str, LevelBase] = {"level1": level1, "level2": level2, "level3": level3}
 
     # Return a dict/json compatible string representation of this object.
-    # Update this when class properties change!
-    __s: dict = {"level1": level1, "level2": level2, "level3": level3}
+    def __get_dict(self) -> dict:
+        # Update this when class properties change!
+        return {"level1": self.level1, "level2": self.level2, "level3": self.level3}
+    
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__s # Dictionary representation
-    def __str__(self) -> str: return str(self.__s) # String representation
+    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
+    def __str__(self) -> str: return str(self.__get_dict()) # String representation
 
 class Player:
     '''Container class for players'''
@@ -91,13 +100,26 @@ class Player:
         self.snowflake: int = snowflake
         self.balance: int = 0
         self.color: ColorBase = color
-        # Update this when class properties change!
-        self.__s: dict = {"name": self.name, "snowflake": self.snowflake, "balance": self.balance, "color": self.color}
+        self.colors: dict[str, ColorBase] = self.__get_colors(base=self.color)
+
+    def __get_colors(self, base: ColorBase) -> dict:
+        '''Generate colors for each level'''
+        r, g, b = base.rgb
+        colors: dict[str, ColorBase] = {}
+        colors.update({"level1": ColorBase(name="level1", rgb=(r, g, b))})
+        colors.update({"level2": ColorBase(name="level2", rgb=(r - (r / 10), g - (g / 10), b - (b / 10)))})
+        colors.update({"level2": ColorBase(name="level2", rgb=(r - (r / 5), g - (g / 5), b - (b / 5)))})
+
+        return colors
 
     # Return a dict/json compatible string representation of this object.
+    def __get_dict(self) -> dict:
+        # Update this when class properties change!
+        return {"name": self.name, "snowflake": self.snowflake, "balance": self.balance, "color": self.color}
+
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__s # Dictionary representation
-    def __str__(self) -> str: return str(self.__s) # String representation
+    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
+    def __str__(self) -> str: return str(self.__get_dict()) # String representation
 
 class Province:
     '''Class for working with provinces'''
@@ -110,8 +132,6 @@ class Province:
         self.level: LevelBase = level
         self.owner: Player = None
         self.pos_xy: tuple = pos
-        # Update this when class properties change!
-        self.__s: dict = {"name": self.name, "level": self.level, "owner": self.owner, "pos_xy": self.pos_xy}
 
     def update_owner(self, owner: Player) -> None:
         '''Update the owner of a province
@@ -120,13 +140,25 @@ class Province:
 
     def get_color(self) -> ColorBase:
         '''Returns the color object that this province should currently be.'''
-        if (self.owner != None): return self.owner.color
+        if (self.owner != None): 
+            match self.level:
+                case Level.level1:
+                    return self.owner.colors[Level.level1.name]
+                case Level.level2:
+                    return self.owner.colors[Level.level2.name]
+                case Level.level3:
+                    return self.owner.colors[Level.level3.name]
+                case _: return self.owner.color
         else: return self.level.color
 
     # Return a dict/json compatible string representation of this object.
+    def __get_dict(self) -> dict:
+        # Update this when class properties change!
+        return {"name": self.name, "level": self.level, "owner": self.owner, "pos_xy": self.pos_xy}
+
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__s # Dictionary representation
-    def __str__(self) -> str: return str(self.__s) # String representation
+    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
+    def __str__(self) -> str: return str(self.__get_dict()) # String representation
 
 class Region:
     '''Class for working with regions'''
@@ -135,17 +167,19 @@ class Region:
         :name: Friendly name for region'''
         self.name: str = name
         self.provinces: dict[str, Province] = {}
-        # Update this when class properties change!
-        self.__s: dict = {"name": self.name, "provinces": self.provinces}
 
     def add_province(self, province: Province) -> None:
         '''Add province object to region'''
         self.provinces.update({province.name: province})
 
     # Return a dict/json compatible string representation of this object.
+    def __get_dict(self) -> dict:
+        # Update this when class properties change!
+        return {"name": self.name, "provinces": self.provinces}
+
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__s # Dictionary representation
-    def __str__(self) -> str: return str(self.__s) # String representation
+    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
+    def __str__(self) -> str: return str(self.__get_dict()) # String representation
 
 # Examples
 ## Create a player list, a player object, and add the object to the list
