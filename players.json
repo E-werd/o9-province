@@ -1,0 +1,37 @@
+{"player1": {
+    "name": "player1",
+    "snowflake": 8008135,
+    "color": "orange",
+    "owned": {
+        "regions": {
+                "USA1": "",
+                "CAN1": ""
+            },
+        "provinces": {}
+        }
+    },
+"player2": {
+    "name": "player2",
+    "snowflake": 3133700,
+    "color": "coral",
+    "owned": {
+        "regions": {
+            "USA2": "",
+            "USA3": ""
+            },
+        "provinces": {}
+        }
+    },
+"player3": {
+    "name": "player3",
+    "snowflake": 4206900,
+    "color": "steelblue",
+    "owned": {
+        "regions": {
+            "CAN2": "",
+            "CAN3": ""
+            },
+        "provinces": {}
+        }
+    }
+}
