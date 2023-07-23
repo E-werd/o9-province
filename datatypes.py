@@ -112,10 +112,10 @@ class Player:
         colors.update({"level1": ColorBase(name="level1", rgb=(r, g, b))})
         logging.debug(f"Generated color: {colors['level1'].name} - {str(colors['level1'].rgb)}")
 
-        colors.update({"level2": ColorBase(name="level2", rgb=(round(r - (r / 10)), round(g - (g / 10)), round(b - (b / 10))))})
+        colors.update({"level2": ColorBase(name="level2", rgb=(round(r - (r / 6)), round(g - (g / 6)), round(b - (b / 6))))})
         logging.debug(f"Generated color: {colors['level2'].name} - {str(colors['level2'].rgb)}")
 
-        colors.update({"level3": ColorBase(name="level3", rgb=(round(r - (r / 5)), round(g - (g / 5)), round(b - (b / 5))))})
+        colors.update({"level3": ColorBase(name="level3", rgb=(round(r - (r / 3)), round(g - (g / 3)), round(b - (b / 3))))})
         logging.debug(f"Generated color: {colors['level3'].name} - {str(colors['level3'].rgb)}")
 
         return colors

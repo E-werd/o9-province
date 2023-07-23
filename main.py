@@ -49,6 +49,8 @@ class Main:
     def start(self) -> None:
         '''Main loop'''
         player1: Player = Player(name="player1", snowflake=8008135, color=Color.list["orange"])
+        player2: Player = Player(name="player2", snowflake=3133700, color=Color.list["coral"])
+        player3: Player = Player(name="player3", snowflake=4206900, color=Color.list["lavender"])
 
         regions: dict[str, Region] = {}
         provinces: dict[str, Province] = {}
@@ -60,10 +62,12 @@ class Main:
                 y = self.data.data[reg][prov]["y"]
                 provinces.update({prov: Province(name=prov,level=level,pos=(x,y))})
                 regions[reg].add_province(provinces[prov])
-                provinces[prov].update_owner(owner=player1)
+                match regions[reg].name:
+                    case "USA1" | "CA1": provinces[prov].update_owner(owner=player1)
+                    case "USA2" | "USA3": provinces[prov].update_owner(owner=player2)
+                    case _: provinces[prov].update_owner(owner=player3)
 
         for prov in provinces.keys():
-            provinces[prov].update_owner(owner=player1)
             self.map.fill(seed_point=provinces[prov].pos_xy, new_color=provinces[prov].get_color().rgb)
 
         self.map.write_image()

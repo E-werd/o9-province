@@ -28,10 +28,15 @@ class Map:
         new_image = Image.fromarray(obj=np.uint8(self.image))
 
         # Save the output image
-        if (dest == ""): new_image.save(self.out_image_path)
-        else: new_image.save(dest)
+        if (dest == ""): 
+            logging.debug(f"Writing map to {self.out_image_path}")
+            new_image.save(self.out_image_path)
+        else: 
+            logging.debug(f"Writing map to {dest}")
+            new_image.save(dest)
 
     def fill(self, seed_point: tuple, new_color: tuple) -> None:
+        logging.debug(f"Filling province at {str(seed_point)} with color {str(new_color)}")
         # Get color at the seed_point
         #seed_color = image[seed_point[1], seed_point[0]] # Gets pixel in rgb at image coords [y, x]
         seed_color = self.image[seed_point[1], seed_point[0]] # Gets pixel in rgb at image coords [y, x]
