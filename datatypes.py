@@ -1,4 +1,5 @@
 # External
+import logging
 from PIL import ImageColor
 
 class ColorBase:
@@ -104,11 +105,18 @@ class Player:
 
     def __get_colors(self, base: ColorBase) -> dict:
         '''Generate colors for each level'''
+        logging.debug(f"Generating colors for {self.name} based on: {base.name} - {str(base.rgb)}")
         r, g, b = base.rgb
         colors: dict[str, ColorBase] = {}
+        
         colors.update({"level1": ColorBase(name="level1", rgb=(r, g, b))})
+        logging.debug(f"Generated color: {colors['level1'].name} - {str(colors['level1'].rgb)}")
+
         colors.update({"level2": ColorBase(name="level2", rgb=(r - (r / 10), g - (g / 10), b - (b / 10)))})
+        logging.debug(f"Generated color: {colors['level2'].name} - {str(colors['level2'].rgb)}")
+
         colors.update({"level2": ColorBase(name="level2", rgb=(r - (r / 5), g - (g / 5), b - (b / 5)))})
+        logging.debug(f"Generated color: {colors['level3'].name} - {str(colors['level3'].rgb)}")
 
         return colors
 
@@ -136,6 +144,7 @@ class Province:
     def update_owner(self, owner: Player) -> None:
         '''Update the owner of a province
         :owner: Player object to assign as owner'''
+        logging.debug(f"Updating owner for {self.name} to {owner.name}")
         self.owner = owner
 
     def get_color(self) -> ColorBase:
@@ -143,13 +152,20 @@ class Province:
         if (self.owner != None): 
             match self.level:
                 case Level.level1:
+                    logging.debug(f"Returning color for {self.name}: {str(self.owner.colors[Level.level1.name].rgb)}")
                     return self.owner.colors[Level.level1.name]
                 case Level.level2:
+                    logging.debug(f"Returning color for {self.name}: {str(self.owner.colors[Level.level2.name].rgb)}")
                     return self.owner.colors[Level.level2.name]
                 case Level.level3:
+                    logging.debug(f"Returning color for {self.name}: {str(self.owner.colors[Level.level3.name].rgb)}")
                     return self.owner.colors[Level.level3.name]
-                case _: return self.owner.color
-        else: return self.level.color
+                case _: 
+                    logging.debug(f"Returning color for {self.name}: {str(self.owner.color.rgb)}")
+                    return self.owner.color
+        else:
+            logging.debug(f"Returning color for {self.name}: {str(self.level.color.rgb)}")
+            return self.level.color
 
     # Return a dict/json compatible string representation of this object.
     def __get_dict(self) -> dict:
@@ -170,6 +186,7 @@ class Region:
 
     def add_province(self, province: Province) -> None:
         '''Add province object to region'''
+        logging.debug(f"Adding province {province.name} to region {self.name}")
         self.provinces.update({province.name: province})
 
     # Return a dict/json compatible string representation of this object.
