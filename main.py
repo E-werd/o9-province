@@ -67,10 +67,14 @@ class Main:
                     case "USA2" | "USA3": provinces[prov].update_owner(owner=player2)
                     case _: provinces[prov].update_owner(owner=player3)
 
-        for prov in provinces.keys():
-            self.map.fill(seed_point=provinces[prov].pos_xy, new_color=provinces[prov].get_color().rgb)
+        # for prov in provinces.keys():
+        #     self.map.fill(seed_point=provinces[prov].pos_xy, new_color=provinces[prov].get_color().rgb)
 
-        self.map.write_image()
+        # self.map.write_image()
+
+        #print(f"Regions: {regions}")
+        for reg in regions:
+            print(f"Region: {regions[reg]}\n")
 
 # Starting point
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 # External
-import logging
+import logging, json
 from PIL import ImageColor
 
 class ColorBase:
@@ -9,16 +9,10 @@ class ColorBase:
         :name: Friendly name for color
         :rgb: 3-element tuple (r, g, b) for color'''
         self.name: str = name
-        self.rgb: tuple = rgb    
-
-    # Return a dict/json compatible string representation of this object.
-    def __get_dict(self) -> dict:
-        # Update this when class properties change!
-        return {"name": self.name, "rgb": self.rgb}
-
+        self.rgb: tuple = rgb
+    
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
-    def __str__(self) -> str: return str(self.__get_dict()) # String representation
+    def __str__(self) -> str: return str(self.__dict__) # String representation
 
 
 class Color:
@@ -42,15 +36,9 @@ class Color:
     level2: ColorBase = ColorBase(name="level2", rgb=(0, 127, 0))
     level3: ColorBase = ColorBase(name="level3", rgb=(0, 76, 0))
     list: dict[str, ColorBase] = get_colors()
-
-    # Return a dict/json compatible string representation of this object.
-    def __get_dict(self) -> dict:
-    # Update this when class properties change!
-        {"level1": self.level1, "level2": self.level2, "level3": self.level3, "list": list}
-
+    
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
-    def __str__(self) -> str: return str(self.__get_dict()) # String representation
+    def __str__(self) -> str: return str(self.__dict__) # String representation
 
 class LevelBase:
     '''Container class for individual levels'''
@@ -63,16 +51,10 @@ class LevelBase:
         self.name: str = name
         self.cost: int = cost
         self.product: int = product
-        self.color: ColorBase = color
-    
-    # Return a dict/json compatible string representation of this object.
-    def __get_dict(self) -> dict:
-        # Update this when class properties change!
-        return {"name": self.name, "cost": self.cost, "product": self.product, "color": self.color}
+        self.color: ColorBase = color  
     
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
-    def __str__(self) -> str: return str(self.__get_dict()) # String representation
+    def __str__(self) -> str: return str(self.__dict__) # String representation
 
 class Level:
     '''Static class for levels, will be used as a property of Province'''
@@ -80,15 +62,9 @@ class Level:
     level2: LevelBase = LevelBase(name="level2", cost=10, product=3, color=Color.level2)
     level3: LevelBase = LevelBase(name="level3", cost=15, product=5, color=Color.level3)
     list: dict[str, LevelBase] = {"level1": level1, "level2": level2, "level3": level3}
-
-    # Return a dict/json compatible string representation of this object.
-    def __get_dict(self) -> dict:
-        # Update this when class properties change!
-        return {"level1": self.level1, "level2": self.level2, "level3": self.level3}
     
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
-    def __str__(self) -> str: return str(self.__get_dict()) # String representation
+    def __str__(self) -> str: return str(self.__dict__) # String representation
 
 class Player:
     '''Container class for players'''
@@ -119,15 +95,9 @@ class Player:
         logging.debug(f"Generated color: {colors['level3'].name} - {str(colors['level3'].rgb)}")
 
         return colors
-
-    # Return a dict/json compatible string representation of this object.
-    def __get_dict(self) -> dict:
-        # Update this when class properties change!
-        return {"name": self.name, "snowflake": self.snowflake, "balance": self.balance, "color": self.color}
-
+    
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
-    def __str__(self) -> str: return str(self.__get_dict()) # String representation
+    def __str__(self) -> str: return str(self.__dict__) # String representation
 
 class Province:
     '''Class for working with provinces'''
@@ -166,15 +136,9 @@ class Province:
         else:
             logging.debug(f"Returning color for {self.name}: {str(self.level.color.rgb)}")
             return self.level.color
-
-    # Return a dict/json compatible string representation of this object.
-    def __get_dict(self) -> dict:
-        # Update this when class properties change!
-        return {"name": self.name, "level": self.level, "owner": self.owner, "pos_xy": self.pos_xy}
-
+    
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
-    def __str__(self) -> str: return str(self.__get_dict()) # String representation
+    def __str__(self) -> str: return str(self.__dict__) # String representation
 
 class Region:
     '''Class for working with regions'''
@@ -188,15 +152,9 @@ class Region:
         '''Add province object to region'''
         logging.debug(f"Adding province {province.name} to region {self.name}")
         self.provinces.update({province.name: province})
-
-    # Return a dict/json compatible string representation of this object.
-    def __get_dict(self) -> dict:
-        # Update this when class properties change!
-        return {"name": self.name, "provinces": self.provinces}
-
+   
     def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __dict__(self) -> dict: return self.__get_dict() # Dictionary representation
-    def __str__(self) -> str: return str(self.__get_dict()) # String representation
+    def __str__(self) -> str: return str(self.__dict__) # String representation
 
 # Examples
 ## Create a player list, a player object, and add the object to the list
