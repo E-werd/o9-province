@@ -16,7 +16,7 @@ class ColorBase:
     def __str__(self) -> str: return str(self.__dict__) # String representation
 
 class Color:
-    '''Static class for colors.'''
+    '''Static class for colors, provides colors by name from PIL'''
     @staticmethod
     def get_colors() -> dict[str, ColorBase]:
         all_colors: dict = ImageColor.colormap.items() # Get list of colors from PIL
@@ -32,9 +32,6 @@ class Color:
 
         return converted # Return dict
     
-    level1: ColorBase = ColorBase(name="level1", rgb=(0, 178, 0))
-    level2: ColorBase = ColorBase(name="level2", rgb=(0, 127, 0))
-    level3: ColorBase = ColorBase(name="level3", rgb=(0, 76, 0))
     list: dict[str, ColorBase] = get_colors()
     
     def __repr__(self) -> str: return self.__str__() # Printable representation
