@@ -32,10 +32,10 @@ class Map:
 
         # Save the output image
         if (dest == None): 
-            logging.debug(f"Writing map to {self.out_image_path.__str__()}")
+            logging.info(f"Writing map to {self.out_image_path.__str__()}")
             new_image.save(self.out_image_path.__str__())
         else: 
-            logging.debug(f"Writing map to {dest.__str__()}")
+            logging.info(f"Writing map to {dest.__str__()}")
             new_image.save(dest.__str__())
 
     def fill(self, seed_point: tuple, new_color: tuple) -> None:

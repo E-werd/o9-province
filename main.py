@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # External
-import logging, os
+import logging, os, time
 from dotenv import load_dotenv
 from pathlib import Path
 # Internal
@@ -12,6 +12,7 @@ class Main:
     '''Main class to run o9-province'''
     def __init__(self) -> None:
         '''Main class to run o9-province'''
+        print("Setting up environment...")
         self.DATAFILE: str = ""
         self.IMAGEFILE: str = ""
         self.PLAYERFILE: str = ""
@@ -23,6 +24,8 @@ class Main:
 
         # Setup logging
         self.__set_logging()
+        logging.info("Loading data...")
+        tic = time.perf_counter()
 
         # Create Path objects for files
         self.datafile_path: Path = Path(self.DATAFILE).resolve()
@@ -49,6 +52,8 @@ class Main:
 
         # Update map to current state
         self.update_map()
+        toc = time.perf_counter()
+        logging.info(f"Loading completed! {toc - tic:0.4f}s")
 
     def __load_env(self) -> None:
         '''Loads from .env using dotenv'''
@@ -102,6 +107,8 @@ class Main:
                 self.regions[reg].add_province(self.provinces[prov])
 
     def update_map(self) -> None:
+        '''Fill in map from latest data'''
+        logging.info("Filling map from data...")
         for prov in self.provinces.keys():
             self.map.fill(seed_point=self.provinces[prov].pos_xy, new_color=self.provinces[prov].get_color().rgb)
 
