@@ -6,7 +6,7 @@
     #map {
       position: relative;
       cursor: crosshair;
-      background-image: url('image.png');
+      background-image: url('sample_data/image.png');
       background-size: 300%; /* For 3x zoom */
       width: 100vw;
       height: 100vh;
@@ -124,7 +124,7 @@ map.addEventListener('click', (event) => {
 function saveData() {
   // Get pixel color at clicked position
   let img = new Image();
-  img.src = 'image.png';
+  img.src = 'sample_data/image.png';
   img.onload = function () {
     canvas.width = img.width;
     canvas.height = img.height;

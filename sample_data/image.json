@@ -63,6 +63,18 @@
         "pos": [1930, 320],
         "level": "level1"
         },
+    "NWG": {
+        "pos": [2000, 70],
+        "level": "level1"
+        },
+    "SWG": {
+        "pos": [2040, 120],
+        "level": "level1"
+        },
+    "EGR": {
+        "pos": [2120, 90],
+        "level": "level1"
+        },
     "NOS": {
         "pos": [1770, 360],
         "level": "level2"
@@ -94,6 +106,10 @@
     "CAL": {
         "pos": [900, 500],
         "level": "level3"
+    },
+    "HI": {
+        "pos": [337, 1026],
+        "level": "level1"
     },
     "NEV": {
         "pos": [950, 500],
