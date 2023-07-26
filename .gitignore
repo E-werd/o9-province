@@ -7,4 +7,5 @@ test*.py
 notes.md
 .idea/*
 venv/*
-out_*.png
+out_*
+data

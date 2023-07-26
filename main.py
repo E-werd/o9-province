@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # External
-import logging, sys
+import logging, os
 from dotenv import load_dotenv
-from os import getenv
+from pathlib import Path
 # Internal
 from datatypes import (ColorBase, Color, LevelBase, Player, Province, Region)
 from data import Data
@@ -24,11 +24,17 @@ class Main:
         # Setup logging
         self.__set_logging()
 
+        # Create Path objects for files
+        self.datafile_path: Path = Path(self.DATAFILE).resolve()
+        self.imagefile_path: Path = Path(self.IMAGEFILE).resolve()
+        self.playerfile_path: Path = Path(self.PLAYERFILE).resolve()
+        self.levelfile_path: Path = Path(self.LEVELFILE).resolve()
+
         # Setup filedata and map
-        self.level_data: Data = Data(file=self.LEVELFILE, source=Data.Source.json)
-        self.map_data: Data = Data(file=self.DATAFILE, source=Data.Source.json)
-        self.player_data: Data = Data(file=self.PLAYERFILE, source=Data.Source.json)
-        self.map: Map = Map(in_image=self.IMAGEFILE)
+        self.level_data: Data = Data(file=self.levelfile_path)
+        self.map_data: Data = Data(file=self.datafile_path)
+        self.player_data: Data = Data(file=self.playerfile_path)
+        self.map: Map = Map(in_image=self.imagefile_path)
 
         # Setup data dicts
         self.regions: dict[str, Region] = {}
@@ -47,11 +53,11 @@ class Main:
     def __load_env(self) -> None:
         '''Loads from .env using dotenv'''
         load_dotenv()
-        self.DATAFILE = getenv("DATAFILE", default="image.json")
-        self.IMAGEFILE = getenv("IMAGEFILE", default="image.png")
-        self.PLAYERFILE = getenv("PLAYERFILE", default="players.json")
-        self.LEVELFILE = getenv("LEVELFILE", default="levels.json")
-        self.LOGLEVEL = getenv("LOGLEVEL", default="error")
+        self.DATAFILE = os.getenv("DATAFILE", default="image.json")
+        self.IMAGEFILE = os.getenv("IMAGEFILE", default="image.png")
+        self.PLAYERFILE = os.getenv("PLAYERFILE", default="players.json")
+        self.LEVELFILE = os.getenv("LEVELFILE", default="levels.json")
+        self.LOGLEVEL = os.getenv("LOGLEVEL", default="error")
 
     def __set_logging(self) -> None:
         '''Sets logging options'''

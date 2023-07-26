@@ -1,5 +1,6 @@
 # External
 import json, logging
+from pathlib import Path
 
 class Data:
     '''Class for accessing and manipulating data'''
@@ -13,13 +14,13 @@ class Data:
         json: Type = Type(name="json", full="json data")
         types: dict[str, Type] = {"json": json}
 
-    def __init__(self, file: str, source: Source.Type) -> None:
+    def __init__(self, file: Path, source: Source.Type = Source.json) -> None:
         '''Class for accessing and manipulating data
         :file: File path for data source
         :source: Data source object. Data.Source.Type object, enumated in Data.Source.sources'''
-        self.path: str = file
+        self.path: Path = file
         self.source: Data.Source.Type = source
-        self.data: dict = self.__load_data(path=self.path)
+        self.data: dict = self.__load_data(path=self.path.__str__())
 
     def __load_data(self, path: str) -> dict:
         '''Wraps buffering of data from any source into self.data'''
@@ -31,7 +32,7 @@ class Data:
     def __load_json(self, path: str) -> dict:
         '''Buffers json from self.path into self.data'''
         try:
-            logging.info(f"Loading data from file: {self.path}")
+            logging.info(f"Loading data from file: {self.path.__str__()}")
             with open(file=path, mode="r", encoding="utf-8") as f:
                 return json.load(f)
         except Exception as e:
@@ -42,8 +43,8 @@ class Data:
     def __write_json(self) -> None:
         '''Writes json to self.path from self.data'''
         try:
-            logging.info(f"Writing data to file: {self.path}")
-            with open(file=self.path, mode='w', encoding='utf-8') as f:
+            logging.info(f"Writing data to file: {self.path.__str__()}")
+            with open(file=self.path.__str__(), mode='w', encoding='utf-8') as f:
                 json.dump(self.data, f, ensure_ascii=False, indent=2)
         except Exception as e:
             logging.error(f"*** File write error: {str(e)}")

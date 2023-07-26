@@ -4,7 +4,7 @@ import numpy as np
 def blackout():
 
     # Load the image in color
-    image = cv2.imread('image.png', cv2.IMREAD_COLOR)
+    image = cv2.imread('sample/image.png', cv2.IMREAD_COLOR)
 
     # Define the color range for green
     mid_green = np.array([0, 127, 0])  # use appropriate values
