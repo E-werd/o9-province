@@ -91,8 +91,7 @@ class Main:
             self.regions.update({reg: Region(name=reg)})
             for prov in self.map_data.data[reg]:
                 level = self.levels[self.map_data.data[reg][prov]["level"]]
-                x = self.map_data.data[reg][prov]["x"]
-                y = self.map_data.data[reg][prov]["y"]
+                x, y = self.map_data.data[reg][prov]["pos"]
                 self.provinces.update({prov: Province(name=prov,level=level,pos=(x,y))})
                 self.regions[reg].add_province(self.provinces[prov])
 
