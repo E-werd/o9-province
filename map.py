@@ -13,6 +13,7 @@ class Map:
         if (out_image == ""): self.out_image_path = "out_" + in_image
         else: self.out_image_path = out_image
 
+        logging.info(f"Loading map image from file: {self.in_image_path}")
         self.image: np.ndarray = self.__get_image_array(img_path=self.in_image_path)
 
     def __get_image_array(self, img_path: str) -> np.ndarray:
@@ -23,7 +24,7 @@ class Map:
         img_array = np.array(object=img) # returns np.ndarray object, basically just an array
         return img_array
 
-    def write_image(self, dest: str = "") -> None:
+    def write(self, dest: str = "") -> None:
         # Convert array to image
         new_image = Image.fromarray(obj=np.uint8(self.image))
 
@@ -38,7 +39,6 @@ class Map:
     def fill(self, seed_point: tuple, new_color: tuple) -> None:
         logging.debug(f"Filling province at {str(seed_point)} with color {str(new_color)}")
         # Get color at the seed_point
-        #seed_color = image[seed_point[1], seed_point[0]] # Gets pixel in rgb at image coords [y, x]
         seed_color = self.image[seed_point[1], seed_point[0]] # Gets pixel in rgb at image coords [y, x]
 
         # Generate a binary image (mask) where pixels with the seed color are white

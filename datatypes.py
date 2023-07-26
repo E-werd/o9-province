@@ -10,6 +10,7 @@ class ColorBase:
         :rgb: 3-element tuple (r, g, b) for color'''
         self.name: str = name
         self.rgb: tuple = rgb
+        logging.debug(f"Generated color: {self.name} - {str(self.rgb)}")
     
     def __repr__(self) -> str: return self.__str__() # Printable representation
     def __str__(self) -> str: return str(self.__dict__) # String representation
@@ -55,19 +56,9 @@ class LevelBase:
     def __repr__(self) -> str: return self.__str__() # Printable representation
     def __str__(self) -> str: return str(self.__dict__) # String representation
 
-class Level:
-    '''Static class for levels, will be used as a property of Province'''
-    level1: LevelBase = LevelBase(name="level1", cost=5, product=1, color=Color.level1)
-    level2: LevelBase = LevelBase(name="level2", cost=10, product=3, color=Color.level2)
-    level3: LevelBase = LevelBase(name="level3", cost=15, product=5, color=Color.level3)
-    list: dict[str, LevelBase] = {"level1": level1, "level2": level2, "level3": level3}
-    
-    def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __str__(self) -> str: return str(self.__dict__) # String representation
-
 class Player:
     '''Container class for players'''
-    def __init__(self, name: str, snowflake: int, color: ColorBase) -> None:
+    def __init__(self, name: str, snowflake: int, color: ColorBase, levels: dict[str, LevelBase]) -> None:
         '''Container class for players
         :name: Friendly name for player
         :snowflake: Discord user snowflake id
@@ -76,22 +67,30 @@ class Player:
         self.snowflake: int = snowflake
         self.balance: int = 0
         self.color: ColorBase = color
-        self.colors: dict[str, ColorBase] = self.__get_colors(base=self.color)
+        self.colors: dict[str, ColorBase] = self.__get_colors(base=self.color, levels=levels)
 
-    def __get_colors(self, base: ColorBase) -> dict:
+    def __get_colors(self, base: ColorBase, levels: dict[str, LevelBase]) -> dict:
         '''Generate colors for each level'''
         logging.debug(f"Generating colors for {self.name} based on: {base.name} - {str(base.rgb)}")
         r, g, b = base.rgb
         colors: dict[str, ColorBase] = {}
 
-        colors.update({"level1": ColorBase(name="level1", rgb=(r, g, b))})
-        logging.debug(f"Generated color: {colors['level1'].name} - {str(colors['level1'].rgb)}")
+        match len(levels):
+            case 3:
+                start = 6
+                step = 4
+            case _:
+                start = (len(levels) * 2) - 2
+                step = 2
 
-        colors.update({"level2": ColorBase(name="level2", rgb=(round(r - (r / 6)), round(g - (g / 6)), round(b - (b / 6))))})
-        logging.debug(f"Generated color: {colors['level2'].name} - {str(colors['level2'].rgb)}")
-
-        colors.update({"level3": ColorBase(name="level3", rgb=(round(r - (r / 3)), round(g - (g / 3)), round(b - (b / 3))))})
-        logging.debug(f"Generated color: {colors['level3'].name} - {str(colors['level3'].rgb)}")
+        first: bool = True
+        for level in levels:
+            if (first):
+                colors.update({levels[level].name: ColorBase(name=levels[level].name, rgb=(r, g, b))})
+                first = False
+            else:
+                colors.update({levels[level].name: ColorBase(name=levels[level].name, rgb=(round(r - (r / start)), round(g - (g / start)), round(b - (b / start))))})
+                start = start - step
 
         return colors
     
@@ -118,20 +117,9 @@ class Province:
 
     def get_color(self) -> ColorBase:
         '''Returns the color object that this province should currently be.'''
-        if (self.owner != None): 
-            match self.level:
-                case Level.level1:
-                    logging.debug(f"Returning color for {self.name}: {str(self.owner.colors[Level.level1.name].rgb)}")
-                    return self.owner.colors[Level.level1.name]
-                case Level.level2:
-                    logging.debug(f"Returning color for {self.name}: {str(self.owner.colors[Level.level2.name].rgb)}")
-                    return self.owner.colors[Level.level2.name]
-                case Level.level3:
-                    logging.debug(f"Returning color for {self.name}: {str(self.owner.colors[Level.level3.name].rgb)}")
-                    return self.owner.colors[Level.level3.name]
-                case _: 
-                    logging.debug(f"Returning color for {self.name}: {str(self.owner.color.rgb)}")
-                    return self.owner.color
+        if (self.owner != None):
+            logging.debug(f"Returning color for {self.name}: {str(self.owner.colors[self.level.name].rgb)}")
+            return self.owner.colors[self.level.name]
         else:
             logging.debug(f"Returning color for {self.name}: {str(self.level.color.rgb)}")
             return self.level.color
