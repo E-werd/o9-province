@@ -105,12 +105,21 @@ class Province:
         self.level: LevelBase = level
         self.owner: Player = None
         self.pos_xy: tuple = pos
+        self.adjacent: list[str] = []
+        self.ocean: bool = False
+        self.sea: bool = False
+        self.seas: list[str] = []
 
     def update_owner(self, owner: Player) -> None:
         '''Update the owner of a province
         :owner: Player object to assign as owner'''
         logging.debug(f"Updating owner for {self.name} to {owner.name}")
         self.owner = owner
+
+    def add_adjacent(self, province: str) -> None:
+        '''Add an adjacent province by name
+        :province: Province name, string'''
+        self.adjacent.append(province)
 
     def get_color(self) -> ColorBase:
         '''Returns the color object that this province should currently be.'''

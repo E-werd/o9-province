@@ -44,6 +44,8 @@ class Main:
         self.levels: dict[str, LevelBase] = {}
         self.provinces: dict[str, Province] = {}
         self.players: dict[str, Player] = {}
+        self.ocean_provs: list[str] = []
+        self.sea_provs: dict[str, list[str]] = {}
 
         # Load in data
         self.__load_levels()
@@ -51,7 +53,7 @@ class Main:
         self.__load_players()
 
         # Update map to current state
-        self.update_map()
+        # self.update_map()
         toc = time.perf_counter()
         logging.info(f"Loading completed! {toc - tic:0.4f}s")
 
@@ -105,6 +107,38 @@ class Main:
                 x, y = self.map_data.data[reg][prov]["pos"]
                 self.provinces.update({prov: Province(name=prov,level=level,pos=(x,y))})
                 self.regions[reg].add_province(self.provinces[prov])
+                
+                for adj in self.map_data.data[reg][prov]["adjacent"]:
+                    self.provinces[prov].add_adjacent(adj)
+                
+                if (self.map_data.data[reg][prov]["ocean"]):
+                    self.ocean_provs.append(prov)
+                    self.provinces[prov].ocean = True
+
+                if (self.map_data.data[reg][prov]["sea"]):
+                    for sea in self.map_data.data[reg][prov]["seas"]:
+                        if (sea in self.sea_provs):
+                            self.sea_provs[sea].append(prov)
+                        else:
+                            self.sea_provs.update({sea: []})
+                            self.sea_provs[sea].append(prov)
+                        self.provinces[prov].sea = True
+                        self.provinces[prov].seas.append(sea)
+
+    def get_adjacent(self, province: Province) -> list[str]:
+        raw_adjacents: list[str] = []
+
+        if (province.ocean): # Check/Add ocean-accessible provinces
+            raw_adjacents += self.ocean_provs
+        
+        if (province.sea): # Check/Add sea-accessible provinces
+            for sea in province.seas:
+                raw_adjacents += self.sea_provs[sea]
+
+        raw_adjacents += province.adjacent # Add direct adjacents
+
+        adjacents: list[str] = list(dict.fromkeys(raw_adjacents)) # Dedupe into new list
+        return adjacents
 
     def update_map(self) -> None:
         '''Fill in map from latest data'''
@@ -114,7 +148,15 @@ class Main:
 
     def start(self) -> None:
         '''Main loop'''
-        self.map.write()
+        # self.map.write()
+
+        # print(f"Ocean provinces: {self.ocean_provs}")
+        # for sea in self.sea_provs:
+        #     print(f"{sea} sea provinces: {self.sea_provs[sea]}")
+
+        prov = "IDA"
+        adj = self.get_adjacent(province=self.provinces[prov])
+        print(f"Provinces adjacent to '{prov}': {adj}")
 
         ##Examples
         # # Get list of available colors
