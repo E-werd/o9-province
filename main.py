@@ -8,6 +8,14 @@ from datatypes import (ColorBase, Color, LevelBase, Player, Province, Region)
 from data import Data
 from map import Map
 
+class Status:
+    class Claim:
+        ok = 1
+        water = 2
+        self_owned = 4
+        other_owned = 8
+        not_adjacent = 16
+
 class Main:
     '''Main class to run o9-province'''
     def __init__(self) -> None:
@@ -53,7 +61,7 @@ class Main:
         self.__load_players()
 
         # Update map to current state
-        # self.update_map()
+        self.update_map()
         toc = time.perf_counter()
         logging.info(f"Loading completed! {toc - tic:0.4f}s")
 
@@ -125,7 +133,7 @@ class Main:
                         self.provinces[prov].sea = True
                         self.provinces[prov].seas.append(sea)
 
-    def get_adjacent(self, province: Province) -> list[str]:
+    def get_province_adjacents(self, province: Province) -> list[str]:
         raw_adjacents: list[str] = []
 
         if (province.ocean): # Check/Add ocean-accessible provinces
@@ -137,8 +145,47 @@ class Main:
 
         raw_adjacents += province.adjacent # Add direct adjacents
 
-        adjacents: list[str] = list(dict.fromkeys(raw_adjacents)) # Dedupe into new list
+        adjacents = list(dict.fromkeys(raw_adjacents)) # Dedupe into new list
         return adjacents
+    
+    def get_player_adjacents(self, player: Player) -> list[str]:
+        raw_adjacents: list[str] = []
+        owned_provinces: list[str] = []
+
+        for prov in self.provinces: # Get owned provinces
+            if (self.provinces[prov].owner == player):
+                owned_provinces.append(prov)
+        
+        for prov in owned_provinces: # Get adjacents of owned provinces
+            raw_adjacents += self.get_province_adjacents(province=self.provinces[prov])
+
+        adjacents = list(dict.fromkeys(raw_adjacents)) # Dedupe into new list
+
+        for prov in adjacents:
+            try:
+                provin = self.provinces[prov]
+            except (KeyError):
+                continue # Not in the data list yet, move on for now.
+
+            if (provin.owner != None): # Remove if owned by anybody
+                adjacents.remove(prov)
+        
+        return adjacents
+    
+    def get_cost(self, province: Province, player: Player) -> int:
+        adjacents: list[str] = self.get_player_adjacents(player=player)
+        if (province.owner == player):
+            return 0
+        elif (province.owner != None):
+            return 0
+
+        if province.name in adjacents:
+            if province.name not in province.adjacent:
+                return province.level.cost * 2
+            else:
+                return province.level.cost
+        else:
+            return 0
 
     def update_map(self) -> None:
         '''Fill in map from latest data'''
@@ -148,15 +195,20 @@ class Main:
 
     def start(self) -> None:
         '''Main loop'''
-        # self.map.write()
+        self.map.write()
 
         # print(f"Ocean provinces: {self.ocean_provs}")
         # for sea in self.sea_provs:
         #     print(f"{sea} sea provinces: {self.sea_provs[sea]}")
 
-        prov = "IDA"
-        adj = self.get_adjacent(province=self.provinces[prov])
-        print(f"Provinces adjacent to '{prov}': {adj}")
+        # prov = "QUE"
+        # province = self.provinces[prov]
+        # player = self.players["player2"]
+        # cost = self.get_cost(province=province, player=player)
+        # if (cost != 0):
+        #     print(f"Cost of {province.name} for {player.name} is {cost} points")
+        # else: 
+        #     print(f"Player '{player.name}' cannot claim '{province.name}'")
 
         ##Examples
         # # Get list of available colors

@@ -3,7 +3,7 @@
     "snowflake": 8008135,
     "color": "orange",
     "owned": {
-        "regions": ["USA1"],
+        "regions": ["USA1", "USA4", "USA5"],
         "provinces": []
         }
     },
@@ -12,7 +12,7 @@
     "snowflake": 3133700,
     "color": "coral",
     "owned": {
-        "regions": ["USA2", "USA3"],
+        "regions": ["USA2", "USA3", "MEX1", "MEX2"],
         "provinces": []
         }
     },
@@ -21,7 +21,7 @@
     "snowflake": 4206900,
     "color": "steelblue",
     "owned": {
-        "regions": ["CAN1", "CAN2", "CAN3"],
+        "regions": ["CAN1", "CAN2", "CAN3", "USA6"],
         "provinces": []
         }
     }
