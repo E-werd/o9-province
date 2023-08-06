@@ -86,7 +86,10 @@ class Player:
                 colors.update({levels[level].name: ColorBase(name=levels[level].name, rgb=(r, g, b))})
                 first = False
             else:
-                colors.update({levels[level].name: ColorBase(name=levels[level].name, rgb=(round(r - (r / start)), round(g - (g / start)), round(b - (b / start))))})
+                colors.update({levels[level].name: ColorBase(name=levels[level].name, 
+                                                             rgb=(r - (r // start), 
+                                                                  g - (g // start), 
+                                                                  b - (b // start)))})
                 start = start - step
 
         return colors

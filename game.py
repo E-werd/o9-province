@@ -65,12 +65,12 @@ class Game:
             if (self.player_data.data[play]["custom_color"] != None):
                 r, g, b = self.player_data.data[play]["custom_color"]
                 color = ColorBase(name=play, rgb=(r, g, b))
-                self.players.update({play: Player(name=play, 
+                self.players.update({play: Player(name=self.player_data.data[play]["name"], 
                                                   snowflake=self.player_data.data[play]["snowflake"], 
                                                   color=color,
                                                   levels=self.levels)})
             else:
-                self.players.update({play: Player(name=play, 
+                self.players.update({play: Player(name=self.player_data.data[play]["name"], 
                                                   snowflake=self.player_data.data[play]["snowflake"], 
                                                   color=Color.list[self.player_data.data[play]["color"]],
                                                   levels=self.levels)})
@@ -164,6 +164,8 @@ class Game:
 
     def update_map(self) -> None:
         '''Fill in map from latest data'''
+        self.map.add_players(players=self.players) # Send player data to map
+        self.map.add_levels(levels=self.levels) # Send level data to map
         logging.info("Filling map from data...")
         for prov in self.provinces.keys():
             self.map.fill(seed_point=self.provinces[prov].pos_xy, new_color=self.provinces[prov].get_color().rgb)
