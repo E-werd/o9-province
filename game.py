@@ -62,10 +62,19 @@ class Game:
     def __load_players(self) -> None:
         '''Load player data and set ownership'''
         for play in self.player_data.data:
-            self.players.update({play: Player(name=play, 
-                                             snowflake=self.player_data.data[play]["snowflake"], 
-                                             color=Color.list[self.player_data.data[play]["color"]],
-                                             levels=self.levels)})
+            if (self.player_data.data[play]["custom_color"] != None):
+                r, g, b = self.player_data.data[play]["custom_color"]
+                color = ColorBase(name=play, rgb=(r, g, b))
+                self.players.update({play: Player(name=play, 
+                                                  snowflake=self.player_data.data[play]["snowflake"], 
+                                                  color=color,
+                                                  levels=self.levels)})
+            else:
+                self.players.update({play: Player(name=play, 
+                                                  snowflake=self.player_data.data[play]["snowflake"], 
+                                                  color=Color.list[self.player_data.data[play]["color"]],
+                                                  levels=self.levels)})
+                
             for reg in self.player_data.data[play]["owned"]["regions"]: # Iterate through regions owned
                 for prov in self.regions[reg].provinces: # Iterate through provinces in the region
                     self.provinces[prov].update_owner(owner=self.players[play])
