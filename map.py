@@ -9,7 +9,12 @@ from pathlib import Path
 from datatypes import Player, LevelBase
 
 class Map:
+    '''Class for loading/creating/filling maps'''
     def __init__(self, font: Path, in_image: Path, out_image: Path = None) -> None:
+        '''Class for loading/creating/filling maps
+        :font: path to font for legend
+        :in_image: path to base image
+        :out_image: path to output image'''
         self.font_path: Path = font.resolve()
         self.in_image_path: Path = in_image
         self.out_image_path: Path = out_image
@@ -24,6 +29,8 @@ class Map:
         self.image: np.ndarray = self.__get_image_array(img_path=self.in_image_path)
 
     def __get_image_array(self, img_path: str) -> np.ndarray:
+        '''Convert image to numpy array
+        :img_path: Path of image to load'''
         # Open image and convert to RGB
         img = Image.open(fp=img_path, mode="r").convert("RGB") # Returns PIL.Image.Image object
 
@@ -32,12 +39,18 @@ class Map:
         return img_array
     
     def add_players(self, players: dict[str, Player]):
+        '''Set players for map legend
+        :players: dict with list of players'''
         self.players = players
     
     def add_levels(self, levels: dict[str, LevelBase]):
+        '''Set levels for map legend
+        :levels: dict with list of levels'''
         self.levels = levels
 
     def write(self, dest: Path = None) -> None:
+        '''Write map image to destination
+        :dest: Destination path for the image'''
         # Convert array to image
         self.draw_legend()
         new_image = Image.fromarray(obj=np.uint8(self.image))
@@ -51,6 +64,9 @@ class Map:
             new_image.save(dest.__str__())
 
     def fill(self, seed_point: tuple, new_color: tuple) -> None:
+        '''Fill a province
+        :seed_point: (x,y) position inside a province
+        :new_color: (r,g,b) value to fill'''
         logging.debug(f"Filling province at {str(seed_point)} with color {str(new_color)}")
         # Get color at the seed_point
         seed_color = self.image[seed_point[1], seed_point[0]] # Gets pixel in rgb at image coords [y, x]
@@ -74,12 +90,14 @@ class Map:
         self.image = new_img_array
 
     def draw_legend(self) -> None:
-        n = len(self.players)
+        '''Draw legend of players and their colors on the map'''
+        logging.debug(f"Creating and drawing legend")
 
+        n = len(self.players)
         name_width: int = 0
         for player in self.players:
-            if (len(player) > name_width):
-                name_width = len(player)
+            if (len(self.players[player].name) > name_width):
+                name_width = len(self.players[player].name)
 
         rows        = (n-1) +1
         cellHeight  = 45
