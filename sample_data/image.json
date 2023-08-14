@@ -1065,12 +1065,10 @@
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "HDR",
                 "NCO",
                 "ECO",
                 "SVE",
-                "EVE",
-                "CI"
+                "EVE"
             ]
         },
         "SCO": {
@@ -1117,7 +1115,6 @@
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "WVE"
             ]
         },
         "HDR": {
@@ -1130,7 +1127,6 @@
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "WVE"
             ]
         }
     },
@@ -1215,7 +1211,8 @@
     "SAM3": {
         "SVE": {
             "pos": [
-                1782,1128
+                1782,
+                1128
             ],
             "level": "level1",
             "sea": false,
@@ -1231,7 +1228,8 @@
         },
         "ROR": {
             "pos": [
-                1849,1151
+                1849,
+                1151
             ],
             "level": "level1",
             "sea": false,
@@ -1247,7 +1245,8 @@
         },
         "AMA": {
             "pos": [
-                1787,1191
+                1787,
+                1191
             ],
             "level": "level1",
             "sea": false,
@@ -1263,7 +1262,10 @@
             ]
         },
         "WBA": {
-            "pos": [1723,1265],
+            "pos": [
+                1723,
+                1265
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
@@ -1273,10 +1275,14 @@
                 "RON",
                 "LOR",
                 "ECO",
-                "AMA"]
+                "AMA"
+            ]
         },
         "PRA": {
-            "pos": [2010,1225],
+            "pos": [
+                2010,
+                1225
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
@@ -1297,7 +1303,8 @@
     "SAM4": {
         "ECU": {
             "pos": [
-                    1578,1174
+                1578,
+                1174
             ],
             "level": "level2",
             "sea": false,
@@ -1311,7 +1318,8 @@
         },
         "NPE": {
             "pos": [
-                1574,1242
+                1574,
+                1242
             ],
             "level": "level1",
             "sea": false,
@@ -1325,7 +1333,8 @@
         },
         "LOR": {
             "pos": [
-                1642,1227
+                1642,
+                1227
             ],
             "level": "level1",
             "sea": false,
@@ -1341,7 +1350,10 @@
             ]
         },
         "CPE": {
-            "pos": [1603,1310],
+            "pos": [
+                1603,
+                1310
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
@@ -1350,10 +1362,14 @@
                 "NPE",
                 "LOR",
                 "ACR",
-                "SPE"]
+                "SPE"
+            ]
         },
         "SPE": {
-            "pos": [1676,1386],
+            "pos": [
+                1676,
+                1386
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
@@ -1369,7 +1385,8 @@
     "SAM5": {
         "ACR": {
             "pos": [
-                    1578,1174
+                1578,
+                1174
             ],
             "level": "level2",
             "sea": false,
@@ -1385,7 +1402,8 @@
         },
         "BOL": {
             "pos": [
-                1740,1424
+                1740,
+                1424
             ],
             "level": "level1",
             "sea": false,
@@ -1401,7 +1419,8 @@
         },
         "RON": {
             "pos": [
-                1818,1328
+                1818,
+                1328
             ],
             "level": "level1",
             "sea": false,
@@ -1418,7 +1437,10 @@
             ]
         },
         "BNI": {
-            "pos": [1779, 1383],
+            "pos": [
+                1779,
+                1383
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
@@ -1426,10 +1448,14 @@
             "adjacent": [
                 "BOL",
                 "STC",
-                "RON"]
+                "RON"
+            ]
         },
         "WCB": {
-            "pos": [1913,1326],
+            "pos": [
+                1913,
+                1326
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
@@ -1446,7 +1472,8 @@
     "SAM6": {
         "ECB": {
             "pos": [
-                    2001,1398
+                2001,
+                1398
             ],
             "level": "level1",
             "sea": false,
@@ -1463,7 +1490,8 @@
         },
         "NBR": {
             "pos": [
-                2078,1315
+                2078,
+                1315
             ],
             "level": "level2",
             "sea": false,
@@ -1478,7 +1506,8 @@
         },
         "RGN": {
             "pos": [
-                2215,1316
+                2215,
+                1316
             ],
             "level": "level1",
             "sea": false,
@@ -1490,7 +1519,10 @@
             ]
         },
         "SEB": {
-            "pos": [2147,1425],
+            "pos": [
+                2147,
+                1425
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
@@ -1499,10 +1531,14 @@
                 "SPA",
                 "ECB",
                 "RGN",
-                "NBR"]
+                "NBR"
+            ]
         },
         "SPA": {
-            "pos": [2083,1530],
+            "pos": [
+                2083,
+                1530
+            ],
             "level": "level3",
             "sea": false,
             "seas": [],
@@ -1517,7 +1553,10 @@
     },
     "SAM7": {
         "STC": {
-            "pos": [1843,1428],
+            "pos": [
+                1843,
+                1428
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
@@ -1534,7 +1573,8 @@
         },
         "SBO": {
             "pos": [
-                1785,1497
+                1785,
+                1497
             ],
             "level": "level1",
             "sea": false,
@@ -1550,7 +1590,8 @@
         },
         "PRG": {
             "pos": [
-                1876,1526
+                1876,
+                1526
             ],
             "level": "level1",
             "sea": false,
@@ -1566,7 +1607,10 @@
             ]
         },
         "MGS": {
-            "pos": [1951,1523],
+            "pos": [
+                1951,
+                1523
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
@@ -1577,10 +1621,14 @@
                 "SPA",
                 "PRG",
                 "SEB",
-                "PAR"]
+                "PAR"
+            ]
         },
         "PAR": {
-            "pos": [1996,1560],
+            "pos": [
+                1996,
+                1560
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
@@ -1594,10 +1642,12 @@
             ]
         }
     },
-
     "SAM8": {
         "NCI": {
-            "pos": [1721,1584],
+            "pos": [
+                1721,
+                1584
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
@@ -1613,7 +1663,8 @@
         },
         "NGA": {
             "pos": [
-                1800,1574
+                1800,
+                1574
             ],
             "level": "level1",
             "sea": false,
@@ -1629,7 +1680,8 @@
         },
         "SCI": {
             "pos": [
-                1707,1658
+                1707,
+                1658
             ],
             "level": "level2",
             "sea": false,
@@ -1643,7 +1695,10 @@
             ]
         },
         "NCU": {
-            "pos": [1758,1735],
+            "pos": [
+                1758,
+                1735
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
@@ -1654,13 +1709,16 @@
                 "NGA",
                 "ARG",
                 "APA",
-                "PAR"]
+                "PAR"
+            ]
         }
-
     },
     "SAM9": {
         "SCA": {
-            "pos": [2025,1616],
+            "pos": [
+                2025,
+                1616
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
@@ -1673,7 +1731,8 @@
         },
         "RGS": {
             "pos": [
-                1974,1642
+                1974,
+                1642
             ],
             "level": "level2",
             "sea": false,
@@ -1687,7 +1746,8 @@
         },
         "URU": {
             "pos": [
-                1922,1704
+                1922,
+                1704
             ],
             "level": "level2",
             "sea": false,
@@ -1700,7 +1760,10 @@
             ]
         },
         "ARG": {
-            "pos": [1871,1640],
+            "pos": [
+                1871,
+                1640
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
@@ -1713,12 +1776,16 @@
                 "RGS",
                 "APA",
                 "EAR",
-                "URU"]
+                "URU"
+            ]
         }
     },
     "SAM10": {
         "EAR": {
-            "pos": [1856,1800],
+            "pos": [
+                1856,
+                1800
+            ],
             "level": "level3",
             "sea": false,
             "seas": [],
@@ -1731,7 +1798,8 @@
         },
         "APA": {
             "pos": [
-                1758,1829
+                1758,
+                1829
             ],
             "level": "level1",
             "sea": false,
@@ -1742,13 +1810,13 @@
                 "NCU",
                 "EAR",
                 "PAT",
-                "FAL",
                 "ARG"
             ]
         },
         "PAT": {
             "pos": [
-                1701,1829
+                1701,
+                1829
             ],
             "level": "level1",
             "sea": false,
@@ -1761,39 +1829,47 @@
             ]
         },
         "TDF": {
-            "pos": [1757,2010],
+            "pos": [
+                1757,
+                2010
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "PAT",
-                "FAL"]
+                "PAT"
+            ]
         },
         "FAL": {
-            "pos": [1895,1975],
+            "pos": [
+                1895,
+                1975
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
             "ocean": true,
-            "adjacent": [
-                "APA",
-                "TDF",
-                "SG"]
+            "adjacent": []
         },
         "SG": {
-            "pos": [2222,2005],
+            "pos": [
+                2222,
+                2005
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
             "ocean": true,
-            "adjacent": [
-                "FAL"]
+            "adjacent": []
         }
     },
     "EU1": {
         "WIS": {
-            "pos": [2484,145],
+            "pos": [
+                2484,
+                145
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
@@ -1804,102 +1880,135 @@
         },
         "EIS": {
             "pos": [
-                2550,135
+                2550,
+                135
             ],
             "level": "level1",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "WIS",
-                "SCL",
-                "NIR"
+                "WIS"
             ]
         },
         "SCL": {
             "pos": [
-                2732,370
+                2732,
+                370
             ],
             "level": "level1",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "NEN",
-                "EIS"
+                "NEN"
             ]
         },
         "NIR": {
-            "pos": [2707,438],
+            "pos": [
+                2707,
+                438
+            ],
             "level": "level1",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "IRE",
-                "EIS"]
+                "IRE"
+            ]
         },
         "IRE": {
-            "pos": [2669,448],
+            "pos": [
+                2669,
+                448
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "NIR",
-                "COR"]
+                "NIR"
+            ]
         },
         "NEN": {
-            "pos": [2772,422],
+            "pos": [
+                2772,
+                422
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "SCL","WA","SEN"]
+                "SCL",
+                "WA",
+                "SEN"
+            ]
         },
         "SEN": {
-            "pos": [2796,485],
+            "pos": [
+                2796,
+                485
+            ],
             "level": "level3",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "COR","WA","NEN"]
+                "COR",
+                "WA",
+                "NEN"
+            ]
         },
         "COR": {
-            "pos": [2740,515],
+            "pos": [
+                2740,
+                515
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "IRE","WA","SEN"]
+                "WA",
+                "SEN"
+            ]
         },
         "WA": {
-            "pos": [2747,473],
+            "pos": [
+                2747,
+                473
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "NEN","COR","SEN"]
+                "NEN",
+                "COR",
+                "SEN"
+            ]
         }
     },
     "EU2": {
         "GAL": {
-            "pos": [2689,658],
+            "pos": [
+                2689,
+                658
+            ],
             "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "LAK","POR"
+                "LAK",
+                "POR"
             ]
         },
         "POR": {
             "pos": [
-                2681,706
+                2681,
+                706
             ],
             "level": "level2",
             "sea": false,
@@ -1913,7 +2022,9 @@
             ]
         },
         "ADL": {
-            "pos": [2704,761
+            "pos": [
+                2704,
+                761
             ],
             "level": "level2",
             "sea": false,
@@ -1926,69 +2037,9 @@
             ]
         },
         "GRA": {
-            "pos": [2719,787],
-            "level": "level2",
-            "sea": false,
-            "seas": [],
-            "ocean": true,
-            "adjacent": [
-                "ADL",
-                "MUR"]
-        }
-    },
-    "EU3": {
-        "LAK": {
             "pos": [
-                2709,
-                667
-            ],
-            "level": "level2",
-            "sea": false,
-            "seas": [],
-            "ocean": true,
-            "adjacent": [
-                "GAL",
-                "POR",
-                "CAS",
-                "ARO"
-            ]
-        },
-        "CAS": {
-            "pos": [
-                2749,
-                697
-            ],
-            "level": "level3",
-            "sea": false,
-            "seas": [],
-            "ocean": false,
-            "adjacent": [
-                "LAK",
-                "ADL",
-                "MUR",
-                "ARO"
-            ]
-        },
-        "ARO": {
-            "pos": [
-                2821,
-                686
-            ],
-            "level": "level3",
-            "sea": false,
-            "seas": [],
-            "ocean": true,
-            "adjacent": [
-                "WFR",
-                "SFR",
-                "CAS",
-                "MUR"
-            ]
-        },
-        "MUR": {
-            "pos": [
-                2787,
-                743
+                2719,
+                787
             ],
             "level": "level2",
             "sea": false,
@@ -2064,11 +2115,11 @@
             ]
         }
     },
-
     "EU4": {
         "WFR": {
             "pos": [
-                2802,611
+                2802,
+                611
             ],
             "level": "level2",
             "sea": false,
@@ -2083,7 +2134,8 @@
         },
         "SFR": {
             "pos": [
-                2843,642
+                2843,
+                642
             ],
             "level": "level2",
             "sea": false,
@@ -2098,7 +2150,8 @@
         },
         "BRI": {
             "pos": [
-                2792,549
+                2792,
+                549
             ],
             "level": "level2",
             "sea": false,
@@ -2111,7 +2164,9 @@
             ]
         },
         "FRA": {
-            "pos": [2840,571
+            "pos": [
+                2840,
+                571
             ],
             "level": "level3",
             "sea": false,
@@ -2127,7 +2182,8 @@
         },
         "BOU": {
             "pos": [
-                2897, 583
+                2897,
+                583
             ],
             "level": "level2",
             "sea": false,
@@ -2144,11 +2200,11 @@
             ]
         }
     },
-
     "EU5": {
         "BLG": {
             "pos": [
-                2886,520
+                2886,
+                520
             ],
             "level": "level3",
             "sea": false,
@@ -2163,7 +2219,8 @@
         },
         "PIC": {
             "pos": [
-                2857,529
+                2857,
+                529
             ],
             "level": "level2",
             "sea": false,
@@ -2176,7 +2233,8 @@
         },
         "NFR": {
             "pos": [
-                2899,563
+                2899,
+                563
             ],
             "level": "level2",
             "sea": false,
@@ -2190,7 +2248,9 @@
             ]
         },
         "AL": {
-            "pos": [2920,565
+            "pos": [
+                2920,
+                565
             ],
             "level": "level2",
             "sea": false,
@@ -2202,6 +2262,1017 @@
                 "NFR",
                 "BOU",
                 "SWZ"
+            ]
+        }
+    },
+    "EU6": {
+        "NDL": {
+            "pos": [
+                2892,
+                469
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "HNV",
+                "RUH",
+                "BLG"
+            ]
+        },
+        "HNV": {
+            "pos": [
+                2930,
+                481
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "HSH",
+                "MVP",
+                "CGE",
+                "RUH",
+                "BRA"
+            ]
+        },
+        "RUH": {
+            "pos": [
+                2924,
+                520
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "NDL",
+                "HNV",
+                "CGE",
+                "BLG",
+                "SWG"
+            ]
+        },
+        "CGE": {
+            "pos": [
+                2952,
+                504
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "RUH",
+                "HNV",
+                "BRA",
+                "SAC",
+                "SWG",
+                "BAV"
+            ]
+        },
+        "HSH": {
+            "pos": [
+                2969,
+                452
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "DEN",
+                "MVP",
+                "HNV"
+            ]
+        }
+    },
+    "EU7": {
+        "SWG": {
+            "pos": [
+                2940,
+                544
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "AL",
+                "RUH",
+                "RUH",
+                "BAV",
+                "TYR",
+                "SWZ"
+            ]
+        },
+        "BAV": {
+            "pos": [
+                2987,
+                563
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SWG",
+                "CGE",
+                "SAC",
+                "CZE",
+                "TYR",
+                "VIE"
+            ]
+        },
+        "TYR": {
+            "pos": [
+                2973,
+                587
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BAV",
+                "SWG",
+                "SWZ",
+                "VEN",
+                "VIE",
+                "SLO"
+            ]
+        }
+    },
+    "EU8": {
+        "MAR": {
+            "pos": [
+                2895,
+                653
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SFR",
+                "BOU",
+                "SVY"
+            ]
+        },
+        "SVY": {
+            "pos": [
+                2942,
+                633
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "MAR",
+                "BOU",
+                "SWZ",
+                "VEN",
+                "FRZ"
+            ]
+        },
+        "VEN": {
+            "pos": [
+                2986,
+                602
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SWZ",
+                "FRZ",
+                "TYR",
+                "SLO",
+                "SVY"
+            ]
+        },
+        "SLO": {
+            "pos": [
+                3004,
+                606
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "VIE",
+                "TYR",
+                "CRO",
+                "VEN"
+            ]
+        },
+        "C": {
+            "pos": [
+                2947,
+                690
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+            ]
+        }
+    },
+    "EU9": {
+        "FRZ": {
+            "pos": [
+                2979,
+                652
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SVY",
+                "VEN",
+                "CIT"
+            ]
+        },
+        "CIT": {
+            "pos": [
+                3005,
+                656
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FRZ",
+                "SIT",
+                "SWZ",
+                "VEN",
+                "FRZ"
+            ]
+        },
+        "SIT": {
+            "pos": [
+                3044,
+                700
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "CIT"
+            ]
+        },
+        "SA": {
+            "pos": [
+                2946,
+                727
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
+        },
+        "SIC": {
+            "pos": [
+                3012,
+                765
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
+        }
+    },
+    "EU10": {
+        "MVP": {
+            "pos": [2987,453
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "HSH",
+                "HNV",
+                "PMR",
+                "BRA"
+            ]
+        },
+        "PMR": {
+            "pos": [3047,469
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "MVP",
+                "BRA",
+                "SIL",
+                "WPR"
+            ]
+        },
+        "BRA": {
+            "pos": [2989,488
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "MVP",
+                "HNV",
+                "CGE",
+                "SAC",
+                "PMR",
+                "SIL"
+            ]
+        },
+        "SAC": {
+            "pos": [3005,514
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BRA",
+                "SIL",
+                "CGE",
+                "CZE",
+                "BAV"
+            ]
+        },
+        "SIL": {
+            "pos": [3066,497
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BRA","PMR","WPR","WAR","CZE","SAC"
+            ]
+        }
+    },
+    "EU11": {
+        "CZE": {
+            "pos": [3072,528
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SAC",
+                "BAV",
+                "SIL",
+                "SLV",
+                "WGL",
+                "VIE"
+            ]
+        },
+        "VIE": {
+            "pos": [3047,570
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "TYR",
+                "BAV",
+                "CZE",
+                "SLV",
+                "HUN",
+                "CRO",
+                "SLO"
+            ]
+        },
+        "WGL": {
+            "pos": [3155,529
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "WAR",
+                "SIL",
+                "CZE",
+                "EGL",
+                "SLV"
+            ]
+        },
+        "CRO": {
+            "pos": [3046,623
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SLO",
+                "VIE",
+                "HUN",
+                "BAH",
+                "V",
+                "MH"
+            ]
+        },
+        "BAH": {
+            "pos": [3094,646
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "CRO","SER","MN"
+            ]
+        },
+        "SLV": {
+            "pos": [3084,562
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "CZE","VIE","HUN","EGL","WGL"
+            ]
+        },
+        "HUN": {
+            "pos": [3121,584
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "VIE","SLV","EGL","TRA","CB","V","CRO"
+            ]
+        }
+    },
+
+
+
+
+
+
+    "SCA1": {
+        "DEN": {
+            "pos": [
+                2943,
+                413
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "HSH"
+            ]
+        },
+        "SVG": {
+            "pos": [
+                2929,
+                330
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NOR",
+                "OSL"
+            ]
+        },
+        "NOR": {
+            "pos": [
+                3033,
+                147
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FNM",
+                "UPP",
+                "SVG",
+                "NSV",
+                "OSL"
+            ]
+        }
+    },
+    "SCA2": {
+        "FNM": {
+            "pos": [
+                3187,
+                66
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NOR",
+                "UPP",
+                "NFL",
+                "KOL"
+            ]
+        },
+        "NFL": {
+            "pos": [
+                3223,
+                154
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FNM",
+                "KOL",
+                "KAR",
+                "EFI",
+                "FIN",
+                "UPP"
+            ]
+        },
+        "KOL": {
+            "pos": [
+                3301,
+                89
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FNM",
+                "NFL",
+                "KAR"
+            ]
+        },
+        "KAR": {
+            "pos": [
+                3297,
+                154
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "KOL",
+                "NFL",
+                "EFI",
+                "STP"
+            ]
+        },
+        "EFI": {
+            "pos": [
+                3255,
+                253
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FIN",
+                "NFL",
+                "KAR",
+                "STP"
+            ]
+        },
+        "FIN": {
+            "pos": [
+                3161,
+                271
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NFL",
+                "EFI",
+                "STP"
+            ]
+        }
+    },
+    "SCA3": {
+        "UPP": {
+            "pos": [
+                3187,
+                66
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NOR",
+                "UPP",
+                "NFL",
+                "KOL"
+            ]
+        },
+        "NSV": {
+            "pos": [
+                3223,
+                154
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FNM",
+                "KOL",
+                "KAR",
+                "EFI",
+                "FIN",
+                "UPP"
+            ]
+        },
+        "STO": {
+            "pos": [
+                3301,
+                89
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FNM",
+                "NFL",
+                "KAR"
+            ]
+        },
+        "SSV": {
+            "pos": [
+                3297,
+                154
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "KOL",
+                "NFL",
+                "EFI",
+                "STP"
+            ]
+        },
+        "EFI": {
+            "pos": [
+                3255,
+                253
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FIN",
+                "NFL",
+                "KAR",
+                "STP"
+            ]
+        },
+        "FIN": {
+            "pos": [
+                3161,
+                271
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NFL",
+                "EFI",
+                "STP"
+            ]
+        }
+    },
+    "AUS1": {
+        "EL": {
+            "pos": [
+                4764,
+                1542
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
+        },
+        "NEA": {
+            "pos": [
+                4787,
+                1671
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NTE",
+                "AUC",
+                "EWA",
+                "WAU"
+            ]
+        },
+        "EWA": {
+            "pos": [
+                4827,
+                1798
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "NEA",
+                "WAU",
+                "SAU",
+                "SCA",
+                "AUC"
+            ]
+        },
+        "WAU": {
+            "pos": [
+                4670,
+                1767
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NEA",
+                "EWA",
+                "SAU"
+            ]
+        },
+        "SCA": {
+            "pos": [
+                4913,
+                1799
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "EWA",
+                "AUC",
+                "SAU",
+                "NSW"
+            ]
+        },
+        "SAU": {
+            "pos": [
+                4880,
+                1864
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "EWA",
+                "WAU",
+                "SCA",
+                "NSW",
+                "VIC"
+            ]
+        },
+        "AUS2": {
+            "WNG": {
+                "pos": [
+                    4960,
+                    1445
+                ],
+                "level": "level2",
+                "sea": false,
+                "seas": [],
+                "ocean": true,
+                "adjacent": [
+                    "PNG"
+                ]
+            },
+            "PNG": {
+                "pos": [
+                    5040,
+                    1473
+                ],
+                "level": "level1",
+                "sea": false,
+                "seas": [],
+                "ocean": true,
+                "adjacent": [
+                    "WNG"
+                ]
+            },
+            "NTE": {
+                "pos": [
+                    4881,
+                    1624
+                ],
+                "level": "level1",
+                "sea": false,
+                "seas": [],
+                "ocean": false,
+                "adjacent": [
+                    "NEA",
+                    "AUC",
+                    "QLD"
+                ]
+            },
+            "AUC": {
+                "pos": [
+                    4905,
+                    1742
+                ],
+                "level": "level1",
+                "sea": false,
+                "seas": [],
+                "ocean": false,
+                "adjacent": [
+                    "NEA",
+                    "EWA",
+                    "NTE",
+                    "QLD",
+                    "SCA"
+                ]
+            },
+            "QLD": {
+                "pos": [
+                    5064,
+                    1760
+                ],
+                "level": "level2",
+                "sea": false,
+                "seas": [],
+                "ocean": true,
+                "adjacent": [
+                    "NTE",
+                    "AUC",
+                    "SCA",
+                    "NSW"
+                ]
+            },
+            "NSW": {
+                "pos": [
+                    5000,
+                    1836
+                ],
+                "level": "level2",
+                "sea": false,
+                "seas": [],
+                "ocean": true,
+                "adjacent": [
+                    "SCA",
+                    "VIC",
+                    "SAU",
+                    "QLD",
+                    "VIC"
+                ]
+            },
+            "VIC": {
+                "pos": [
+                    5041,
+                    1910
+                ],
+                "level": "level3",
+                "sea": false,
+                "seas": [],
+                "ocean": true,
+                "adjacent": [
+                    "SAU",
+                    "NSW"
+                ]
+            },
+            "TAS": {
+                "pos": [
+                    5078,
+                    2015
+                ],
+                "level": "level1",
+                "sea": false,
+                "seas": [],
+                "ocean": true,
+                "adjacent": [
+                ]
+            },
+            "SNZ": {
+                "pos": [
+                    5507,
+                    1962
+                ],
+                "level": "level1",
+                "sea": false,
+                "seas": [],
+                "ocean": true,
+                "adjacent": [
+                ]
+            },
+            "NNZ": {
+                "pos": [
+                    5563,
+                    1896
+                ],
+                "level": "level1",
+                "sea": false,
+                "seas": [],
+                "ocean": true,
+                "adjacent": [
+                ]
+            }
+        }
+    },
+    "SOPA1": {
+        "SUM": {
+            "pos": [4417,1426
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
+        },
+        "BRU": {
+            "pos": [4597,1341
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "BOR"
+            ]
+        },
+        "BOR": {
+            "pos": [4545,1409
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "BRU"
+            ]
+        },
+        "JAV": {
+            "pos": [4491,1511
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
+        },
+        "SUL": {
+            "pos": [4681,1418
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
+        },
+        "PHI": {
+            "pos": [4705,1124
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
             ]
         }
     }
