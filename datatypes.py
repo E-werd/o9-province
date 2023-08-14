@@ -81,15 +81,15 @@ class Player:
                 step = 2
 
         first: bool = True
-        for level in levels:
+        for _, level in levels.items():
             if (first):
-                colors.update({levels[level].name: ColorBase(name=levels[level].name, rgb=(r, g, b))})
+                colors.update({level.name: ColorBase(name=level.name, rgb=(r, g, b))})
                 first = False
             else:
-                colors.update({levels[level].name: ColorBase(name=levels[level].name, 
-                                                             rgb=(r - (r // start), 
-                                                                  g - (g // start), 
-                                                                  b - (b // start)))})
+                colors.update({level.name: ColorBase(name=level.name, 
+                                                     rgb=(r - (r // start), 
+                                                          g - (g // start), 
+                                                          b - (b // start)))})
                 start = start - step
 
         return colors

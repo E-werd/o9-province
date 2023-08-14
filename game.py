@@ -8,12 +8,72 @@ from data import Data
 from map import Map
 
 class Status:
-    class Claim:
-        ok = 1
-        water = 2
-        self_owned = 4
-        other_owned = 8
-        not_adjacent = 16
+    def __init__(self, name: str, value: int):
+        self.name: str = name
+        self.value: int = value
+
+    def __repr__(self) -> str: return self.__str__() # Printable representation
+    def __str__(self) -> str: return self.name # String representation
+
+class Claim:
+    ok: Status = Status(name="ok", value=1)
+    water: Status = Status(name="water", value=2)
+    self_owned: Status = Status(name="self_owned", value=4)
+    other_owned: Status = Status(name="other_owned", value=8)
+    not_adjacent: Status = Status(name="not_adjacent", value=16)
+
+    list: dict[str, Status] = {"not_adjacent": not_adjacent, # 16
+                               "other_owned": other_owned,   # 8
+                               "self_owned": self_owned,     # 4
+                               "water": water,               # 2
+                               "ok": ok}                     # 1
+    
+    max: int = sum(obj.value for _, obj in list.items())
+
+    def is_valid(code: int) -> bool:       
+        # Code out of range
+        if (code > Claim.max):
+            return False 
+        if (code < 1):
+            return False
+        
+        stats = Claim.check(code=code)
+
+        # Owned by self and other
+        case1 = [Claim.self_owned, Claim.other_owned]
+        if all(s in stats for s in case1):
+            return False
+        
+        # OK but owned by other
+        case2 = [Claim.ok, Claim.other_owned]
+        if all(s in stats for s in case2):
+            return False
+
+        # OK but owned by self
+        case3 = [Claim.ok, Claim.self_owned]
+        if all(s in stats for s in case3):
+            return False
+
+        return True
+
+    def check(code: int) -> list:
+        lst: list[Status] = []
+
+        for name in Claim.list:
+            obj = Claim.list[name]
+            if ( (code // obj.value) == 1):
+                lst.append(obj)
+                code -= obj.value
+
+        return lst
+    
+    def get(status_list: list) -> int:
+        code: int = 0
+        
+        for stat in status_list:
+            code += stat.value
+        
+        return code
 
 class Game:
     '''Game class for o9-province'''
@@ -44,7 +104,7 @@ class Game:
         self.__load_players()
 
         # Update map to current state
-        self.update_map()
+        # self.update_map()
         toc = time.perf_counter()
         logging.info(f"Loading completed! {toc - tic:0.4f}s")
 
@@ -62,20 +122,21 @@ class Game:
     def __load_players(self) -> None:
         '''Load player data and set ownership'''
         for play in self.player_data.data:
-            if (self.player_data.data[play]["custom_color"] != None):
-                r, g, b = self.player_data.data[play]["custom_color"]
+            player = self.player_data.data[play]
+            if (player["custom_color"] != None):
+                r, g, b = player["custom_color"]
                 color = ColorBase(name=play, rgb=(r, g, b))
-                self.players.update({play: Player(name=self.player_data.data[play]["name"], 
-                                                  snowflake=self.player_data.data[play]["snowflake"], 
+                self.players.update({play: Player(name=player["name"], 
+                                                  snowflake=player["snowflake"], 
                                                   color=color,
                                                   levels=self.levels)})
             else:
-                self.players.update({play: Player(name=self.player_data.data[play]["name"], 
-                                                  snowflake=self.player_data.data[play]["snowflake"], 
-                                                  color=Color.list[self.player_data.data[play]["color"]],
+                self.players.update({play: Player(name=player["name"], 
+                                                  snowflake=player["snowflake"], 
+                                                  color=Color.list[player["color"]],
                                                   levels=self.levels)})
                 
-            for reg in self.player_data.data[play]["owned"]["regions"]: # Iterate through regions owned
+            for reg in player["owned"]["regions"]: # Iterate through regions owned
                 for prov in self.regions[reg].provinces: # Iterate through provinces in the region
                     self.provinces[prov].update_owner(owner=self.players[play])
             for prov in self.player_data.data[play]["owned"]["provinces"]: # Iterate through provinces owned
@@ -86,20 +147,21 @@ class Game:
         for reg in self.map_data.data:
             self.regions.update({reg: Region(name=reg)})
             for prov in self.map_data.data[reg]:
-                level = self.levels[self.map_data.data[reg][prov]["level"]]
-                x, y = self.map_data.data[reg][prov]["pos"]
+                province = self.map_data.data[reg][prov]
+                level = self.levels[province["level"]]
+                x, y = province["pos"]
                 self.provinces.update({prov: Province(name=prov,level=level,pos=(x,y))})
                 self.regions[reg].add_province(self.provinces[prov])
                 
-                for adj in self.map_data.data[reg][prov]["adjacent"]:
+                for adj in province["adjacent"]:
                     self.provinces[prov].add_adjacent(adj)
                 
-                if (self.map_data.data[reg][prov]["ocean"]):
+                if (province["ocean"]):
                     self.ocean_provs.append(prov)
                     self.provinces[prov].ocean = True
 
-                if (self.map_data.data[reg][prov]["sea"]):
-                    for sea in self.map_data.data[reg][prov]["seas"]:
+                if (province["sea"]):
+                    for sea in province["seas"]:
                         if (sea in self.sea_provs):
                             self.sea_provs[sea].append(prov)
                         else:
@@ -107,6 +169,11 @@ class Game:
                             self.sea_provs[sea].append(prov)
                         self.provinces[prov].sea = True
                         self.provinces[prov].seas.append(sea)
+
+    def load_data(self) -> None:
+        self.__load_levels()
+        self.__load_mapdata()
+        self.__load_players()
 
     def get_province_adjacents(self, province: Province) -> list[str]:
         raw_adjacents: list[str] = []
@@ -172,7 +239,17 @@ class Game:
 
     def start(self) -> None:
         '''Main loop'''
+        # Do the things
+        self.load_data()
+        self.update_map()
         self.map.write()
+
+        # for i in range(Claim.max + 1):
+        #     status = Claim.check(code=i)
+        #     if ( Claim.is_valid(code=i) ):
+        #         logging.debug(f"Status list of code '{i}': {status}")
+        #     else:
+        #         logging.debug(f"Code '{i}' is invalid")
 
         # print(f"Ocean provinces: {self.ocean_provs}")
         # for sea in self.sea_provs:
