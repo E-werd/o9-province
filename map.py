@@ -95,21 +95,22 @@ class Map:
 
         n = len(self.players)
         name_width: int = 0
-        for player in self.players:
-            if (len(self.players[player].name) > name_width):
-                name_width = len(self.players[player].name)
+        for _, player in self.players.items():
+            if (len(player.name) > name_width):
+                name_width = len(player.name)
 
-        rows        = (n-1) +1
-        cellHeight  = 45
-        cellWidth   = 45
-        imgHeight   = cellHeight * rows
-        imgWidth    = (cellWidth * 3) + (name_width * 11) 
+        rows       = (n-1) +1
+        cellHeight = 45
+        cellWidth  = 45
+        imgHeight  = cellHeight * rows
+        imgWidth   = (cellWidth * 3) + (name_width * 11) 
 
         i = Image.new("RGB", (imgWidth, imgHeight), (0,0,0))
         a = ImageDraw.Draw(i)
         font = ImageFont.truetype(font=self.font_path.__str__(), size=14)
 
-        for outer, player in enumerate(self.players):
+        for outer, playername in enumerate(self.players):
+            player = self.players[playername]
             for inner, level in enumerate(self.levels):
                 prev: int = 0
                 if (inner > 0):
@@ -119,10 +120,10 @@ class Map:
                 y0: int = cellHeight * (outer // 1)
                 x1: int = x0 + cellWidth
                 y1: int = y0 + cellHeight
-                a.rectangle([x0, y0, x1, y1], fill=self.players[player].colors[level].rgb, outline='black')
+                a.rectangle([x0, y0, x1, y1], fill=player.colors[level].rgb, outline='black')
 
                 if (inner == len(self.levels) - 1):
-                    a.text((x1+1, y0+10), self.players[player].name, fill='white', font=font)
+                    a.text((x1+1, y0+10), player.name, fill='white', font=font)
 
         legend = np.array(object=i)
         self.image[-legend.shape[0]:, 0:legend.shape[1]] = legend
