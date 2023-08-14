@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # External
-import logging, os, time
+import logging, os
 from dotenv import load_dotenv
 from pathlib import Path
 # Internal
-from datatypes import (ColorBase, Color, LevelBase, Player, Province, Region)
 from data import Data
 from map import Map
 from game import Game
