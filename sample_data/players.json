@@ -1,30 +1,40 @@
 {"Risky": {
     "name": "Risky",
     "snowflake": 8008135,
-    "color": "orange",
+    "color": null,
     "custom_color": [184, 255, 0],
     "owned": {
-        "regions": ["USA1", "USA4", "USA5"],
+        "regions": ["CAN1", "CAN2", "CAN3", "USA1", "USA2", "USA3", "USA4", "USA5", "USA6", "MEX1", "MEX2", "MEX3"],
         "provinces": []
         }
     },
 "THC": {
     "name": "THC",
     "snowflake": 3133700,
+    "color": null,
     "custom_color": [233, 153, 152],
-    "color": "coral",
     "owned": {
-        "regions": ["USA2", "USA3", "MEX1", "MEX2"],
+        "regions": ["SAM1", "SAM2", "SAM3", "SAM4", "SAM5", "SAM6", "SAM7", "SAM8", "SAM9", "SAM10"],
         "provinces": []
         }
     },
 "Hops": {
     "name": "Hops",
     "snowflake": 4206900,
-    "color": "steelblue",
+    "color": null,
     "custom_color": [210, 87, 176],
     "owned": {
-        "regions": ["CAN1", "CAN2", "CAN3", "USA6"],
+        "regions": ["EU1", "EU2", "EU3", "EU4", "EU5", "EU6", "EU7", "EU8", "EU9", "EU10", "EU11", "SCA1", "SCA2", "SCA3"],
+        "provinces": []
+        }
+    },
+"ewerd": {
+    "name": "E-werd",
+    "snowflake": 3133700,
+    "color": "orange",
+    "custom_color": null,
+    "owned": {
+        "regions": ["AUS1", "AUS2", "SOPA1"],
         "provinces": []
         }
     }
