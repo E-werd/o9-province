@@ -1790,5 +1790,419 @@
             "adjacent": [
                 "FAL"]
         }
+    },
+    "EU1": {
+        "WIS": {
+            "pos": [2484,145],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "EIS"
+            ]
+        },
+        "EIS": {
+            "pos": [
+                2550,135
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WIS",
+                "SCL",
+                "NIR"
+            ]
+        },
+        "SCL": {
+            "pos": [
+                2732,370
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NEN",
+                "EIS"
+            ]
+        },
+        "NIR": {
+            "pos": [2707,438],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "IRE",
+                "EIS"]
+        },
+        "IRE": {
+            "pos": [2669,448],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NIR",
+                "COR"]
+        },
+        "NEN": {
+            "pos": [2772,422],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SCL","WA","SEN"]
+        },
+        "SEN": {
+            "pos": [2796,485],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "COR","WA","NEN"]
+        },
+        "COR": {
+            "pos": [2740,515],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "IRE","WA","SEN"]
+        },
+        "WA": {
+            "pos": [2747,473],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NEN","COR","SEN"]
+        }
+    },
+    "EU2": {
+        "GAL": {
+            "pos": [2689,658],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "LAK","POR"
+            ]
+        },
+        "POR": {
+            "pos": [
+                2681,706
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "GAL",
+                "LAK",
+                "ADL",
+                "CAS"
+            ]
+        },
+        "ADL": {
+            "pos": [2704,761
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "POR",
+                "GRA",
+                "CAS"
+            ]
+        },
+        "GRA": {
+            "pos": [2719,787],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ADL",
+                "MUR"]
+        }
+    },
+    "EU3": {
+        "LAK": {
+            "pos": [
+                2709,
+                667
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "GAL",
+                "POR",
+                "CAS",
+                "ARO"
+            ]
+        },
+        "CAS": {
+            "pos": [
+                2749,
+                697
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "LAK",
+                "ADL",
+                "MUR",
+                "ARO"
+            ]
+        },
+        "ARO": {
+            "pos": [
+                2821,
+                686
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WFR",
+                "SFR",
+                "CAS",
+                "MUR"
+            ]
+        },
+        "MUR": {
+            "pos": [
+                2787,
+                743
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ADL",
+                "MUR"
+            ]
+        }
+    },
+    "EU3": {
+        "LAK": {
+            "pos": [
+                2709,
+                667
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "GAL",
+                "POR",
+                "CAS",
+                "ARO"
+            ]
+        },
+        "CAS": {
+            "pos": [
+                2749,
+                697
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "LAK",
+                "ADL",
+                "MUR",
+                "ARO"
+            ]
+        },
+        "ARO": {
+            "pos": [
+                2821,
+                686
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WFR",
+                "SFR",
+                "CAS",
+                "MUR"
+            ]
+        },
+        "MUR": {
+            "pos": [
+                2787,
+                743
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ADL",
+                "MUR"
+            ]
+        }
+    },
+
+    "EU4": {
+        "WFR": {
+            "pos": [
+                2802,611
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "BRI",
+                "SFR",
+                "FRA",
+                "ARO"
+            ]
+        },
+        "SFR": {
+            "pos": [
+                2843,642
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WFR",
+                "FRA",
+                "BOU",
+                "MAR"
+            ]
+        },
+        "BRI": {
+            "pos": [
+                2792,549
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FRA",
+                "NFR",
+                "WFR"
+            ]
+        },
+        "FRA": {
+            "pos": [2840,571
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "WFR",
+                "SFR",
+                "BOU",
+                "NFR",
+                "BRI"
+            ]
+        },
+        "BOU": {
+            "pos": [
+                2897, 583
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "FRA",
+                "FRA",
+                "NFR",
+                "AL",
+                "SVY",
+                "MAR",
+                "SFR"
+            ]
+        }
+    },
+
+    "EU5": {
+        "BLG": {
+            "pos": [
+                2886,520
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NDL",
+                "SWG",
+                "PIC",
+                "NFR"
+            ]
+        },
+        "PIC": {
+            "pos": [
+                2857,529
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "BLG",
+                "NFR"
+            ]
+        },
+        "NFR": {
+            "pos": [
+                2899,563
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "PIC",
+                "AL",
+                "BOU",
+                "FRA"
+            ]
+        },
+        "AL": {
+            "pos": [2920,565
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SWG",
+                "BLG",
+                "NFR",
+                "BOU",
+                "SWZ"
+            ]
+        }
     }
 }
