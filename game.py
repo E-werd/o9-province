@@ -1,7 +1,5 @@
 # External
-import logging, os, time
-from dotenv import load_dotenv
-from pathlib import Path
+import logging, time
 # Internal
 from datatypes import (ColorBase, Color, LevelBase, Player, Province, Region)
 from data import Data
@@ -234,8 +232,8 @@ class Game:
         self.map.add_players(players=self.players) # Send player data to map
         self.map.add_levels(levels=self.levels) # Send level data to map
         logging.info("Filling map from data...")
-        for prov in self.provinces.keys():
-            self.map.fill(seed_point=self.provinces[prov].pos_xy, new_color=self.provinces[prov].get_color().rgb)
+        for prov in self.provinces.values():
+            self.map.fill(seed_point=prov.pos_xy, new_color=prov.get_color().rgb)
 
     def start(self) -> None:
         '''Main loop'''
