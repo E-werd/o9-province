@@ -1,1 +1,3243 @@
-{"TAS": {"coordinates": [5072, 2023], "value": "1"}, "SG": {"coordinates": [2231, 2015], "value": "1"}, "TDF": {"coordinates": [1744, 2006], "value": "1"}, "SNZ": {"coordinates": [5483, 1989], "value": "1"}, "FAL": {"coordinates": [1896, 1970], "value": "1"}, "VIC": {"coordinates": [5046, 1938], "value": "3"}, "SOU": {"coordinates": [3187, 1922], "value": "3"}, "PAT": {"coordinates": [1708, 1911], "value": "1"}, "": {"coordinates": [1256, 799], "value": "2"}, "SOW": {"coordinates": [3123, 1893], "value": "2"}, "NNZ": {"coordinates": [5570, 1888], "value": "1"}, "SAU": {"coordinates": [4928, 1885], "value": "2"}, "LST": {"coordinates": [3257, 1879], "value": "1"}, "APA": {"coordinates": [1759, 1874], "value": "1"}, "NSW": {"coordinates": [5067, 1840], "value": "2"}, "SOE": {"coordinates": [3261, 1836], "value": "2"}, "SZ": {"coordinates": [3300, 1831], "value": "1"}, "SCA": {"coordinates": [2016, 1621], "value": "2"}, "EWA": {"coordinates": [4832, 1821], "value": "1"}, "WAU": {"coordinates": [4713, 1807], "value": "2"}, "SMD": {"coordinates": [3519, 1784], "value": "1"}, "EAR": {"coordinates": [1866, 1782], "value": "3"}, "MOS": {"coordinates": [3328, 1769], "value": "1"}, "NAM": {"coordinates": [3070, 1761], "value": "1"}, "BOT": {"coordinates": [3188, 1756], "value": "1"}, "AUC": {"coordinates": [4900, 1757], "value": "1"}, "SCI": {"coordinates": [1707, 1743], "value": "2"}, "WMD": {"coordinates": [3533, 1735], "value": null}, "OLD": {"coordinates": [5030, 1728], "value": "2"}, "URU": {"coordinates": [1920, 1726], "value": "2"}, "NRA": {"coordinates": [3121, 1717], "value": "1"}, "SBW": {"coordinates": [3271, 1707], "value": "1"}, "EMA": {"coordinates": [2770, 1127], "value": "1"}, "NEA": {"coordinates": [4817, 1705], "value": "1"}, "NCU": {"coordinates": [1748, 1701], "value": "1"}, "ARG": {"coordinates": [1863, 1673], "value": "2"}, "RGS": {"coordinates": [1967, 1666], "value": "2"}, "NTE": {"coordinates": [4890, 1664], "value": "1"}, "NGA": {"coordinates": [1813, 1588], "value": "1"}, "H": {"coordinates": [2723, 1652], "value": "1"}, "NMA": {"coordinates": [3561, 1647], "value": "1"}, "WZB": {"coordinates": [3186, 1645], "value": "1"}, "MON": {"coordinates": [3396, 1637], "value": "1"}, "ZMB": {"coordinates": [3246, 1627], "value": null}, "MLW": {"coordinates": [3333, 1613], "value": "1"}, "PAR": {"coordinates": [3617, 859], "value": "1"}, "EZB": {"coordinates": [3298, 1575], "value": "1"}, "ANG": {"coordinates": [3067, 1565], "value": "2"}, "NCI": {"coordinates": [1723, 1564], "value": "2"}, "KPH": {"coordinates": [3227, 1559], "value": "2"}, "STA": {"coordinates": [3390, 1556], "value": "2"}, "PRG": {"coordinates": [1906, 1556], "value": "2"}, "El": {"coordinates": [4746, 1551], "value": "2"}, "SPA": {"coordinates": [2066, 1541], "value": "3"}, "JAV": {"coordinates": [4550, 1518], "value": "3"}, "SBO": {"coordinates": [1777, 1509], "value": "1"}, "ESK": {"coordinates": [3222, 1502], "value": "2"}, "MGS": {"coordinates": [1944, 1500], "value": "2"}, "PNG": {"coordinates": [5039, 1489], "value": "1"}, "SKK": {"coordinates": [3116, 1480], "value": "3"}, "NTA": {"coordinates": [3342, 1470], "value": "3"}, "WNG": {"coordinates": [4973, 1466], "value": "2"}, "STC": {"coordinates": [1844, 1449], "value": "1"}, "BU": {"coordinates": [3271, 1450], "value": "1"}, "SEB": {"coordinates": [2137, 1447], "value": "1"}, "BOL": {"coordinates": [1756, 1445], "value": "1"}, "KPZ": {"coordinates": [3222, 1431], "value": "2"}, "SUL": {"coordinates": [4683, 1427], "value": "1"}, "RU": {"coordinates": [3273, 1426], "value": "2"}, "ECB": {"coordinates": [2018, 1427], "value": null}, "BOR": {"coordinates": [4585, 1411], "value": "2"}, "GAB": {"coordinates": [2990, 1408], "value": "1"}, "SPE": {"coordinates": [1672, 1407], "value": "1"}, "KBR": {"coordinates": [3052, 1406], "value": "1"}, "BNI": {"coordinates": [1781, 1403], "value": "1"}, "SUM": {"coordinates": [4385, 1397], "value": "2"}, "KEN": {"coordinates": [3397, 1390], "value": "3"}, "UGA": {"coordinates": [3319, 1378], "value": "2"}, "EGU": {"coordinates": [2977, 1373], "value": "1"}, "NKK": {"coordinates": [3181, 1368], "value": "2"}, "WCB": {"coordinates": [1930, 1365], "value": null}, "BRU": {"coordinates": [4579, 1359], "value": "2"}, "SSO": {"coordinates": [3485, 1354], "value": "2"}, "RON": {"coordinates": [1825, 1351], "value": null}, "CPE": {"coordinates": [1629, 1341], "value": "2"}, "MAL": {"coordinates": [4396, 1337], "value": "2"}, "CAM": {"coordinates": [2997, 1331], "value": "2"}, "RGN": {"coordinates": [2214, 1331], "value": "2"}, "ACR": {"coordinates": [1708, 1322], "value": "1"}, "ECA": {"coordinates": [3070, 1315], "value": "1"}, "NSO": {"coordinates": [3553, 1304], "value": null}, "NBR": {"coordinates": [2114, 1299], "value": "2"}, "RSE": {"coordinates": [4724, 438], "value": "1"}, "LIB": {"coordinates": [2660, 1293], "value": null}, "SSE": {"coordinates": [3321, 1293], "value": "2"}, "CAR": {"coordinates": [3145, 1286], "value": "1"}, "ESO": {"coordinates": [3504, 1285], "value": null}, "NIG": {"coordinates": [2898, 1282], "value": "3"}, "SRL": {"coordinates": [4065, 1280], "value": "2"}, "SSW": {"coordinates": [3250, 1280], "value": "2"}, "WBA": {"coordinates": [1750, 1279], "value": "1"}, "IVO": {"coordinates": [2726, 1278], "value": "2"}, "ETH": {"coordinates": [3445, 1269], "value": "3"}, "GHA": {"coordinates": [2793, 1268], "value": "2"}, "CPH": {"coordinates": [3038, 1265], "value": "1"}, "NPE": {"coordinates": [1570, 1261], "value": "1"}, "SLE": {"coordinates": [2617, 1258], "value": "1"}, "TO": {"coordinates": [2826, 1257], "value": "1"}, "LOR": {"coordinates": [1637, 1256], "value": "1"}, "PRA": {"coordinates": [1974, 1247], "value": "2"}, "SOM": {"coordinates": [3530, 1244], "value": "1"}, "PUN": {"coordinates": [3586, 1237], "value": "1"}, "BEN": {"coordinates": [2837, 1233], "value": "1"}, "SEI": {"coordinates": [4020, 1225], "value": "2"}, "GUI": {"coordinates": [2636, 1225], "value": "1"}, "NIJ": {"coordinates": [2952, 1224], "value": "2"}, "AMA": {"coordinates": [1818, 1219], "value": "1"}, "DJ": {"coordinates": [3465, 1218], "value": "1"}, "SCH": {"coordinates": [3099, 1209], "value": "2"}, "GBI": {"coordinates": [2576, 1204], "value": null}, "AFA": {"coordinates": [3442, 1204], "value": "2"}, "CMB": {"coordinates": [4446, 1201], "value": "1"}, "BUF": {"coordinates": [2773, 1196], "value": "1"}, "ETA": {"coordinates": [3409, 1193], "value": "2"}, "ECU": {"coordinates": [1584, 1190], "value": "2"}, "WCS": {"coordinates": [3199, 1190], "value": "1"}, "ECS": {"coordinates": [3306, 1186], "value": "2"}, "WMA": {"coordinates": [2675, 1181], "value": "1"}, "ENI": {"coordinates": [2976, 1166], "value": "1"}, "SAG": {"coordinates": [2581, 1165], "value": "2"}, "AMP": {"coordinates": [2009, 1159], "value": "1"}, "WNI": {"coordinates": [2891, 1157], "value": "1"}, "PHI": {"coordinates": [4692, 1154], "value": "3"}, "ECO": {"coordinates": [1693, 1152], "value": "1"}, "THC": {"coordinates": [4393, 1149], "value": "3"}, "SWI": {"coordinates": [3975, 1145], "value": "2"}, "YEM": {"coordinates": [3550, 1142], "value": "1"}, "ERI": {"coordinates": [3403, 1140], "value": "1"}, "ROR": {"coordinates": [1847, 1135], "value": "1"}, "SCO": {"coordinates": [1626, 1133], "value": "2"}, "SUR": {"coordinates": [1934, 1112], "value": "1"}, "FRG": {"coordinates": [1976, 1111], "value": "1"}, "SVE": {"coordinates": [1779, 1112], "value": "1"}, "NCH": {"coordinates": [3109, 1107], "value": "1"}, "ICP": {"coordinates": [4029, 1101], "value": null}, "SUS": {"coordinates": [3227, 1097], "value": "1"}, "MAU": {"coordinates": [2568, 1094], "value": "1"}, "HN": {"coordinates": [4520, 1092], "value": "1"}, "COS": {"coordinates": [3339, 1091], "value": "2"}, "NAJ": {"coordinates": [3538, 1091], "value": "1"}, "LAO": {"coordinates": [4400, 1090], "value": "1"}, "GUA": {"coordinates": [1889, 1088], "value": "2"}, "NSA": {"coordinates": [2977, 1086], "value": "1"}, "EVE": {"coordinates": [1825, 1075], "value": "1"}, "OMA": {"coordinates": [3684, 1069], "value": "1"}, "MAS": {"coordinates": [2775, 1066], "value": "1"}, "NCO": {"coordinates": [1649, 1066], "value": "2"}, "HJS": {"coordinates": [3454, 1065], "value": "2"}, "INE": {"coordinates": [4114, 1056], "value": "2"}, "MYA": {"coordinates": [4307, 1051], "value": "2"}, "VTM": {"coordinates": [4440, 1048], "value": "3"}, "PNM": {"coordinates": [1540, 1045], "value": "2"}, "SEW": {"coordinates": [2594, 1043], "value": "1"}, "MSA": {"coordinates": [2657, 1039], "value": "1"}, "WVE": {"coordinates": [1738, 1038], "value": "2"}, "VSA": {"coordinates": [2822, 1036], "value": "1"}, "ABN": {"coordinates": [2939, 1035], "value": "1"}, "HI": {"coordinates": [343, 1032], "value": "1"}, "ASQ": {"coordinates": [3599, 1028], "value": "1"}, "SWW": {"coordinates": [2574, 1025], "value": "1"}, "ICN": {"coordinates": [4018, 1021], "value": "2"}, "RYD": {"coordinates": [3517, 1019], "value": "1"}, "CSC": {"coordinates": [4593, 1018], "value": "3"}, "TAI": {"coordinates": [4693, 1017], "value": "3"}, "UAE": {"coordinates": [3650, 1017], "value": "2"}, "BNG": {"coordinates": [4196, 1014], "value": "3"}, "GUZ": {"coordinates": [4507, 1013], "value": "2"}, "CRI": {"coordinates": [1485, 1008], "value": "1"}, "EGD": {"coordinates": [3248, 1002], "value": null}, "SAS": {"coordinates": [2867, 1002], "value": "1"}, "WEI": {"coordinates": [4153, 990], "value": "3"}, "Q": {"coordinates": [3605, 988], "value": "2"}, "YUN": {"coordinates": [4390, 982], "value": "2"}, "INW": {"coordinates": [3945, 979], "value": "2"}, "EIN": {"coordinates": [4258, 977], "value": "3"}, "ELY": {"coordinates": [3129, 975], "value": "1"}, "NIC": {"coordinates": [1471, 970], "value": "1"}, "NEW": {"coordinates": [3229, 906], "value": "2"}, "HJN": {"coordinates": [3392, 962], "value": "1"}, "ELS": {"coordinates": [1420, 960], "value": "2"}, "HAQ": {"coordinates": [3453, 956], "value": "1"}, "MWS": {"coordinates": [2610, 956], "value": "1"}, "INN": {"coordinates": [4065, 954], "value": "3"}, "CEC": {"coordinates": [4644, 953], "value": "3"}, "BUT": {"coordinates": [4213, 951], "value": "1"}, "PAS": {"coordinates": [3836, 946], "value": "3"}, "AWS": {"coordinates": [2724, 947], "value": "1"}, "SCC": {"coordinates": [4500, 947], "value": "2"}, "AWE": {"coordinates": [3652, 942], "value": "1"}, "NEP": {"coordinates": [4124, 937], "value": "2"}, "WLY": {"coordinates": [3027, 936], "value": "1"}, "GTM": {"coordinates": [1396, 936], "value": "1"}, "HON": {"coordinates": [1453, 934], "value": "2"}, "EGY": {"coordinates": [3288, 928], "value": "3"}, "PES": {"coordinates": [3716, 923], "value": "2"}, "CI": {"coordinates": [1849, 919], "value": "1"}, "WIN": {"coordinates": [3996, 919], "value": "3"}, "AWZ": {"coordinates": [3629, 916], "value": "2"}, "K": {"coordinates": [3546, 915], "value": "1"}, "NAS": {"coordinates": [2847, 910], "value": "1"}, "SMX": {"coordinates": [1324, 904], "value": "1"}, "B": {"coordinates": [1421, 903], "value": "1"}, "SIN": {"coordinates": [3329, 900], "value": "2"}, "JHS": {"coordinates": [3433, 899], "value": "1"}, "SMA": {"coordinates": [2675, 893], "value": "2"}, "JOR": {"coordinates": [3374, 892], "value": "2"}, "EIR": {"coordinates": [3520, 887], "value": "2"}, "PA": {"coordinates": [3350, 883], "value": "3"}, "NLY": {"coordinates": [3154, 883], "value": "1"}, "PCH": {"coordinates": [4393, 879], "value": "1"}, "PAN": {"coordinates": [3926, 878], "value": "3"}, "TRP": {"coordinates": [3020, 876], "value": "1"}, "TIB": {"coordinates": [4268, 877], "value": null}, "ECC": {"coordinates": [4571, 872], "value": "3"}, "HDR": {"coordinates": [1699, 872], "value": "1"}, "EMX": {"coordinates": [1280, 869], "value": "2"}, "YUC": {"coordinates": [1402, 867], "value": "1"}, "WCC": {"coordinates": [4450, 857], "value": "2"}, "SHA": {"coordinates": [4668, 856], "value": "3"}, "WMX": {"coordinates": [1203, 855], "value": "3"}, "TIM": {"coordinates": [4148, 849], "value": "1"}, "WIR": {"coordinates": [3466, 844], "value": "1"}, "AFG": {"coordinates": [3828, 846], "value": "2"}, "MRC": {"coordinates": [2737, 838], "value": null}, "SJP": {"coordinates": [4869, 835], "value": "3"}, "L": {"coordinates": [3369, 832], "value": "2"}, "ALG": {"coordinates": [2866, 825], "value": "3"}, "JAK": {"coordinates": [3990, 821], "value": "1"}, "SYR": {"coordinates": [3402, 819], "value": "2"}, "CJP": {"coordinates": [4930, 815], "value": "3"}, "CUB": {"coordinates": [1557, 816], "value": null}, "CRE": {"coordinates": [3199, 813], "value": "1"}, "IRA": {"coordinates": [3602, 811], "value": "3"}, "TUN": {"coordinates": [2959, 810], "value": "2"}, "PER": {"coordinates": [3714, 808], "value": "2"}, "KNI": {"coordinates": [3504, 802], "value": "2"}, "AFN": {"coordinates": [3893, 800], "value": "1"}, "KNS": {"coordinates": [3432, 796], "value": "2"}, "SKR": {"coordinates": [4806, 791], "value": "3"}, "NCC": {"coordinates": [4505, 782], "value": "2"}, "SDZ": {"coordinates": [1170, 782], "value": "2"}, "GRA": {"coordinates": [2770, 777], "value": "2"}, "NJP": {"coordinates": [4989, 774], "value": "3"}, "QMO": {"coordinates": [4324, 776], "value": null}, "TSB": {"coordinates": [3431, 771], "value": "2"}, "SIC": {"coordinates": [3025, 768], "value": "2"}, "SCT": {"coordinates": [3358, 762], "value": "2"}, "ADL": {"coordinates": [2720, 764], "value": null}, "MUR": {"coordinates": [2785, 751], "value": "2"}, "SXJ": {"coordinates": [4071, 751], "value": "1"}, "TAD": {"coordinates": [3918, 743], "value": "2"}, "POR": {"coordinates": [2680, 738], "value": "2"}, "TUR": {"coordinates": [3728, 735], "value": "1"}, "FAT": {"coordinates": [3471, 732], "value": "1"}, "COH": {"coordinates": [1217, 733], "value": "1"}, "ANA": {"coordinates": [3258, 732], "value": "3"}, "BCA": {"coordinates": [1034, 731], "value": "1"}, "GRE": {"coordinates": [3140, 729], "value": "2"}, "NKR": {"coordinates": [4781, 724], "value": "2"}, "BEI": {"coordinates": [4611, 724], "value": "3"}, "FLO": {"coordinates": [1540, 721], "value": "3"}, "NCT": {"coordinates": [3384, 715], "value": "2"}, "AZE": {"coordinates": [3556, 717], "value": "2"}, "SA": {"coordinates": [2951, 716], "value": "2"}, "ARM": {"coordinates": [3503, 713], "value": "1"}, "CAS": {"coordinates": [2734, 714], "value": "3"}, "EXJ": {"coordinates": [4336, 712], "value": "1"}, "AB": {"coordinates": [3122, 712], "value": "1"}, "SIT": {"coordinates": [3054, 710], "value": "3"}, "CHH": {"coordinates": [1141, 702], "value": "1"}, "KIR": {"coordinates": [3967, 695], "value": "2"}, "SON": {"coordinates": [1086, 696], "value": "1"}, "MCD": {"coordinates": [3156, 693], "value": null}, "UZB": {"coordinates": [3798, 690], "value": "2"}, "ARO": {"coordinates": [2801, 689], "value": "3"}, "GEO": {"coordinates": [3487, 684], "value": "1"}, "KS": {"coordinates": [3127, 674], "value": "1"}, "CNA": {"coordinates": [4748, 673], "value": "3"}, "BUL": {"coordinates": [3192, 673], "value": "2"}, "GAL": {"coordinates": [2683, 672], "value": "2"}, "TFW": {"coordinates": [1196, 672], "value": "1"}, "TEX": {"coordinates": [1248, 669], "value": "2"}, "CIT": {"coordinates": [3007, 666], "value": "3"}, "LAK": {"coordinates": [2718, 666], "value": "2"}, "LOU": {"coordinates": [1376, 662], "value": "2"}, "HOK": {"coordinates": [5035, 659], "value": "1"}, "WXJ": {"coordinates": [4146, 660], "value": "1"}, "KSC": {"coordinates": [3638, 656], "value": "1"}, "SER": {"coordinates": [3143, 649], "value": null}, "KFS": {"coordinates": [4025, 644], "value": "2"}, "BAH": {"coordinates": [3075, 644], "value": "1"}, "WFR": {"coordinates": [2811, 641], "value": "2"}, "FRZ": {"coordinates": [2986, 642], "value": "2"}, "MAR": {"coordinates": [2891, 641], "value": "3"}, "SES": {"coordinates": [1472, 638], "value": "2"}, "TXE": {"coordinates": [1301, 638], "value": "3"}, "WLC": {"coordinates": [3196, 633], "value": "2"}, "SFR": {"coordinates": [2851, 626], "value": null}, "CAE": {"coordinates": [3519, 627], "value": "2"}, "CRM": {"coordinates": [3341, 625], "value": "2"}, "VDV": {"coordinates": [4919, 627], "value": "2"}, "V": {"coordinates": [3119, 626], "value": "1"}, "IMO": {"coordinates": [4666, 621], "value": "2"}, "SVY": {"coordinates": [2947, 621], "value": "2"}, "CB": {"coordinates": [3149, 617], "value": null}, "KSA": {"coordinates": [3938, 611], "value": "2"}, "CRO": {"coordinates": [3060, 610], "value": "2"}, "VEN": {"coordinates": [2991, 612], "value": "2"}, "ARI": {"coordinates": [1062, 610], "value": "2"}, "SLO": {"coordinates": [3027, 608], "value": "1"}, "EMO": {"coordinates": [4542, 606], "value": "1"}, "NME": {"coordinates": [1156, 603], "value": "1"}, "CAU": {"coordinates": [3464, 600], "value": "2"}, "ANM": {"coordinates": [1387, 600], "value": "2"}, "TRA": {"coordinates": [3187, 598], "value": "1"}, "HEI": {"coordinates": [4805, 597], "value": "2"}, "SWZ": {"coordinates": [2943, 596], "value": "3"}, "CRL": {"coordinates": [1557, 600], "value": "3"}, "RMO": {"coordinates": [3232, 594], "value": "1"}, "MOM": {"coordinates": [4401, 589], "value": "1"}, "HUN": {"coordinates": [3099, 589], "value": "2"}, "ODE": {"coordinates": [3278, 587], "value": "2"}, "TYR": {"coordinates": [3007, 584], "value": "1"}, "MOW": {"coordinates": [4279, 584], "value": null}, "SUK": {"coordinates": [3336, 585], "value": "1"}, "FRA": {"coordinates": [2831, 583], "value": "3"}, "BOU": {"coordinates": [2878, 580], "value": "2"}, "CAL": {"coordinates": [938, 580], "value": "3"}, "KSW": {"coordinates": [3716, 577], "value": "2"}, "MO": {"coordinates": [3249, 577], "value": "1"}, "VIE": {"coordinates": [3040, 577], "value": "2"}, "SWG": {"coordinates": [2056, 138], "value": "1"}, "KFE": {"coordinates": [4090, 570], "value": "2"}, "BRI": {"coordinates": [2766, 568], "value": "2"}, "TNS": {"coordinates": [1435, 564], "value": "2"}, "SLV": {"coordinates": [3111, 558], "value": "1"}, "NFR": {"coordinates": [2879, 556], "value": "2"}, "NRO": {"coordinates": [3390, 555], "value": "1"}, "AL": {"coordinates": [2919, 554], "value": "2"}, "EGL": {"coordinates": [3195, 553], "value": "1"}, "KOK": {"coordinates": [1264, 551], "value": "2"}, "BAV": {"coordinates": [2991, 550], "value": "3"}, "CZE": {"coordinates": [3041, 534], "value": "2"}, "VRG": {"coordinates": [1579, 535], "value": "3"}, "SLI": {"coordinates": [5044, 537], "value": "1"}, "WGL": {"coordinates": [3135, 532], "value": "2"}, "KTY": {"coordinates": [1466, 532], "value": "2"}, "KIE": {"coordinates": [3263, 531], "value": "2"}, "PIC": {"coordinates": [2841, 525], "value": "2"}, "NEV": {"coordinates": [963, 526], "value": "2"}, "NUK": {"coordinates": [3335, 523], "value": "2"}, "RMC": {"coordinates": [4903, 519], "value": "2"}, "CGE": {"coordinates": [2974, 515], "value": "2"}, "BLG": {"coordinates": [2877, 513], "value": "3"}, "NWU": {"coordinates": [3201, 512], "value": "1"}, "RUH": {"coordinates": [2922, 509], "value": "3"}, "COR": {"coordinates": [2777, 507], "value": "2"}, "SAC": {"coordinates": [3017, 504], "value": "2"}, "SFS": {"coordinates": [4217, 502], "value": "1"}, "NKA": {"coordinates": [3876, 498], "value": "1"}, "RMB": {"coordinates": [4555, 492], "value": null}, "WA": {"coordinates": [2754, 491], "value": "2"}, "WAR": {"coordinates": [3130, 489], "value": "3"}, "OIO": {"coordinates": [1511, 490], "value": null}, "RUB": {"coordinates": [3395, 488], "value": null}, "SIL": {"coordinates": [3051, 487], "value": "2"}, "WUS": {"coordinates": [1085, 485], "value": "1"}, "SRU": {"coordinates": [3617, 482], "value": null}, "EPL": {"coordinates": [3187, 479], "value": "1"}, "BRA": {"coordinates": [3016, 477], "value": "3"}, "SEN": {"coordinates": [2786, 472], "value": "3"}, "HNV": {"coordinates": [2950, 474], "value": "3"}, "NWS": {"coordinates": [1605, 472], "value": "3"}, "NDL": {"coordinates": [2902, 469], "value": null}, "RNM": {"coordinates": [4428, 463], "value": "1"}, "IRE": {"coordinates": [2679, 462], "value": "2"}, "PMR": {"coordinates": [3062, 455], "value": null}, "BEL": {"coordinates": [3239, 454], "value": "2"}, "WPR": {"coordinates": [3112, 453], "value": "2"}, "EBL": {"coordinates": [3292, 457], "value": "2"}, "MVP": {"coordinates": [3007, 452], "value": "2"}, "MIW": {"coordinates": [1328, 452], "value": "2"}, "HSH": {"coordinates": [2957, 443], "value": "2"}, "CVR": {"coordinates": [3507, 440], "value": null}, "NEN": {"coordinates": [2773, 434], "value": "2"}, "NEL": {"coordinates": [1684, 433], "value": "3"}, "NIR": {"coordinates": [2703, 431], "value": "1"}, "EPR": {"coordinates": [3132, 429], "value": "1"}, "LIT": {"coordinates": [3159, 405], "value": "1"}, "IDA": {"coordinates": [985, 406], "value": "1"}, "DS": {"coordinates": [3015, 402], "value": "2"}, "SIB": {"coordinates": [4193, 401], "value": "1"}, "DEN": {"coordinates": [2945, 400], "value": "2"}, "SGL": {"coordinates": [1410, 397], "value": "2"}, "DAK": {"coordinates": [1206, 397], "value": "1"}, "WAO": {"coordinates": [915, 395], "value": null}, "KAM": {"coordinates": [5277, 392], "value": "1"}, "MSK": {"coordinates": [3403, 392], "value": "3"}, "ESB": {"coordinates": [4419, 390], "value": null}, "WSB": {"coordinates": [4015, 390], "value": null}, "LAT": {"coordinates": [3195, 385], "value": "2"}, "SCL": {"coordinates": [2744, 383], "value": "1"}, "NOS": {"coordinates": [1769, 380], "value": "2"}, "SSV": {"coordinates": [3036, 380], "value": "2"}, "MTN": {"coordinates": [1096, 370], "value": "1"}, "NOV": {"coordinates": [3292, 373], "value": "2"}, "ERU": {"coordinates": [3784, 358], "value": null}, "OKT": {"coordinates": [4963, 344], "value": "1"}, "EST": {"coordinates": [3212, 337], "value": "1"}, "NFO": {"coordinates": [1935, 339], "value": "1"}, "CRU": {"coordinates": [3481, 327], "value": null}, "QUE": {"coordinates": [1663, 318], "value": "2"}, "SVG": {"coordinates": [2939, 318], "value": "1"}, "VAI": {"coordinates": [845, 316], "value": "1"}, "STO": {"coordinates": [3047, 309], "value": "2"}, "CLG": {"coordinates": [981, 301], "value": "1"}, "OSL": {"coordinates": [2974, 289], "value": "2"}, "ONT": {"coordinates": [1446, 288], "value": "2"}, "JKT": {"coordinates": [4699, 278], "value": "1"}, "STP": {"coordinates": [3344, 271], "value": null}, "FIN": {"coordinates": [3200, 273], "value": "2"}, "MGD": {"coordinates": [5226, 257], "value": null}, "MNT": {"coordinates": [1301, 251], "value": "1"}, "NSV": {"coordinates": [3037, 245], "value": "1"}, "EFI": {"coordinates": [3254, 234], "value": "1"}, "SKW": {"coordinates": [1177, 233], "value": "1"}, "LBD": {"coordinates": [1870, 227], "value": null}, "BCO": {"coordinates": [853, 220], "value": "2"}, "ART": {"coordinates": [1017, 211], "value": "1"}, "NOR": {"coordinates": [3002, 205], "value": "1"}, "ARK": {"coordinates": [3496, 206], "value": "2"}, "NEE": {"coordinates": [3653, 200], "value": "2"}, "KAR": {"coordinates": [3305, 177], "value": "1"}, "WIS": {"coordinates": [2487, 158], "value": "1"}, "UPP": {"coordinates": [3112, 156], "value": "2"}, "EIS": {"coordinates": [2543, 152], "value": "1"}, "NQU": {"coordinates": [1679, 146], "value": "1"}, "ALI": {"coordinates": [703, 140], "value": "1"}, "NFL": {"coordinates": [3225, 140], "value": "1"}, "SKH": {"coordinates": [5127, 114], "value": "1"}, "KOL": {"coordinates": [3326, 107], "value": "1"}, "NSI": {"coordinates": [4190, 105], "value": "1"}, "NJK": {"coordinates": [4722, 87], "value": "1"}, "CKT": {"coordinates": [5434, 82], "value": "1"}, "KGY": {"coordinates": [3581, 80], "value": "1"}, "FNM": {"coordinates": [3165, 70], "value": "1"}, "EGR": {"coordinates": [2123, 62], "value": "1"}, "NUN": {"coordinates": [1160, 49], "value": "1"}, "YNW": {"coordinates": [783, 46], "value": "1"}, "NWG": {"coordinates": [2012, 38], "value": "1"}, "ALK": {"coordinates": [426, 24], "value": "1"}, "NZL": {"coordinates": [3655, 10], "value": "1"}}
+{
+  "TAS": {
+    "coordinates": [
+      5072,
+      2023
+    ],
+    "value": "1"
+  },
+  "SG": {
+    "coordinates": [
+      2231,
+      2015
+    ],
+    "value": "1"
+  },
+  "TDF": {
+    "coordinates": [
+      1744,
+      2006
+    ],
+    "value": "1"
+  },
+  "SNZ": {
+    "coordinates": [
+      5483,
+      1989
+    ],
+    "value": "1"
+  },
+  "FAL": {
+    "coordinates": [
+      1896,
+      1970
+    ],
+    "value": "1"
+  },
+  "VIC": {
+    "coordinates": [
+      5046,
+      1938
+    ],
+    "value": "3"
+  },
+  "SOU": {
+    "coordinates": [
+      3187,
+      1922
+    ],
+    "value": "3"
+  },
+  "PAT": {
+    "coordinates": [
+      1708,
+      1911
+    ],
+    "value": "1"
+  },
+  "NMX": {
+    "coordinates": [
+      1256,
+      799
+    ],
+    "value": "2"
+  },
+  "SOW": {
+    "coordinates": [
+      3123,
+      1893
+    ],
+    "value": "2"
+  },
+  "NNZ": {
+    "coordinates": [
+      5570,
+      1888
+    ],
+    "value": "1"
+  },
+  "SAU": {
+    "coordinates": [
+      4928,
+      1885
+    ],
+    "value": "2"
+  },
+  "CY": {
+    "coordinates": [
+      3320,
+      816
+    ],
+    "value": "1"
+  },
+  "LST": {
+    "coordinates": [
+      3257,
+      1879
+    ],
+    "value": "1"
+  },
+  "APA": {
+    "coordinates": [
+      1759,
+      1874
+    ],
+    "value": "1"
+  },
+  "NSW": {
+    "coordinates": [
+      5067,
+      1840
+    ],
+    "value": "2"
+  },
+  "SOE": {
+    "coordinates": [
+      3261,
+      1836
+    ],
+    "value": "2"
+  },
+  "SZ": {
+    "coordinates": [
+      3300,
+      1831
+    ],
+    "value": "1"
+  },
+  "SCA": {
+    "coordinates": [
+      2016,
+      1621
+    ],
+    "value": "2"
+  },
+  "EWA": {
+    "coordinates": [
+      4832,
+      1821
+    ],
+    "value": "1"
+  },
+  "WAU": {
+    "coordinates": [
+      4713,
+      1807
+    ],
+    "value": "2"
+  },
+  "SMD": {
+    "coordinates": [
+      3519,
+      1784
+    ],
+    "value": "1"
+  },
+  "EAR": {
+    "coordinates": [
+      1866,
+      1782
+    ],
+    "value": "3"
+  },
+  "MOS": {
+    "coordinates": [
+      3328,
+      1769
+    ],
+    "value": "1"
+  },
+  "NAM": {
+    "coordinates": [
+      3070,
+      1761
+    ],
+    "value": "1"
+  },
+  "BOT": {
+    "coordinates": [
+      3188,
+      1756
+    ],
+    "value": "1"
+  },
+  "AUC": {
+    "coordinates": [
+      4900,
+      1757
+    ],
+    "value": "1"
+  },
+  "SCI": {
+    "coordinates": [
+      1707,
+      1743
+    ],
+    "value": "2"
+  },
+  "WMD": {
+    "coordinates": [
+      3533,
+      1735
+    ],
+    "value": null
+  },
+  "OLD": {
+    "coordinates": [
+      5030,
+      1728
+    ],
+    "value": "2"
+  },
+  "URU": {
+    "coordinates": [
+      1920,
+      1726
+    ],
+    "value": "2"
+  },
+  "NRA": {
+    "coordinates": [
+      3121,
+      1717
+    ],
+    "value": "1"
+  },
+  "SBW": {
+    "coordinates": [
+      3271,
+      1707
+    ],
+    "value": "1"
+  },
+  "EMA": {
+    "coordinates": [
+      2770,
+      1127
+    ],
+    "value": "1"
+  },
+  "NEA": {
+    "coordinates": [
+      4817,
+      1705
+    ],
+    "value": "1"
+  },
+  "NCU": {
+    "coordinates": [
+      1748,
+      1701
+    ],
+    "value": "1"
+  },
+  "ARG": {
+    "coordinates": [
+      1863,
+      1673
+    ],
+    "value": "2"
+  },
+  "RGS": {
+    "coordinates": [
+      1967,
+      1666
+    ],
+    "value": "2"
+  },
+  "NTE": {
+    "coordinates": [
+      4890,
+      1664
+    ],
+    "value": "1"
+  },
+  "NGA": {
+    "coordinates": [
+      1813,
+      1588
+    ],
+    "value": "1"
+  },
+  "H": {
+    "coordinates": [
+      2723,
+      1652
+    ],
+    "value": "1"
+  },
+  "NMA": {
+    "coordinates": [
+      3561,
+      1647
+    ],
+    "value": "1"
+  },
+  "WZB": {
+    "coordinates": [
+      3186,
+      1645
+    ],
+    "value": "1"
+  },
+  "MON": {
+    "coordinates": [
+      3396,
+      1637
+    ],
+    "value": "1"
+  },
+  "ZMB": {
+    "coordinates": [
+      3246,
+      1627
+    ],
+    "value": null
+  },
+  "MLW": {
+    "coordinates": [
+      3333,
+      1613
+    ],
+    "value": "1"
+  },
+  "PAR": {
+    "coordinates": [
+      3617,
+      859
+    ],
+    "value": "1"
+  },
+  "EZB": {
+    "coordinates": [
+      3298,
+      1575
+    ],
+    "value": "1"
+  },
+  "ANG": {
+    "coordinates": [
+      3067,
+      1565
+    ],
+    "value": "2"
+  },
+  "NCI": {
+    "coordinates": [
+      1723,
+      1564
+    ],
+    "value": "2"
+  },
+  "KPH": {
+    "coordinates": [
+      3227,
+      1559
+    ],
+    "value": "2"
+  },
+  "STA": {
+    "coordinates": [
+      3390,
+      1556
+    ],
+    "value": "2"
+  },
+  "PRG": {
+    "coordinates": [
+      1906,
+      1556
+    ],
+    "value": "2"
+  },
+  "EI": {
+    "coordinates": [
+      4746,
+      1551
+    ],
+    "value": "2"
+  },
+  "SPA": {
+    "coordinates": [
+      2066,
+      1541
+    ],
+    "value": "3"
+  },
+  "JAV": {
+    "coordinates": [
+      4550,
+      1518
+    ],
+    "value": "3"
+  },
+  "SBO": {
+    "coordinates": [
+      1777,
+      1509
+    ],
+    "value": "1"
+  },
+  "ESK": {
+    "coordinates": [
+      3222,
+      1502
+    ],
+    "value": "2"
+  },
+  "MGS": {
+    "coordinates": [
+      1944,
+      1500
+    ],
+    "value": "2"
+  },
+  "PNG": {
+    "coordinates": [
+      5039,
+      1489
+    ],
+    "value": "1"
+  },
+  "SKK": {
+    "coordinates": [
+      3116,
+      1480
+    ],
+    "value": "3"
+  },
+  "NTA": {
+    "coordinates": [
+      3342,
+      1470
+    ],
+    "value": "3"
+  },
+  "WNG": {
+    "coordinates": [
+      4973,
+      1466
+    ],
+    "value": "2"
+  },
+  "STC": {
+    "coordinates": [
+      1844,
+      1449
+    ],
+    "value": "1"
+  },
+  "BU": {
+    "coordinates": [
+      3271,
+      1450
+    ],
+    "value": "1"
+  },
+  "SEB": {
+    "coordinates": [
+      2137,
+      1447
+    ],
+    "value": "1"
+  },
+  "BOL": {
+    "coordinates": [
+      1756,
+      1445
+    ],
+    "value": "1"
+  },
+  "KPZ": {
+    "coordinates": [
+      3222,
+      1431
+    ],
+    "value": "2"
+  },
+  "SUL": {
+    "coordinates": [
+      4683,
+      1427
+    ],
+    "value": "1"
+  },
+  "RU": {
+    "coordinates": [
+      3273,
+      1426
+    ],
+    "value": "2"
+  },
+  "ECB": {
+    "coordinates": [
+      2018,
+      1427
+    ],
+    "value": null
+  },
+  "BOR": {
+    "coordinates": [
+      4585,
+      1411
+    ],
+    "value": "2"
+  },
+  "GAB": {
+    "coordinates": [
+      2990,
+      1408
+    ],
+    "value": "1"
+  },
+  "SPE": {
+    "coordinates": [
+      1672,
+      1407
+    ],
+    "value": "1"
+  },
+  "KBR": {
+    "coordinates": [
+      3052,
+      1406
+    ],
+    "value": "1"
+  },
+  "BNI": {
+    "coordinates": [
+      1781,
+      1403
+    ],
+    "value": "1"
+  },
+  "SUM": {
+    "coordinates": [
+      4385,
+      1397
+    ],
+    "value": "2"
+  },
+  "KEN": {
+    "coordinates": [
+      3397,
+      1390
+    ],
+    "value": "3"
+  },
+  "UGA": {
+    "coordinates": [
+      3319,
+      1378
+    ],
+    "value": "2"
+  },
+  "EGU": {
+    "coordinates": [
+      2977,
+      1373
+    ],
+    "value": "1"
+  },
+  "NKK": {
+    "coordinates": [
+      3181,
+      1368
+    ],
+    "value": "2"
+  },
+  "WCB": {
+    "coordinates": [
+      1930,
+      1365
+    ],
+    "value": null
+  },
+  "BRU": {
+    "coordinates": [
+      4579,
+      1359
+    ],
+    "value": "2"
+  },
+  "SSO": {
+    "coordinates": [
+      3485,
+      1354
+    ],
+    "value": "2"
+  },
+  "RON": {
+    "coordinates": [
+      1825,
+      1351
+    ],
+    "value": null
+  },
+  "CPE": {
+    "coordinates": [
+      1629,
+      1341
+    ],
+    "value": "2"
+  },
+  "MAL": {
+    "coordinates": [
+      4396,
+      1337
+    ],
+    "value": "2"
+  },
+  "CAM": {
+    "coordinates": [
+      2997,
+      1331
+    ],
+    "value": "2"
+  },
+  "RGN": {
+    "coordinates": [
+      2214,
+      1331
+    ],
+    "value": "2"
+  },
+  "ACR": {
+    "coordinates": [
+      1708,
+      1322
+    ],
+    "value": "1"
+  },
+  "ECA": {
+    "coordinates": [
+      3070,
+      1315
+    ],
+    "value": "1"
+  },
+  "NSO": {
+    "coordinates": [
+      3553,
+      1304
+    ],
+    "value": null
+  },
+  "NBR": {
+    "coordinates": [
+      2114,
+      1299
+    ],
+    "value": "2"
+  },
+  "RSE": {
+    "coordinates": [
+      4724,
+      438
+    ],
+    "value": "1"
+  },
+  "LIB": {
+    "coordinates": [
+      2660,
+      1293
+    ],
+    "value": null
+  },
+  "SSE": {
+    "coordinates": [
+      3321,
+      1293
+    ],
+    "value": "2"
+  },
+  "CAR": {
+    "coordinates": [
+      3145,
+      1286
+    ],
+    "value": "1"
+  },
+  "ESO": {
+    "coordinates": [
+      3504,
+      1285
+    ],
+    "value": null
+  },
+  "NIG": {
+    "coordinates": [
+      2898,
+      1282
+    ],
+    "value": "3"
+  },
+  "SRL": {
+    "coordinates": [
+      4065,
+      1280
+    ],
+    "value": "2"
+  },
+  "SSW": {
+    "coordinates": [
+      3250,
+      1280
+    ],
+    "value": "2"
+  },
+  "WBA": {
+    "coordinates": [
+      1750,
+      1279
+    ],
+    "value": "1"
+  },
+  "IVO": {
+    "coordinates": [
+      2726,
+      1278
+    ],
+    "value": "2"
+  },
+  "ETH": {
+    "coordinates": [
+      3445,
+      1269
+    ],
+    "value": "3"
+  },
+  "GHA": {
+    "coordinates": [
+      2793,
+      1268
+    ],
+    "value": "2"
+  },
+  "CPH": {
+    "coordinates": [
+      3038,
+      1265
+    ],
+    "value": "1"
+  },
+  "NPE": {
+    "coordinates": [
+      1570,
+      1261
+    ],
+    "value": "1"
+  },
+  "SLE": {
+    "coordinates": [
+      2617,
+      1258
+    ],
+    "value": "1"
+  },
+  "TO": {
+    "coordinates": [
+      2826,
+      1257
+    ],
+    "value": "1"
+  },
+  "LOR": {
+    "coordinates": [
+      1637,
+      1256
+    ],
+    "value": "1"
+  },
+  "PRA": {
+    "coordinates": [
+      1974,
+      1247
+    ],
+    "value": "2"
+  },
+  "SOM": {
+    "coordinates": [
+      3530,
+      1244
+    ],
+    "value": "1"
+  },
+  "PUN": {
+    "coordinates": [
+      3586,
+      1237
+    ],
+    "value": "1"
+  },
+  "BEN": {
+    "coordinates": [
+      2837,
+      1233
+    ],
+    "value": "1"
+  },
+  "SEI": {
+    "coordinates": [
+      4020,
+      1225
+    ],
+    "value": "2"
+  },
+  "GUI": {
+    "coordinates": [
+      2636,
+      1225
+    ],
+    "value": "1"
+  },
+  "NIJ": {
+    "coordinates": [
+      2952,
+      1224
+    ],
+    "value": "2"
+  },
+  "AMA": {
+    "coordinates": [
+      1818,
+      1219
+    ],
+    "value": "1"
+  },
+  "DJ": {
+    "coordinates": [
+      3465,
+      1218
+    ],
+    "value": "1"
+  },
+  "SCH": {
+    "coordinates": [
+      3099,
+      1209
+    ],
+    "value": "2"
+  },
+  "GBI": {
+    "coordinates": [
+      2576,
+      1204
+    ],
+    "value": null
+  },
+  "AFA": {
+    "coordinates": [
+      3442,
+      1204
+    ],
+    "value": "2"
+  },
+  "CMB": {
+    "coordinates": [
+      4446,
+      1201
+    ],
+    "value": "1"
+  },
+  "BUF": {
+    "coordinates": [
+      2773,
+      1196
+    ],
+    "value": "1"
+  },
+  "ETA": {
+    "coordinates": [
+      3409,
+      1193
+    ],
+    "value": "2"
+  },
+  "ECU": {
+    "coordinates": [
+      1584,
+      1190
+    ],
+    "value": "2"
+  },
+  "WCS": {
+    "coordinates": [
+      3199,
+      1190
+    ],
+    "value": "1"
+  },
+  "ECS": {
+    "coordinates": [
+      3306,
+      1186
+    ],
+    "value": "2"
+  },
+  "WMA": {
+    "coordinates": [
+      2675,
+      1181
+    ],
+    "value": "1"
+  },
+  "ENI": {
+    "coordinates": [
+      2976,
+      1166
+    ],
+    "value": "1"
+  },
+  "SAG": {
+    "coordinates": [
+      2581,
+      1165
+    ],
+    "value": "2"
+  },
+  "AMP": {
+    "coordinates": [
+      2009,
+      1159
+    ],
+    "value": "1"
+  },
+  "WNI": {
+    "coordinates": [
+      2891,
+      1157
+    ],
+    "value": "1"
+  },
+  "PHI": {
+    "coordinates": [
+      4692,
+      1154
+    ],
+    "value": "3"
+  },
+  "ECO": {
+    "coordinates": [
+      1693,
+      1152
+    ],
+    "value": "1"
+  },
+  "THA": {
+    "coordinates": [
+      4393,
+      1149
+    ],
+    "value": "3"
+  },
+  "SWI": {
+    "coordinates": [
+      3975,
+      1145
+    ],
+    "value": "2"
+  },
+  "YEM": {
+    "coordinates": [
+      3550,
+      1142
+    ],
+    "value": "1"
+  },
+  "ERI": {
+    "coordinates": [
+      3403,
+      1140
+    ],
+    "value": "1"
+  },
+  "ROR": {
+    "coordinates": [
+      1847,
+      1135
+    ],
+    "value": "1"
+  },
+  "SCO": {
+    "coordinates": [
+      1626,
+      1133
+    ],
+    "value": "2"
+  },
+  "SUR": {
+    "coordinates": [
+      1934,
+      1112
+    ],
+    "value": "1"
+  },
+  "FRG": {
+    "coordinates": [
+      1976,
+      1111
+    ],
+    "value": "1"
+  },
+  "SVE": {
+    "coordinates": [
+      1779,
+      1112
+    ],
+    "value": "1"
+  },
+  "NCH": {
+    "coordinates": [
+      3109,
+      1107
+    ],
+    "value": "1"
+  },
+  "ICP": {
+    "coordinates": [
+      4029,
+      1101
+    ],
+    "value": null
+  },
+  "SUS": {
+    "coordinates": [
+      3227,
+      1097
+    ],
+    "value": "1"
+  },
+  "MAU": {
+    "coordinates": [
+      2568,
+      1094
+    ],
+    "value": "1"
+  },
+  "HN": {
+    "coordinates": [
+      4520,
+      1092
+    ],
+    "value": "1"
+  },
+  "COS": {
+    "coordinates": [
+      3339,
+      1091
+    ],
+    "value": "2"
+  },
+  "NAJ": {
+    "coordinates": [
+      3538,
+      1091
+    ],
+    "value": "1"
+  },
+  "LAO": {
+    "coordinates": [
+      4400,
+      1090
+    ],
+    "value": "1"
+  },
+  "GUA": {
+    "coordinates": [
+      1889,
+      1088
+    ],
+    "value": "2"
+  },
+  "NSA": {
+    "coordinates": [
+      2977,
+      1086
+    ],
+    "value": "1"
+  },
+  "EVE": {
+    "coordinates": [
+      1825,
+      1075
+    ],
+    "value": "1"
+  },
+  "OMA": {
+    "coordinates": [
+      3684,
+      1069
+    ],
+    "value": "1"
+  },
+  "MAS": {
+    "coordinates": [
+      2775,
+      1066
+    ],
+    "value": "1"
+  },
+  "NCO": {
+    "coordinates": [
+      1649,
+      1066
+    ],
+    "value": "2"
+  },
+  "HJS": {
+    "coordinates": [
+      3454,
+      1065
+    ],
+    "value": "2"
+  },
+  "INE": {
+    "coordinates": [
+      4114,
+      1056
+    ],
+    "value": "2"
+  },
+  "MYA": {
+    "coordinates": [
+      4307,
+      1051
+    ],
+    "value": "2"
+  },
+  "VTM": {
+    "coordinates": [
+      4440,
+      1048
+    ],
+    "value": "3"
+  },
+  "PNM": {
+    "coordinates": [
+      1540,
+      1045
+    ],
+    "value": "2"
+  },
+  "SEW": {
+    "coordinates": [
+      2594,
+      1043
+    ],
+    "value": "1"
+  },
+  "MSA": {
+    "coordinates": [
+      2657,
+      1039
+    ],
+    "value": "1"
+  },
+  "WVE": {
+    "coordinates": [
+      1738,
+      1038
+    ],
+    "value": "2"
+  },
+  "VSA": {
+    "coordinates": [
+      2822,
+      1036
+    ],
+    "value": "1"
+  },
+  "ABN": {
+    "coordinates": [
+      2939,
+      1035
+    ],
+    "value": "1"
+  },
+  "HI": {
+    "coordinates": [
+      343,
+      1032
+    ],
+    "value": "1"
+  },
+  "ASQ": {
+    "coordinates": [
+      3599,
+      1028
+    ],
+    "value": "1"
+  },
+  "SWW": {
+    "coordinates": [
+      2574,
+      1025
+    ],
+    "value": "1"
+  },
+  "ICN": {
+    "coordinates": [
+      4018,
+      1021
+    ],
+    "value": "2"
+  },
+  "RYD": {
+    "coordinates": [
+      3517,
+      1019
+    ],
+    "value": "1"
+  },
+  "CSC": {
+    "coordinates": [
+      4593,
+      1018
+    ],
+    "value": "3"
+  },
+  "TAI": {
+    "coordinates": [
+      4693,
+      1017
+    ],
+    "value": "3"
+  },
+  "UAE": {
+    "coordinates": [
+      3650,
+      1017
+    ],
+    "value": "2"
+  },
+  "BNG": {
+    "coordinates": [
+      4196,
+      1014
+    ],
+    "value": "3"
+  },
+  "GUZ": {
+    "coordinates": [
+      4507,
+      1013
+    ],
+    "value": "2"
+  },
+  "CRI": {
+    "coordinates": [
+      1485,
+      1008
+    ],
+    "value": "1"
+  },
+  "EGD": {
+    "coordinates": [
+      3248,
+      1002
+    ],
+    "value": null
+  },
+  "SAS": {
+    "coordinates": [
+      2867,
+      1002
+    ],
+    "value": "1"
+  },
+  "WEI": {
+    "coordinates": [
+      4153,
+      990
+    ],
+    "value": "3"
+  },
+  "Q": {
+    "coordinates": [
+      3605,
+      988
+    ],
+    "value": "2"
+  },
+  "YUN": {
+    "coordinates": [
+      4390,
+      982
+    ],
+    "value": "2"
+  },
+  "INW": {
+    "coordinates": [
+      3945,
+      979
+    ],
+    "value": "2"
+  },
+  "EIN": {
+    "coordinates": [
+      4258,
+      977
+    ],
+    "value": "3"
+  },
+  "ELY": {
+    "coordinates": [
+      3129,
+      975
+    ],
+    "value": "1"
+  },
+  "NIC": {
+    "coordinates": [
+      1471,
+      970
+    ],
+    "value": "1"
+  },
+  "NWE": {
+    "coordinates": [
+      3229,
+      906
+    ],
+    "value": "2"
+  },
+  "HJN": {
+    "coordinates": [
+      3392,
+      962
+    ],
+    "value": "1"
+  },
+  "ELS": {
+    "coordinates": [
+      1420,
+      960
+    ],
+    "value": "2"
+  },
+  "HAQ": {
+    "coordinates": [
+      3453,
+      956
+    ],
+    "value": "1"
+  },
+  "MWS": {
+    "coordinates": [
+      2610,
+      956
+    ],
+    "value": "1"
+  },
+  "INN": {
+    "coordinates": [
+      4065,
+      954
+    ],
+    "value": "3"
+  },
+  "CEC": {
+    "coordinates": [
+      4644,
+      953
+    ],
+    "value": "3"
+  },
+  "BUT": {
+    "coordinates": [
+      4213,
+      951
+    ],
+    "value": "1"
+  },
+  "PAS": {
+    "coordinates": [
+      3836,
+      946
+    ],
+    "value": "3"
+  },
+  "AWS": {
+    "coordinates": [
+      2724,
+      947
+    ],
+    "value": "1"
+  },
+  "SCC": {
+    "coordinates": [
+      4500,
+      947
+    ],
+    "value": "2"
+  },
+  "AWE": {
+    "coordinates": [
+      3652,
+      942
+    ],
+    "value": "1"
+  },
+  "NEP": {
+    "coordinates": [
+      4124,
+      937
+    ],
+    "value": "2"
+  },
+  "WLY": {
+    "coordinates": [
+      3027,
+      936
+    ],
+    "value": "1"
+  },
+  "GTM": {
+    "coordinates": [
+      1396,
+      936
+    ],
+    "value": "1"
+  },
+  "HON": {
+    "coordinates": [
+      1453,
+      934
+    ],
+    "value": "2"
+  },
+  "EGY": {
+    "coordinates": [
+      3288,
+      928
+    ],
+    "value": "3"
+  },
+  "PES": {
+    "coordinates": [
+      3716,
+      923
+    ],
+    "value": "2"
+  },
+  "CI": {
+    "coordinates": [
+      1849,
+      919
+    ],
+    "value": "1"
+  },
+  "WIN": {
+    "coordinates": [
+      3996,
+      919
+    ],
+    "value": "3"
+  },
+  "AWZ": {
+    "coordinates": [
+      3629,
+      916
+    ],
+    "value": "2"
+  },
+  "K": {
+    "coordinates": [
+      3546,
+      915
+    ],
+    "value": "1"
+  },
+  "NAS": {
+    "coordinates": [
+      2847,
+      910
+    ],
+    "value": "1"
+  },
+  "SMX": {
+    "coordinates": [
+      1324,
+      904
+    ],
+    "value": "1"
+  },
+  "B": {
+    "coordinates": [
+      1421,
+      903
+    ],
+    "value": "1"
+  },
+  "SIN": {
+    "coordinates": [
+      3329,
+      900
+    ],
+    "value": "2"
+  },
+  "JHS": {
+    "coordinates": [
+      3433,
+      899
+    ],
+    "value": "1"
+  },
+  "SMA": {
+    "coordinates": [
+      2675,
+      893
+    ],
+    "value": "2"
+  },
+  "JOR": {
+    "coordinates": [
+      3374,
+      892
+    ],
+    "value": "2"
+  },
+  "EIR": {
+    "coordinates": [
+      3520,
+      887
+    ],
+    "value": "2"
+  },
+  "PA": {
+    "coordinates": [
+      3350,
+      883
+    ],
+    "value": "3"
+  },
+  "NLY": {
+    "coordinates": [
+      3154,
+      883
+    ],
+    "value": "1"
+  },
+  "PCH": {
+    "coordinates": [
+      4393,
+      879
+    ],
+    "value": "1"
+  },
+  "PAN": {
+    "coordinates": [
+      3926,
+      878
+    ],
+    "value": "3"
+  },
+  "TRP": {
+    "coordinates": [
+      3020,
+      876
+    ],
+    "value": "1"
+  },
+  "TIB": {
+    "coordinates": [
+      4268,
+      877
+    ],
+    "value": null
+  },
+  "ECC": {
+    "coordinates": [
+      4571,
+      872
+    ],
+    "value": "3"
+  },
+  "HDR": {
+    "coordinates": [
+      1699,
+      872
+    ],
+    "value": "1"
+  },
+  "EMX": {
+    "coordinates": [
+      1280,
+      869
+    ],
+    "value": "2"
+  },
+  "YUC": {
+    "coordinates": [
+      1402,
+      867
+    ],
+    "value": "1"
+  },
+  "WCC": {
+    "coordinates": [
+      4450,
+      857
+    ],
+    "value": "2"
+  },
+  "SHA": {
+    "coordinates": [
+      4668,
+      856
+    ],
+    "value": "3"
+  },
+  "WMX": {
+    "coordinates": [
+      1203,
+      855
+    ],
+    "value": "3"
+  },
+  "TIM": {
+    "coordinates": [
+      4148,
+      849
+    ],
+    "value": "1"
+  },
+  "WIR": {
+    "coordinates": [
+      3466,
+      844
+    ],
+    "value": "1"
+  },
+  "AFG": {
+    "coordinates": [
+      3828,
+      846
+    ],
+    "value": "2"
+  },
+  "MRC": {
+    "coordinates": [
+      2737,
+      838
+    ],
+    "value": null
+  },
+  "SJP": {
+    "coordinates": [
+      4869,
+      835
+    ],
+    "value": "3"
+  },
+  "L": {
+    "coordinates": [
+      3369,
+      832
+    ],
+    "value": "2"
+  },
+  "ALG": {
+    "coordinates": [
+      2866,
+      825
+    ],
+    "value": "3"
+  },
+  "JAK": {
+    "coordinates": [
+      3990,
+      821
+    ],
+    "value": "1"
+  },
+  "SYR": {
+    "coordinates": [
+      3402,
+      819
+    ],
+    "value": "2"
+  },
+  "CJP": {
+    "coordinates": [
+      4930,
+      815
+    ],
+    "value": "3"
+  },
+  "CUB": {
+    "coordinates": [
+      1557,
+      816
+    ],
+    "value": null
+  },
+  "CRE": {
+    "coordinates": [
+      3199,
+      813
+    ],
+    "value": "1"
+  },
+  "IRA": {
+    "coordinates": [
+      3602,
+      811
+    ],
+    "value": "3"
+  },
+  "TUN": {
+    "coordinates": [
+      2959,
+      810
+    ],
+    "value": "2"
+  },
+  "PER": {
+    "coordinates": [
+      3714,
+      808
+    ],
+    "value": "2"
+  },
+  "KNI": {
+    "coordinates": [
+      3504,
+      802
+    ],
+    "value": "2"
+  },
+  "AFN": {
+    "coordinates": [
+      3893,
+      800
+    ],
+    "value": "1"
+  },
+  "KNS": {
+    "coordinates": [
+      3432,
+      796
+    ],
+    "value": "2"
+  },
+  "SKR": {
+    "coordinates": [
+      4806,
+      791
+    ],
+    "value": "3"
+  },
+  "NCC": {
+    "coordinates": [
+      4505,
+      782
+    ],
+    "value": "2"
+  },
+  "SDZ": {
+    "coordinates": [
+      1170,
+      782
+    ],
+    "value": "2"
+  },
+  "GRA": {
+    "coordinates": [
+      2770,
+      777
+    ],
+    "value": "2"
+  },
+  "NJP": {
+    "coordinates": [
+      4989,
+      774
+    ],
+    "value": "3"
+  },
+  "QMO": {
+    "coordinates": [
+      4324,
+      776
+    ],
+    "value": null
+  },
+  "TSB": {
+    "coordinates": [
+      3431,
+      771
+    ],
+    "value": "2"
+  },
+  "SIC": {
+    "coordinates": [
+      3025,
+      768
+    ],
+    "value": "2"
+  },
+  "SCT": {
+    "coordinates": [
+      3358,
+      762
+    ],
+    "value": "2"
+  },
+  "ADL": {
+    "coordinates": [
+      2720,
+      764
+    ],
+    "value": null
+  },
+  "MUR": {
+    "coordinates": [
+      2785,
+      751
+    ],
+    "value": "2"
+  },
+  "SXJ": {
+    "coordinates": [
+      4071,
+      751
+    ],
+    "value": "1"
+  },
+  "TAD": {
+    "coordinates": [
+      3918,
+      743
+    ],
+    "value": "2"
+  },
+  "POR": {
+    "coordinates": [
+      2680,
+      738
+    ],
+    "value": "2"
+  },
+  "TUR": {
+    "coordinates": [
+      3728,
+      735
+    ],
+    "value": "1"
+  },
+  "FAT": {
+    "coordinates": [
+      3471,
+      732
+    ],
+    "value": "1"
+  },
+  "COH": {
+    "coordinates": [
+      1217,
+      733
+    ],
+    "value": "1"
+  },
+  "ANA": {
+    "coordinates": [
+      3258,
+      732
+    ],
+    "value": "3"
+  },
+  "BCA": {
+    "coordinates": [
+      1034,
+      731
+    ],
+    "value": "1"
+  },
+  "GRE": {
+    "coordinates": [
+      3140,
+      729
+    ],
+    "value": "2"
+  },
+  "NKR": {
+    "coordinates": [
+      4781,
+      724
+    ],
+    "value": "2"
+  },
+  "BEI": {
+    "coordinates": [
+      4611,
+      724
+    ],
+    "value": "3"
+  },
+  "FLO": {
+    "coordinates": [
+      1540,
+      721
+    ],
+    "value": "3"
+  },
+  "NCT": {
+    "coordinates": [
+      3384,
+      715
+    ],
+    "value": "2"
+  },
+  "AZE": {
+    "coordinates": [
+      3556,
+      717
+    ],
+    "value": "2"
+  },
+  "SA": {
+    "coordinates": [
+      2951,
+      716
+    ],
+    "value": "2"
+  },
+  "ARM": {
+    "coordinates": [
+      3503,
+      713
+    ],
+    "value": "1"
+  },
+  "CAS": {
+    "coordinates": [
+      2734,
+      714
+    ],
+    "value": "3"
+  },
+  "EXJ": {
+    "coordinates": [
+      4336,
+      712
+    ],
+    "value": "1"
+  },
+  "AB": {
+    "coordinates": [
+      3122,
+      712
+    ],
+    "value": "1"
+  },
+  "SIT": {
+    "coordinates": [
+      3054,
+      710
+    ],
+    "value": "3"
+  },
+  "CHH": {
+    "coordinates": [
+      1141,
+      702
+    ],
+    "value": "1"
+  },
+  "KIR": {
+    "coordinates": [
+      3967,
+      695
+    ],
+    "value": "2"
+  },
+  "SON": {
+    "coordinates": [
+      1086,
+      696
+    ],
+    "value": "1"
+  },
+  "MCD": {
+    "coordinates": [
+      3156,
+      693
+    ],
+    "value": null
+  },
+  "UZB": {
+    "coordinates": [
+      3798,
+      690
+    ],
+    "value": "2"
+  },
+  "ARO": {
+    "coordinates": [
+      2801,
+      689
+    ],
+    "value": "3"
+  },
+  "GEO": {
+    "coordinates": [
+      3487,
+      684
+    ],
+    "value": "1"
+  },
+  "KS": {
+    "coordinates": [
+      3127,
+      674
+    ],
+    "value": "1"
+  },
+  "CNA": {
+    "coordinates": [
+      4748,
+      673
+    ],
+    "value": "3"
+  },
+  "BUL": {
+    "coordinates": [
+      3192,
+      673
+    ],
+    "value": "2"
+  },
+  "GAL": {
+    "coordinates": [
+      2683,
+      672
+    ],
+    "value": "2"
+  },
+  "TFW": {
+    "coordinates": [
+      1196,
+      672
+    ],
+    "value": "1"
+  },
+  "TEX": {
+    "coordinates": [
+      1248,
+      669
+    ],
+    "value": "2"
+  },
+  "CIT": {
+    "coordinates": [
+      3007,
+      666
+    ],
+    "value": "3"
+  },
+  "LAK": {
+    "coordinates": [
+      2718,
+      666
+    ],
+    "value": "2"
+  },
+  "LOU": {
+    "coordinates": [
+      1376,
+      662
+    ],
+    "value": "2"
+  },
+  "HOK": {
+    "coordinates": [
+      5035,
+      659
+    ],
+    "value": "1"
+  },
+  "WXJ": {
+    "coordinates": [
+      4146,
+      660
+    ],
+    "value": "1"
+  },
+  "KSC": {
+    "coordinates": [
+      3638,
+      656
+    ],
+    "value": "1"
+  },
+  "SER": {
+    "coordinates": [
+      3143,
+      649
+    ],
+    "value": null
+  },
+  "KFS": {
+    "coordinates": [
+      4025,
+      644
+    ],
+    "value": "2"
+  },
+  "BAH": {
+    "coordinates": [
+      3075,
+      644
+    ],
+    "value": "1"
+  },
+  "WFR": {
+    "coordinates": [
+      2811,
+      641
+    ],
+    "value": "2"
+  },
+  "FRZ": {
+    "coordinates": [
+      2986,
+      642
+    ],
+    "value": "2"
+  },
+  "MAR": {
+    "coordinates": [
+      2891,
+      641
+    ],
+    "value": "3"
+  },
+  "SES": {
+    "coordinates": [
+      1472,
+      638
+    ],
+    "value": "2"
+  },
+  "TXE": {
+    "coordinates": [
+      1301,
+      638
+    ],
+    "value": "3"
+  },
+  "WLC": {
+    "coordinates": [
+      3196,
+      633
+    ],
+    "value": "2"
+  },
+  "SFR": {
+    "coordinates": [
+      2851,
+      626
+    ],
+    "value": null
+  },
+  "CAE": {
+    "coordinates": [
+      3519,
+      627
+    ],
+    "value": "2"
+  },
+  "CRM": {
+    "coordinates": [
+      3341,
+      625
+    ],
+    "value": "2"
+  },
+  "VDV": {
+    "coordinates": [
+      4919,
+      627
+    ],
+    "value": "2"
+  },
+  "V": {
+    "coordinates": [
+      3119,
+      626
+    ],
+    "value": "1"
+  },
+  "IMO": {
+    "coordinates": [
+      4666,
+      621
+    ],
+    "value": "2"
+  },
+  "SVY": {
+    "coordinates": [
+      2947,
+      621
+    ],
+    "value": "2"
+  },
+  "CB": {
+    "coordinates": [
+      3149,
+      617
+    ],
+    "value": null
+  },
+  "KSE": {
+    "coordinates": [
+      3938,
+      611
+    ],
+    "value": "2"
+  },
+  "CRO": {
+    "coordinates": [
+      3060,
+      610
+    ],
+    "value": "2"
+  },
+  "VEN": {
+    "coordinates": [
+      2991,
+      612
+    ],
+    "value": "2"
+  },
+  "ARI": {
+    "coordinates": [
+      1062,
+      610
+    ],
+    "value": "2"
+  },
+  "SLO": {
+    "coordinates": [
+      3027,
+      608
+    ],
+    "value": "1"
+  },
+  "EMO": {
+    "coordinates": [
+      4542,
+      606
+    ],
+    "value": "1"
+  },
+  "NME": {
+    "coordinates": [
+      1156,
+      603
+    ],
+    "value": "1"
+  },
+  "CAU": {
+    "coordinates": [
+      3464,
+      600
+    ],
+    "value": "2"
+  },
+  "ANM": {
+    "coordinates": [
+      1387,
+      600
+    ],
+    "value": "2"
+  },
+  "TRA": {
+    "coordinates": [
+      3187,
+      598
+    ],
+    "value": "1"
+  },
+  "HEI": {
+    "coordinates": [
+      4805,
+      597
+    ],
+    "value": "2"
+  },
+  "SWZ": {
+    "coordinates": [
+      2943,
+      596
+    ],
+    "value": "3"
+  },
+  "CRL": {
+    "coordinates": [
+      1557,
+      600
+    ],
+    "value": "3"
+  },
+  "RMO": {
+    "coordinates": [
+      3232,
+      594
+    ],
+    "value": "1"
+  },
+  "MOM": {
+    "coordinates": [
+      4401,
+      589
+    ],
+    "value": "1"
+  },
+  "HUN": {
+    "coordinates": [
+      3099,
+      589
+    ],
+    "value": "2"
+  },
+  "ODE": {
+    "coordinates": [
+      3278,
+      587
+    ],
+    "value": "2"
+  },
+  "TYR": {
+    "coordinates": [
+      3007,
+      584
+    ],
+    "value": "1"
+  },
+  "MOW": {
+    "coordinates": [
+      4279,
+      584
+    ],
+    "value": null
+  },
+  "SUK": {
+    "coordinates": [
+      3336,
+      585
+    ],
+    "value": "1"
+  },
+  "FRA": {
+    "coordinates": [
+      2831,
+      583
+    ],
+    "value": "3"
+  },
+  "BOU": {
+    "coordinates": [
+      2878,
+      580
+    ],
+    "value": "2"
+  },
+  "CAL": {
+    "coordinates": [
+      938,
+      580
+    ],
+    "value": "3"
+  },
+  "KSW": {
+    "coordinates": [
+      3716,
+      577
+    ],
+    "value": "2"
+  },
+  "MO": {
+    "coordinates": [
+      3249,
+      577
+    ],
+    "value": "1"
+  },
+  "VIE": {
+    "coordinates": [
+      3040,
+      577
+    ],
+    "value": "2"
+  },
+  "SWG": {
+    "coordinates": [
+      2056,
+      138
+    ],
+    "value": "1"
+  },
+  "KFE": {
+    "coordinates": [
+      4090,
+      570
+    ],
+    "value": "2"
+  },
+  "BRI": {
+    "coordinates": [
+      2766,
+      568
+    ],
+    "value": "2"
+  },
+  "TNS": {
+    "coordinates": [
+      1435,
+      564
+    ],
+    "value": "2"
+  },
+  "SLV": {
+    "coordinates": [
+      3111,
+      558
+    ],
+    "value": "1"
+  },
+  "NFR": {
+    "coordinates": [
+      2879,
+      556
+    ],
+    "value": "2"
+  },
+  "NRO": {
+    "coordinates": [
+      3390,
+      555
+    ],
+    "value": "1"
+  },
+  "AL": {
+    "coordinates": [
+      2919,
+      554
+    ],
+    "value": "2"
+  },
+  "EGL": {
+    "coordinates": [
+      3195,
+      553
+    ],
+    "value": "1"
+  },
+  "KOK": {
+    "coordinates": [
+      1264,
+      551
+    ],
+    "value": "2"
+  },
+  "BAV": {
+    "coordinates": [
+      2991,
+      550
+    ],
+    "value": "3"
+  },
+  "CZE": {
+    "coordinates": [
+      3041,
+      534
+    ],
+    "value": "2"
+  },
+  "VRG": {
+    "coordinates": [
+      1579,
+      535
+    ],
+    "value": "3"
+  },
+  "SLI": {
+    "coordinates": [
+      5044,
+      537
+    ],
+    "value": "1"
+  },
+  "WGL": {
+    "coordinates": [
+      3135,
+      532
+    ],
+    "value": "2"
+  },
+  "KTY": {
+    "coordinates": [
+      1466,
+      532
+    ],
+    "value": "2"
+  },
+  "KIE": {
+    "coordinates": [
+      3263,
+      531
+    ],
+    "value": "2"
+  },
+  "PIC": {
+    "coordinates": [
+      2841,
+      525
+    ],
+    "value": "2"
+  },
+  "NEV": {
+    "coordinates": [
+      963,
+      526
+    ],
+    "value": "2"
+  },
+  "NUK": {
+    "coordinates": [
+      3335,
+      523
+    ],
+    "value": "2"
+  },
+  "RMC": {
+    "coordinates": [
+      4903,
+      519
+    ],
+    "value": "2"
+  },
+  "CGE": {
+    "coordinates": [
+      2974,
+      515
+    ],
+    "value": "2"
+  },
+  "BLG": {
+    "coordinates": [
+      2877,
+      513
+    ],
+    "value": "3"
+  },
+  "NWU": {
+    "coordinates": [
+      3201,
+      512
+    ],
+    "value": "1"
+  },
+  "RUH": {
+    "coordinates": [
+      2922,
+      509
+    ],
+    "value": "3"
+  },
+  "COR": {
+    "coordinates": [
+      2777,
+      507
+    ],
+    "value": "2"
+  },
+  "SAC": {
+    "coordinates": [
+      3017,
+      504
+    ],
+    "value": "2"
+  },
+  "SFS": {
+    "coordinates": [
+      4217,
+      502
+    ],
+    "value": "1"
+  },
+  "NKA": {
+    "coordinates": [
+      3876,
+      498
+    ],
+    "value": "1"
+  },
+  "RMB": {
+    "coordinates": [
+      4555,
+      492
+    ],
+    "value": null
+  },
+  "WA": {
+    "coordinates": [
+      2754,
+      491
+    ],
+    "value": "2"
+  },
+  "WAR": {
+    "coordinates": [
+      3130,
+      489
+    ],
+    "value": "3"
+  },
+  "OIO": {
+    "coordinates": [
+      1511,
+      490
+    ],
+    "value": null
+  },
+  "RUB": {
+    "coordinates": [
+      3395,
+      488
+    ],
+    "value": null
+  },
+  "SIL": {
+    "coordinates": [
+      3051,
+      487
+    ],
+    "value": "2"
+  },
+  "WUS": {
+    "coordinates": [
+      1085,
+      485
+    ],
+    "value": "1"
+  },
+  "SRU": {
+    "coordinates": [
+      3617,
+      482
+    ],
+    "value": null
+  },
+  "EPL": {
+    "coordinates": [
+      3187,
+      479
+    ],
+    "value": "1"
+  },
+  "BRA": {
+    "coordinates": [
+      3016,
+      477
+    ],
+    "value": "3"
+  },
+  "SEN": {
+    "coordinates": [
+      2786,
+      472
+    ],
+    "value": "3"
+  },
+  "HNV": {
+    "coordinates": [
+      2950,
+      474
+    ],
+    "value": "3"
+  },
+  "NWS": {
+    "coordinates": [
+      1605,
+      472
+    ],
+    "value": "3"
+  },
+  "NDL": {
+    "coordinates": [
+      2902,
+      469
+    ],
+    "value": null
+  },
+  "RNM": {
+    "coordinates": [
+      4428,
+      463
+    ],
+    "value": "1"
+  },
+  "IRE": {
+    "coordinates": [
+      2679,
+      462
+    ],
+    "value": "2"
+  },
+  "PMR": {
+    "coordinates": [
+      3062,
+      455
+    ],
+    "value": null
+  },
+  "BEL": {
+    "coordinates": [
+      3239,
+      454
+    ],
+    "value": "2"
+  },
+  "WPR": {
+    "coordinates": [
+      3112,
+      453
+    ],
+    "value": "2"
+  },
+  "EBL": {
+    "coordinates": [
+      3292,
+      457
+    ],
+    "value": "2"
+  },
+  "MVP": {
+    "coordinates": [
+      3007,
+      452
+    ],
+    "value": "2"
+  },
+  "MIW": {
+    "coordinates": [
+      1328,
+      452
+    ],
+    "value": "2"
+  },
+  "HSH": {
+    "coordinates": [
+      2957,
+      443
+    ],
+    "value": "2"
+  },
+  "CVR": {
+    "coordinates": [
+      3507,
+      440
+    ],
+    "value": null
+  },
+  "NEN": {
+    "coordinates": [
+      2773,
+      434
+    ],
+    "value": "2"
+  },
+  "NEL": {
+    "coordinates": [
+      1684,
+      433
+    ],
+    "value": "3"
+  },
+  "NIR": {
+    "coordinates": [
+      2703,
+      431
+    ],
+    "value": "1"
+  },
+  "EPR": {
+    "coordinates": [
+      3132,
+      429
+    ],
+    "value": "1"
+  },
+  "LIT": {
+    "coordinates": [
+      3159,
+      405
+    ],
+    "value": "1"
+  },
+  "IDA": {
+    "coordinates": [
+      985,
+      406
+    ],
+    "value": "1"
+  },
+  "DS": {
+    "coordinates": [
+      3015,
+      402
+    ],
+    "value": "2"
+  },
+  "SIB": {
+    "coordinates": [
+      4193,
+      401
+    ],
+    "value": "1"
+  },
+  "DEN": {
+    "coordinates": [
+      2945,
+      400
+    ],
+    "value": "2"
+  },
+  "SGL": {
+    "coordinates": [
+      1410,
+      397
+    ],
+    "value": "2"
+  },
+  "DAK": {
+    "coordinates": [
+      1206,
+      397
+    ],
+    "value": "1"
+  },
+  "WAO": {
+    "coordinates": [
+      915,
+      395
+    ],
+    "value": null
+  },
+  "KAM": {
+    "coordinates": [
+      5277,
+      392
+    ],
+    "value": "1"
+  },
+  "MSK": {
+    "coordinates": [
+      3403,
+      392
+    ],
+    "value": "3"
+  },
+  "ESB": {
+    "coordinates": [
+      4419,
+      390
+    ],
+    "value": null
+  },
+  "WSB": {
+    "coordinates": [
+      4015,
+      390
+    ],
+    "value": null
+  },
+  "LAT": {
+    "coordinates": [
+      3195,
+      385
+    ],
+    "value": "2"
+  },
+  "SCL": {
+    "coordinates": [
+      2744,
+      383
+    ],
+    "value": "1"
+  },
+  "NOS": {
+    "coordinates": [
+      1769,
+      380
+    ],
+    "value": "2"
+  },
+  "SSV": {
+    "coordinates": [
+      3036,
+      380
+    ],
+    "value": "2"
+  },
+  "MTN": {
+    "coordinates": [
+      1096,
+      370
+    ],
+    "value": "1"
+  },
+  "NOV": {
+    "coordinates": [
+      3292,
+      373
+    ],
+    "value": "2"
+  },
+  "ERU": {
+    "coordinates": [
+      3784,
+      358
+    ],
+    "value": null
+  },
+  "OKT": {
+    "coordinates": [
+      4963,
+      344
+    ],
+    "value": "1"
+  },
+  "EST": {
+    "coordinates": [
+      3212,
+      337
+    ],
+    "value": "1"
+  },
+  "NFO": {
+    "coordinates": [
+      1935,
+      339
+    ],
+    "value": "1"
+  },
+  "CRU": {
+    "coordinates": [
+      3481,
+      327
+    ],
+    "value": null
+  },
+  "QUE": {
+    "coordinates": [
+      1663,
+      318
+    ],
+    "value": "2"
+  },
+  "SVG": {
+    "coordinates": [
+      2939,
+      318
+    ],
+    "value": "1"
+  },
+  "VAI": {
+    "coordinates": [
+      845,
+      316
+    ],
+    "value": "1"
+  },
+  "STO": {
+    "coordinates": [
+      3047,
+      309
+    ],
+    "value": "2"
+  },
+  "CLG": {
+    "coordinates": [
+      981,
+      301
+    ],
+    "value": "1"
+  },
+  "OSL": {
+    "coordinates": [
+      2974,
+      289
+    ],
+    "value": "2"
+  },
+  "ONT": {
+    "coordinates": [
+      1446,
+      288
+    ],
+    "value": "2"
+  },
+  "JKT": {
+    "coordinates": [
+      4699,
+      278
+    ],
+    "value": "1"
+  },
+  "STP": {
+    "coordinates": [
+      3344,
+      271
+    ],
+    "value": null
+  },
+  "FIN": {
+    "coordinates": [
+      3200,
+      273
+    ],
+    "value": "2"
+  },
+  "MGD": {
+    "coordinates": [
+      5226,
+      257
+    ],
+    "value": null
+  },
+  "MNT": {
+    "coordinates": [
+      1301,
+      251
+    ],
+    "value": "1"
+  },
+  "NSV": {
+    "coordinates": [
+      3037,
+      245
+    ],
+    "value": "1"
+  },
+  "EFI": {
+    "coordinates": [
+      3254,
+      234
+    ],
+    "value": "1"
+  },
+  "SKW": {
+    "coordinates": [
+      1177,
+      233
+    ],
+    "value": "1"
+  },
+  "LBD": {
+    "coordinates": [
+      1870,
+      227
+    ],
+    "value": null
+  },
+  "BCO": {
+    "coordinates": [
+      853,
+      220
+    ],
+    "value": "2"
+  },
+  "ART": {
+    "coordinates": [
+      1017,
+      211
+    ],
+    "value": "1"
+  },
+  "NOR": {
+    "coordinates": [
+      3002,
+      205
+    ],
+    "value": "1"
+  },
+  "ARK": {
+    "coordinates": [
+      3496,
+      206
+    ],
+    "value": "2"
+  },
+  "NEE": {
+    "coordinates": [
+      3653,
+      200
+    ],
+    "value": "2"
+  },
+  "KAR": {
+    "coordinates": [
+      3305,
+      177
+    ],
+    "value": "1"
+  },
+  "WIS": {
+    "coordinates": [
+      2487,
+      158
+    ],
+    "value": "1"
+  },
+  "UPP": {
+    "coordinates": [
+      3112,
+      156
+    ],
+    "value": "2"
+  },
+  "EIS": {
+    "coordinates": [
+      2543,
+      152
+    ],
+    "value": "1"
+  },
+  "NQU": {
+    "coordinates": [
+      1679,
+      146
+    ],
+    "value": "1"
+  },
+  "ALI": {
+    "coordinates": [
+      703,
+      140
+    ],
+    "value": "1"
+  },
+  "NFL": {
+    "coordinates": [
+      3225,
+      140
+    ],
+    "value": "1"
+  },
+  "SKH": {
+    "coordinates": [
+      5127,
+      114
+    ],
+    "value": "1"
+  },
+  "KOL": {
+    "coordinates": [
+      3326,
+      107
+    ],
+    "value": "1"
+  },
+  "NSI": {
+    "coordinates": [
+      4190,
+      105
+    ],
+    "value": "1"
+  },
+  "NJK": {
+    "coordinates": [
+      4722,
+      87
+    ],
+    "value": "1"
+  },
+  "CKT": {
+    "coordinates": [
+      5434,
+      82
+    ],
+    "value": "1"
+  },
+  "KGY": {
+    "coordinates": [
+      3581,
+      80
+    ],
+    "value": "1"
+  },
+  "FNM": {
+    "coordinates": [
+      3165,
+      70
+    ],
+    "value": "1"
+  },
+  "EGR": {
+    "coordinates": [
+      2123,
+      62
+    ],
+    "value": "1"
+  },
+  "NUN": {
+    "coordinates": [
+      1160,
+      49
+    ],
+    "value": "1"
+  },
+  "YNW": {
+    "coordinates": [
+      783,
+      46
+    ],
+    "value": "1"
+  },
+  "NWG": {
+    "coordinates": [
+      2012,
+      38
+    ],
+    "value": "1"
+  },
+  "ALK": {
+    "coordinates": [
+      426,
+      24
+    ],
+    "value": "1"
+  },
+  "NZL": {
+    "coordinates": [
+      3655,
+      10
+    ],
+    "value": "1"
+  }
+}
