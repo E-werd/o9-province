@@ -102,7 +102,6 @@ class Game:
         self.__load_players()
 
         # Update map to current state
-        # self.update_map()
         toc = time.perf_counter()
         logging.info(f"Loading completed! {toc - tic:0.4f}s")
 
@@ -229,11 +228,15 @@ class Game:
 
     def update_map(self) -> None:
         '''Fill in map from latest data'''
+        tic = time.perf_counter()
         self.map.add_players(players=self.players) # Send player data to map
         self.map.add_levels(levels=self.levels) # Send level data to map
         logging.info("Filling map from data...")
         for prov in self.provinces.values():
             self.map.fill(seed_point=prov.pos_xy, new_color=prov.get_color().rgb)
+
+        toc = time.perf_counter()
+        logging.info(f"Filling completed! {toc - tic:0.4f}s")
 
     def start(self) -> None:
         '''Main loop'''
