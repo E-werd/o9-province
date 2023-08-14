@@ -1,479 +1,1794 @@
-{"CAN1": {
-    "ALK": {
-        "pos": [360, 30],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["YNW", "ALI"]
-        }, 
-    "ALI": {
-        "pos": [720, 160],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["ALK", "YNW", "BCO"]
+{
+    "CAN1": {
+        "ALK": {
+            "pos": [
+                360,
+                30
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "YNW",
+                "ALI"
+            ]
         },
-    "YNW": {
-        "pos": [840, 30],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["ALK", "ALI", "BCO", "ART", "NUN"]
+        "ALI": {
+            "pos": [
+                720,
+                160
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ALK",
+                "YNW",
+                "BCO"
+            ]
         },
-    "BCO": {
-        "pos": [830, 200],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["ALI", "YNW", "ART", "CLG", "VAI", "WAO"]
+        "YNW": {
+            "pos": [
+                840,
+                30
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "ALK",
+                "ALI",
+                "BCO",
+                "ART",
+                "NUN"
+            ]
         },
-    "VAI": {
-        "pos": [830, 305],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": []
+        "BCO": {
+            "pos": [
+                830,
+                200
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ALI",
+                "YNW",
+                "ART",
+                "CLG",
+                "VAI",
+                "WAO"
+            ]
         },
-    "CLG": {
-        "pos": [1000, 300],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["BCO", "ART", "IDA"]
+        "VAI": {
+            "pos": [
+                830,
+                305
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": []
+        },
+        "CLG": {
+            "pos": [
+                1000,
+                300
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BCO",
+                "ART",
+                "IDA"
+            ]
         }
     },
-"CAN2": {
-    "ART": {
-        "pos": [1000, 200],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["BCO", "CLG", "MTN", "SKW", "NUN", "YNW"]
-        }, 
-    "SKW": {
-        "pos": [1200, 200],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["ART", "DAK", "MNT", "NUN"]
+    "CAN2": {
+        "ART": {
+            "pos": [
+                1000,
+                200
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BCO",
+                "CLG",
+                "MTN",
+                "SKW",
+                "NUN",
+                "YNW"
+            ]
         },
-    "NUN": {
-        "pos": [1200, 50],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["YNW", "ART", "SKW", "MNT"]
+        "SKW": {
+            "pos": [
+                1200,
+                200
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "ART",
+                "DAK",
+                "MNT",
+                "NUN"
+            ]
         },
-    "MNT": {
-        "pos": [1300, 200],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["SKW", "MIW", "ONT", "NUN"]
+        "NUN": {
+            "pos": [
+                1200,
+                50
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "YNW",
+                "ART",
+                "SKW",
+                "MNT"
+            ]
         },
-    "ONT": {
-        "pos": [1450, 250],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["MNT", "MIW", "SGL", "OIO", "NWS"]
+        "MNT": {
+            "pos": [
+                1300,
+                200
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SKW",
+                "MIW",
+                "ONT",
+                "NUN"
+            ]
+        },
+        "ONT": {
+            "pos": [
+                1450,
+                250
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "MNT",
+                "MIW",
+                "SGL",
+                "OIO",
+                "NWS"
+            ]
         }
     },
-"CAN3": {
-    "NQU": {
-        "pos": [1650, 100],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["QUE", "LBD"]
-        }, 
-    "LBD": {
-        "pos": [1850, 250],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["NQU", "QUE"]
+    "CAN3": {
+        "NQU": {
+            "pos": [
+                1650,
+                100
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "QUE",
+                "LBD"
+            ]
         },
-    "QUE": {
-        "pos": [1700, 300],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["NQU", "LBD", "NOS", "NEL", "NWS", "ONT"]
+        "LBD": {
+            "pos": [
+                1850,
+                250
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NQU",
+                "QUE"
+            ]
         },
-    "NFO": {
-        "pos": [1930, 320],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": []
+        "QUE": {
+            "pos": [
+                1700,
+                300
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NQU",
+                "LBD",
+                "NOS",
+                "NEL",
+                "NWS",
+                "ONT"
+            ]
         },
-    "NWG": {
-        "pos": [2000, 70],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["SWG", "EGR"]
+        "NFO": {
+            "pos": [
+                1930,
+                320
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": []
         },
-    "SWG": {
-        "pos": [2040, 120],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["NWG", "EGR"]
+        "NWG": {
+            "pos": [
+                2000,
+                70
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SWG",
+                "EGR"
+            ]
         },
-    "EGR": {
-        "pos": [2120, 90],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["NWG", "SWG"]
+        "SWG": {
+            "pos": [
+                2040,
+                120
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NWG",
+                "EGR"
+            ]
         },
-    "NOS": {
-        "pos": [1770, 360],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["QUE", "NEL"]
+        "EGR": {
+            "pos": [
+                2120,
+                90
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NWG",
+                "SWG"
+            ]
+        },
+        "NOS": {
+            "pos": [
+                1770,
+                360
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "QUE",
+                "NEL"
+            ]
         }
     },
-"USA1": {
-    "WAO": {
-        "pos": [900, 350],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["IDA", "CAL", "BCO"]
-    },
-    "IDA": {
-        "pos": [975, 350],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["CLG", "MTN", "WUS", "NEV", "WAO"]
-    },
-    "MTN": {
-        "pos": [1050, 350],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["ART", "DAK", "WUS", "IDA"]
-    },
-    "WUS": {
-        "pos": [1050, 500],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["MTN", "DAK", "KOK", "NME", "ARI", "NEV", "IDA"]
-    },
-    "DAK": {
-        "pos": [1200, 350],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["MTN", "SKW", "MIW", "KOK", "WUS"]
+    "USA1": {
+        "WAO": {
+            "pos": [
+                900,
+                350
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "IDA",
+                "CAL",
+                "BCO"
+            ]
+        },
+        "IDA": {
+            "pos": [
+                975,
+                350
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "CLG",
+                "MTN",
+                "WUS",
+                "NEV",
+                "WAO"
+            ]
+        },
+        "MTN": {
+            "pos": [
+                1050,
+                350
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "ART",
+                "DAK",
+                "WUS",
+                "IDA"
+            ]
+        },
+        "WUS": {
+            "pos": [
+                1050,
+                500
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "MTN",
+                "DAK",
+                "KOK",
+                "NME",
+                "ARI",
+                "NEV",
+                "IDA"
+            ]
+        },
+        "DAK": {
+            "pos": [
+                1200,
+                350
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "MTN",
+                "SKW",
+                "MIW",
+                "KOK",
+                "WUS"
+            ]
         }
     },
-"USA2": {
-    "CAL": {
-        "pos": [900, 500],
-        "level": "level3",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["WAO", "NEV", "ARI", "BCA"]
-    },
-    "HI": {
-        "pos": [337, 1026],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": []
-    },
-    "NEV": {
-        "pos": [950, 500],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["CAL", "IDA", "WUS", "ARI"]
-    },
-    "ARI": {
-        "pos": [1050, 575],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["CAL", "NEV", "WUS", "NME", "SON", "BCA"]
+    "USA2": {
+        "CAL": {
+            "pos": [
+                900,
+                500
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WAO",
+                "NEV",
+                "ARI",
+                "BCA"
+            ]
         },
-    "BCA": {
-        "pos": [1000, 650],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["CAL", "ARI", "SON"]
+        "HI": {
+            "pos": [
+                337,
+                1026
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": []
+        },
+        "NEV": {
+            "pos": [
+                950,
+                500
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "CAL",
+                "IDA",
+                "WUS",
+                "ARI"
+            ]
+        },
+        "ARI": {
+            "pos": [
+                1050,
+                575
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "CAL",
+                "NEV",
+                "WUS",
+                "NME",
+                "SON",
+                "BCA"
+            ]
+        },
+        "BCA": {
+            "pos": [
+                1000,
+                650
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "CAL",
+                "ARI",
+                "SON"
+            ]
         }
     },
-"USA3": {
-    "NME": {
-        "pos": [1150, 575],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["ARI", "WUS", "KOK", "TXE", "TEX", "TFW", "CHH"]
-    },
-    "TFW": {
-        "pos": [1170, 660],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["NME", "TEX", "COH", "CHH"]
-    },
-    "TXE": {
-        "pos": [1270, 630],
-        "level": "level3",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["NME", "KOK", "ANM", "LOU", "TEX"]
-    },
-    "TEX": {
-        "pos": [1260, 700],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["NME", "TXE", "NMX", "COH", "TFW"]
+    "USA3": {
+        "NME": {
+            "pos": [
+                1150,
+                575
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "ARI",
+                "WUS",
+                "KOK",
+                "TXE",
+                "TEX",
+                "TFW",
+                "CHH"
+            ]
+        },
+        "TFW": {
+            "pos": [
+                1170,
+                660
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "NME",
+                "TEX",
+                "COH",
+                "CHH"
+            ]
+        },
+        "TXE": {
+            "pos": [
+                1270,
+                630
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NME",
+                "KOK",
+                "ANM",
+                "LOU",
+                "TEX"
+            ]
+        },
+        "TEX": {
+            "pos": [
+                1260,
+                700
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NME",
+                "TXE",
+                "NMX",
+                "COH",
+                "TFW"
+            ]
         }
     },
-"USA4": {
-    "MIW": {
-        "pos": [1300, 400],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["DAK", "MNT", "SGL", "KTY", "TNS", "ANM", "KOK"]
+    "USA4": {
+        "MIW": {
+            "pos": [
+                1300,
+                400
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "DAK",
+                "MNT",
+                "SGL",
+                "KTY",
+                "TNS",
+                "ANM",
+                "KOK"
+            ]
         },
-    "KOK": {
-        "pos": [1250, 525],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["MIW", "ANM", "TXE", "NME", "WUS", "DAK"]
+        "KOK": {
+            "pos": [
+                1250,
+                525
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "MIW",
+                "ANM",
+                "TXE",
+                "NME",
+                "WUS",
+                "DAK"
+            ]
         },
-    "ANM": {
-        "pos": [1350, 600],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["KOK", "MIW", "TNS", "LOU", "TXE"]
+        "ANM": {
+            "pos": [
+                1350,
+                600
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "KOK",
+                "MIW",
+                "TNS",
+                "LOU",
+                "TXE"
+            ]
         },
-    "LOU": {
-        "pos": [1360, 650],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["TXE", "ANM", "SES"]
+        "LOU": {
+            "pos": [
+                1360,
+                650
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "TXE",
+                "ANM",
+                "SES"
+            ]
         },
-    "SGL": {
-        "pos": [1370, 390],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["MIW", "ONT", "OIO", "KTY"]
+        "SGL": {
+            "pos": [
+                1370,
+                390
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "MIW",
+                "ONT",
+                "OIO",
+                "KTY"
+            ]
         }
     },
-"USA5": {
-    "KTY": {
-        "pos": [1430, 520],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["MIW", "SGL", "OIO", "VRG", "TNS"]
+    "USA5": {
+        "KTY": {
+            "pos": [
+                1430,
+                520
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "MIW",
+                "SGL",
+                "OIO",
+                "VRG",
+                "TNS"
+            ]
         },
-    "TNS": {
-        "pos": [1410, 550],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["MIW", "KTY", "CRL", "SES", "ANM"]
+        "TNS": {
+            "pos": [
+                1410,
+                550
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "MIW",
+                "KTY",
+                "CRL",
+                "SES",
+                "ANM"
+            ]
         },
-    "SES": {
-        "pos": [1450, 630],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["LOU", "TNS", "CRL", "FLO"]
+        "SES": {
+            "pos": [
+                1450,
+                630
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "LOU",
+                "TNS",
+                "CRL",
+                "FLO"
+            ]
         },
-    "CRL": {
-        "pos": [1520, 580],
-        "level": "level3",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["SES", "TNS", "VRG"]
+        "CRL": {
+            "pos": [
+                1520,
+                580
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SES",
+                "TNS",
+                "VRG"
+            ]
         },
-    "FLO": {
-        "pos": [1530, 700],
-        "level": "level3",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["SES"]
+        "FLO": {
+            "pos": [
+                1530,
+                700
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SES"
+            ]
         }
     },
-"USA6": {
-    "OIO": {
-        "pos": [1530, 480],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["SGL", "ONT", "NWS", "VRG", "KTY"]
+    "USA6": {
+        "OIO": {
+            "pos": [
+                1530,
+                480
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SGL",
+                "ONT",
+                "NWS",
+                "VRG",
+                "KTY"
+            ]
         },
-    "VRG": {
-        "pos": [1540, 530],
-        "level": "level3",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["CRL", "KTY", "OIO", "NWS"]
+        "VRG": {
+            "pos": [
+                1540,
+                530
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "CRL",
+                "KTY",
+                "OIO",
+                "NWS"
+            ]
         },
-    "NWS": {
-        "pos": [1575, 475],
-        "level": "level3",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["VRG", "OIO", "ONT", "QUE"]
+        "NWS": {
+            "pos": [
+                1575,
+                475
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "VRG",
+                "OIO",
+                "ONT",
+                "QUE"
+            ]
         },
-    "NEL": {
-        "pos": [1680, 450],
-        "level": "level3",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["NWS", "QUE", "NOS"]
+        "NEL": {
+            "pos": [
+                1680,
+                450
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NWS",
+                "QUE",
+                "NOS"
+            ]
         }
     },
-"MEX1": {
-    "SON": {
-        "pos": [1070, 670],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["BCA", "ARI", "CHH", "SDZ"]
+    "MEX1": {
+        "SON": {
+            "pos": [
+                1070,
+                670
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "BCA",
+                "ARI",
+                "CHH",
+                "SDZ"
+            ]
         },
-    "CHH": {
-        "pos": [1130, 680],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["SON", "NME", "TFW", "COH", "SDZ"]
+        "CHH": {
+            "pos": [
+                1130,
+                680
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SON",
+                "NME",
+                "TFW",
+                "COH",
+                "SDZ"
+            ]
         },
-    "COH": {
-        "pos": [1215, 700],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": false,
-        "adjacent": ["CHH", "TFW", "TEX", "NMX", "SDZ"]
+        "COH": {
+            "pos": [
+                1215,
+                700
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "CHH",
+                "TFW",
+                "TEX",
+                "NMX",
+                "SDZ"
+            ]
         },
-    "SDZ": {
-        "pos": [1160, 760],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["SON", "CHH", "COH", "NMX", "WMX"]
+        "SDZ": {
+            "pos": [
+                1160,
+                760
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SON",
+                "CHH",
+                "COH",
+                "NMX",
+                "WMX"
+            ]
         },
-    "NMX": {
-        "pos": [1250, 775],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["EMX", "WMX", "SDZ", "COH", "TEX"]
+        "NMX": {
+            "pos": [
+                1250,
+                775
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "EMX",
+                "WMX",
+                "SDZ",
+                "COH",
+                "TEX"
+            ]
         }
     },
-"MEX2": {
-    "WMX": {
-        "pos": [1225, 860],
-        "level": "level3",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["SDZ", "NMX", "EMX"]
+    "MEX2": {
+        "WMX": {
+            "pos": [
+                1225,
+                860
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SDZ",
+                "NMX",
+                "EMX"
+            ]
         },
-    "EMX": {
-        "pos": [1260, 880],
-        "level": "level2",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["WMX", "NMX", "SMX"]
+        "EMX": {
+            "pos": [
+                1260,
+                880
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WMX",
+                "NMX",
+                "SMX"
+            ]
         },
-    "SMX": {
-        "pos": [1300, 900],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["EMX", "YUC", "GTM"]
+        "SMX": {
+            "pos": [
+                1300,
+                900
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "EMX",
+                "YUC",
+                "GTM"
+            ]
         },
-    "YUC": {
-        "pos": [1415, 850],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["SMX", "GTM", "B"]
+        "YUC": {
+            "pos": [
+                1415,
+                850
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SMX",
+                "GTM",
+                "B"
+            ]
         },
-    "B": {
-        "pos": [1420, 910],
-        "level": "level1",
-        "sea": false,
-        "seas": [],
-        "ocean": true,
-        "adjacent": ["GTM", "YUC"]
+        "B": {
+            "pos": [
+                1420,
+                910
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "GTM",
+                "YUC"
+            ]
+        }
+    },
+    "MEX3": {
+        "GTM": {
+            "pos": [
+                1400,
+                900
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SMX",
+                "YUKA",
+                "HON",
+                "ELS"
+            ]
+        },
+        "ELS": {
+            "pos": [
+                1411,
+                955
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SMX",
+                "YUKA",
+                "HON",
+                "ELS"
+            ]
+        },
+        "HON": {
+            "pos": [
+                1450,
+                944
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "GMT",
+                "CUB",
+                "ELS"
+            ]
+        },
+        "NIC": {
+            "pos": [
+                1480,
+                980
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "HON",
+                "CRI"
+            ]
+        },
+        "CUB": {
+            "pos": [
+                1600,
+                840
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "HON",
+                "J"
+            ]
+        },
+        "J": {
+            "pos": [
+                1595,
+                885
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "CUB"
+            ]
+        },
+        "cri": {
+            "pos": [
+                1495,
+                1020
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "CUB"
+            ]
+        }
+    },
+    "SAM1": {
+        "PNM": {
+            "pos": [
+                1521,
+                1039
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "CRI",
+                "NCO"
+            ]
+        },
+        "NCO": {
+            "pos": [
+                1650,
+                1050
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SCO",
+                "WVE",
+                "PNM",
+                "ECO"
+            ]
+        },
+        "WVE": {
+            "pos": [
+                1700,
+                1050
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "HDR",
+                "NCO",
+                "ECO",
+                "SVE",
+                "EVE",
+                "CI"
+            ]
+        },
+        "SCO": {
+            "pos": [
+                1625,
+                1120
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ECU",
+                "ECO",
+                "NCO"
+            ]
+        },
+        "ECO": {
+            "pos": [
+                1650,
+                1150
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SCO",
+                "NCO",
+                "WVE",
+                "SVE",
+                "AMA",
+                "WBA",
+                "LOR"
+            ]
+        },
+        "CI": {
+            "pos": [
+                1849,
+                930
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WVE"
+            ]
+        },
+        "HDR": {
+            "pos": [
+                1700,
+                878
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WVE"
+            ]
+        }
+    },
+    "SAM2": {
+        "EVE": {
+            "pos": [
+                1818,
+                1100
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WVE",
+                "SVE",
+                "ROR",
+                "GUA"
+            ]
+        },
+        "GUA": {
+            "pos": [
+                1885,
+                1105
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "EVE",
+                "ROR",
+                "PRA",
+                "SUR"
+            ]
+        },
+        "SUR": {
+            "pos": [
+                1937,
+                1124
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FRG",
+                "GUA",
+                "PRA"
+            ]
+        },
+        "FRG": {
+            "pos": [
+                1974,
+                1123
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SUR",
+                "PRA",
+                "AMP"
+            ]
+        },
+        "AMP": {
+            "pos": [
+                1521,
+                1039
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "CRI",
+                "NCO"
+            ]
+        }
+    },
+    "SAM3": {
+        "SVE": {
+            "pos": [
+                1782,1128
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "WVE",
+                "EVE",
+                "ECO",
+                "ROR",
+                "AMA"
+            ]
+        },
+        "ROR": {
+            "pos": [
+                1849,1151
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "EVE",
+                "GUA",
+                "PRA",
+                "AMA",
+                "SVE"
+            ]
+        },
+        "AMA": {
+            "pos": [
+                1787,1191
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ROR",
+                "SVE",
+                "WBA",
+                "ECO",
+                "PRA",
+                "RON"
+            ]
+        },
+        "WBA": {
+            "pos": [1723,1265],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ACR",
+                "RON",
+                "LOR",
+                "ECO",
+                "AMA"]
+        },
+        "PRA": {
+            "pos": [2010,1225],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "AMP",
+                "FRG",
+                "SUR",
+                "GUA",
+                "ROR",
+                "WCB",
+                "ECB",
+                "NBR",
+                "AMA"
+            ]
+        }
+    },
+    "SAM4": {
+        "ECU": {
+            "pos": [
+                    1578,1174
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SCo",
+                "LOR",
+                "NPE"
+            ]
+        },
+        "NPE": {
+            "pos": [
+                1574,1242
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ECU",
+                "LOR",
+                "CPE"
+            ]
+        },
+        "LOR": {
+            "pos": [
+                1642,1227
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "ECO",
+                "ECU",
+                "NPE",
+                "CPE",
+                "ACR",
+                "WBA"
+            ]
+        },
+        "CPE": {
+            "pos": [1603,1310],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NPE",
+                "LOR",
+                "ACR",
+                "SPE"]
+        },
+        "SPE": {
+            "pos": [1676,1386],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "CPE",
+                "ACR",
+                "BOL",
+                "NCI"
+            ]
+        }
+    },
+    "SAM5": {
+        "ACR": {
+            "pos": [
+                    1578,1174
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "LOR",
+                "CPE",
+                "SPE",
+                "BOL",
+                "RON"
+            ]
+        },
+        "BOL": {
+            "pos": [
+                1740,1424
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SPE",
+                "STC",
+                "ACR",
+                "SBO",
+                "BNI"
+            ]
+        },
+        "RON": {
+            "pos": [
+                1818,1328
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BOL",
+                "BNI",
+                "STC",
+                "ACR",
+                "WCB",
+                "AMA",
+                "WBA"
+            ]
+        },
+        "BNI": {
+            "pos": [1779, 1383],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BOL",
+                "STC",
+                "RON"]
+        },
+        "WCB": {
+            "pos": [1913,1326],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "AMA",
+                "RON",
+                "STC",
+                "PRA",
+                "ECB"
+            ]
+        }
+    },
+    "SAM6": {
+        "ECB": {
+            "pos": [
+                    2001,1398
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "WCB",
+                "STC",
+                "MGS",
+                "SEB",
+                "PRA",
+                "NBR"
+            ]
+        },
+        "NBR": {
+            "pos": [
+                2078,1315
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "PRA",
+                "RGN",
+                "SEB",
+                "ECB"
+            ]
+        },
+        "RGN": {
+            "pos": [
+                2215,1316
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NBR",
+                "SEB"
+            ]
+        },
+        "SEB": {
+            "pos": [2147,1425],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SPA",
+                "ECB",
+                "RGN",
+                "NBR"]
+        },
+        "SPA": {
+            "pos": [2083,1530],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SEB",
+                "ECB",
+                "MGS",
+                "PAR"
+            ]
+        }
+    },
+    "SAM7": {
+        "STC": {
+            "pos": [1843,1428],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BNI",
+                "RON",
+                "BOL",
+                "SBO",
+                "PRG",
+                "ECB",
+                "MGS"
+            ]
+        },
+        "SBO": {
+            "pos": [
+                1785,1497
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "BOL",
+                "STC",
+                "PRG",
+                "NCI",
+                "NGA"
+            ]
+        },
+        "PRG": {
+            "pos": [
+                1876,1526
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "STC",
+                "SBO",
+                "NGA",
+                "ARG",
+                "PAR",
+                "MGS"
+            ]
+        },
+        "MGS": {
+            "pos": [1951,1523],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "ECB",
+                "STC",
+                "SPA",
+                "PRG",
+                "SEB",
+                "PAR"]
+        },
+        "PAR": {
+            "pos": [1996,1560],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SPA",
+                "PRG",
+                "MGS",
+                "ARG",
+                "SCA"
+            ]
+        }
+    },
+
+    "SAM8": {
+        "NCI": {
+            "pos": [1721,1584],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SPE",
+                "BOL",
+                "SBO",
+                "NGA",
+                "NCU",
+                "SCI"
+            ]
+        },
+        "NGA": {
+            "pos": [
+                1800,1574
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SBO",
+                "NCI",
+                "PRG",
+                "NCU",
+                "ARG"
+            ]
+        },
+        "SCI": {
+            "pos": [
+                1707,1658
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NCI",
+                "NCU",
+                "PAT",
+                "APA"
+            ]
+        },
+        "NCU": {
+            "pos": [1758,1735],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "SCI",
+                "NCI",
+                "NGA",
+                "ARG",
+                "APA",
+                "PAR"]
+        }
+
+    },
+    "SAM9": {
+        "SCA": {
+            "pos": [2025,1616],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "PAR",
+                "ARG",
+                "RGS"
+            ]
+        },
+        "RGS": {
+            "pos": [
+                1974,1642
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ARG",
+                "URU",
+                "SCA"
+            ]
+        },
+        "URU": {
+            "pos": [
+                1922,1704
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "ARG",
+                "EAR",
+                "RGS"
+            ]
+        },
+        "ARG": {
+            "pos": [1871,1640],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "PRG",
+                "NGA",
+                "SCA",
+                "NCU",
+                "RGS",
+                "APA",
+                "EAR",
+                "URU"]
+        }
+    },
+    "SAM10": {
+        "EAR": {
+            "pos": [1856,1800],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "APA",
+                "ARG",
+                "URU"
+            ]
+        },
+        "APA": {
+            "pos": [
+                1758,1829
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SCI",
+                "NCU",
+                "EAR",
+                "PAT",
+                "FAL",
+                "ARG"
+            ]
+        },
+        "PAT": {
+            "pos": [
+                1701,1829
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SCI",
+                "APA",
+                "TDF"
+            ]
+        },
+        "TDF": {
+            "pos": [1757,2010],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "PAT",
+                "FAL"]
+        },
+        "FAL": {
+            "pos": [1895,1975],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "APA",
+                "TDF",
+                "SG"]
+        },
+        "SG": {
+            "pos": [2222,2005],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "FAL"]
         }
     }
 }
