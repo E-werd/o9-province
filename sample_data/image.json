@@ -3067,149 +3067,149 @@
                 "NSW",
                 "VIC"
             ]
+        }
+    },
+    "AUS2": {
+        "WNG": {
+            "pos": [
+                4960,
+                1445
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "PNG"
+            ]
         },
-        "AUS2": {
-            "WNG": {
-                "pos": [
-                    4960,
-                    1445
-                ],
-                "level": "level2",
-                "sea": false,
-                "seas": [],
-                "ocean": true,
-                "adjacent": [
-                    "PNG"
-                ]
-            },
-            "PNG": {
-                "pos": [
-                    5040,
-                    1473
-                ],
-                "level": "level1",
-                "sea": false,
-                "seas": [],
-                "ocean": true,
-                "adjacent": [
-                    "WNG"
-                ]
-            },
-            "NTE": {
-                "pos": [
-                    4881,
-                    1624
-                ],
-                "level": "level1",
-                "sea": false,
-                "seas": [],
-                "ocean": false,
-                "adjacent": [
-                    "NEA",
-                    "AUC",
-                    "QLD"
-                ]
-            },
-            "AUC": {
-                "pos": [
-                    4905,
-                    1742
-                ],
-                "level": "level1",
-                "sea": false,
-                "seas": [],
-                "ocean": false,
-                "adjacent": [
-                    "NEA",
-                    "EWA",
-                    "NTE",
-                    "QLD",
-                    "SCA"
-                ]
-            },
-            "QLD": {
-                "pos": [
-                    5064,
-                    1760
-                ],
-                "level": "level2",
-                "sea": false,
-                "seas": [],
-                "ocean": true,
-                "adjacent": [
-                    "NTE",
-                    "AUC",
-                    "SCA",
-                    "NSW"
-                ]
-            },
-            "NSW": {
-                "pos": [
-                    5000,
-                    1836
-                ],
-                "level": "level2",
-                "sea": false,
-                "seas": [],
-                "ocean": true,
-                "adjacent": [
-                    "SCA",
-                    "VIC",
-                    "SAU",
-                    "QLD",
-                    "VIC"
-                ]
-            },
-            "VIC": {
-                "pos": [
-                    5041,
-                    1910
-                ],
-                "level": "level3",
-                "sea": false,
-                "seas": [],
-                "ocean": true,
-                "adjacent": [
-                    "SAU",
-                    "NSW"
-                ]
-            },
-            "TAS": {
-                "pos": [
-                    5078,
-                    2015
-                ],
-                "level": "level1",
-                "sea": false,
-                "seas": [],
-                "ocean": true,
-                "adjacent": [
-                ]
-            },
-            "SNZ": {
-                "pos": [
-                    5507,
-                    1962
-                ],
-                "level": "level1",
-                "sea": false,
-                "seas": [],
-                "ocean": true,
-                "adjacent": [
-                ]
-            },
-            "NNZ": {
-                "pos": [
-                    5563,
-                    1896
-                ],
-                "level": "level1",
-                "sea": false,
-                "seas": [],
-                "ocean": true,
-                "adjacent": [
-                ]
-            }
+        "PNG": {
+            "pos": [
+                5040,
+                1473
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "WNG"
+            ]
+        },
+        "NTE": {
+            "pos": [
+                4881,
+                1624
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "NEA",
+                "AUC",
+                "QLD"
+            ]
+        },
+        "AUC": {
+            "pos": [
+                4905,
+                1742
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "NEA",
+                "EWA",
+                "NTE",
+                "QLD",
+                "SCA"
+            ]
+        },
+        "QLD": {
+            "pos": [
+                5064,
+                1760
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NTE",
+                "AUC",
+                "SCA",
+                "NSW"
+            ]
+        },
+        "NSW": {
+            "pos": [
+                5000,
+                1836
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SCA",
+                "VIC",
+                "SAU",
+                "QLD",
+                "VIC"
+            ]
+        },
+        "VIC": {
+            "pos": [
+                5041,
+                1910
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SAU",
+                "NSW"
+            ]
+        },
+        "TAS": {
+            "pos": [
+                5078,
+                2015
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
+        },
+        "SNZ": {
+            "pos": [
+                5507,
+                1962
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
+        },
+        "NNZ": {
+            "pos": [
+                5563,
+                1896
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+            ]
         }
     },
     "SOPA1": {
