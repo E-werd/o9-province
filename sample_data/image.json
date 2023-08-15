@@ -2212,7 +2212,7 @@
             "ocean": true,
             "adjacent": [
                 "NDL",
-                "SWG",
+                "SWT",
                 "PIC",
                 "NFR"
             ]
@@ -2257,7 +2257,7 @@
             "seas": [],
             "ocean": false,
             "adjacent": [
-                "SWG",
+                "SWT",
                 "BLG",
                 "NFR",
                 "BOU",
@@ -2312,7 +2312,7 @@
                 "HNV",
                 "CGE",
                 "BLG",
-                "SWG"
+                "SWT"
             ]
         },
         "CGE": {
@@ -2329,7 +2329,7 @@
                 "HNV",
                 "BRA",
                 "SAC",
-                "SWG",
+                "SWT",
                 "BAV"
             ]
         },
@@ -2350,7 +2350,7 @@
         }
     },
     "EU7": {
-        "SWG": {
+        "SWT": {
             "pos": [
                 2940,
                 544
@@ -2378,7 +2378,7 @@
             "seas": [],
             "ocean": false,
             "adjacent": [
-                "SWG",
+                "SWT",
                 "CGE",
                 "SAC",
                 "CZE",
@@ -2397,7 +2397,7 @@
             "ocean": false,
             "adjacent": [
                 "BAV",
-                "SWG",
+                "SWT",
                 "SWZ",
                 "VEN",
                 "VIE",
@@ -2726,12 +2726,6 @@
             ]
         }
     },
-
-
-
-
-
-
     "SCA1": {
         "DEN": {
             "pos": [
@@ -2775,6 +2769,22 @@
                 "SVG",
                 "NSV",
                 "OSL"
+            ]
+        },
+        "OSL": {
+            "pos": [
+                2976,
+                270
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "SVG",
+                "NOR",
+                "NSV",
+                "STO"
             ]
         }
     },
@@ -2879,24 +2889,24 @@
     "SCA3": {
         "UPP": {
             "pos": [
-                3187,
-                66
+                3110,
+                140
             ],
-            "level": "level1",
+            "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
                 "NOR",
-                "UPP",
+                "FNM",
                 "NFL",
-                "KOL"
+                "NSV"
             ]
         },
         "NSV": {
             "pos": [
-                3223,
-                154
+                3040,
+                230
             ],
             "level": "level1",
             "sea": false,
@@ -2913,25 +2923,25 @@
         },
         "STO": {
             "pos": [
-                3301,
-                89
+                3060,
+                310
             ],
-            "level": "level1",
+            "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "FNM",
-                "NFL",
-                "KAR"
+                "OSL",
+                "NSV",
+                "SSV"
             ]
         },
         "SSV": {
             "pos": [
-                3297,
-                154
+                3040,
+                390
             ],
-            "level": "level1",
+            "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
@@ -2942,35 +2952,17 @@
                 "STP"
             ]
         },
-        "EFI": {
+        "DS": {
             "pos": [
-                3255,
-                253
-            ],
-            "level": "level1",
-            "sea": false,
-            "seas": [],
-            "ocean": true,
-            "adjacent": [
-                "FIN",
-                "NFL",
-                "KAR",
-                "STP"
-            ]
-        },
-        "FIN": {
-            "pos": [
-                3161,
-                271
+                3020,
+                410
             ],
             "level": "level2",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "NFL",
-                "EFI",
-                "STP"
+                "SSV"
             ]
         }
     },
