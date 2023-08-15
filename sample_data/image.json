@@ -1311,7 +1311,7 @@
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "SCo",
+                "SCO",
                 "LOR",
                 "NPE"
             ]
@@ -1639,7 +1639,7 @@
                 "PRG",
                 "MGS",
                 "ARG",
-                "SCA"
+                "SCG"
             ]
         }
     },
@@ -1715,10 +1715,10 @@
         }
     },
     "SAM9": {
-        "SCA": {
+        "SCG": {
             "pos": [
-                2000,
-                1610
+                2030,
+                1620
             ],
             "level": "level2",
             "sea": false,
@@ -1742,7 +1742,7 @@
             "adjacent": [
                 "ARG",
                 "URU",
-                "SCA"
+                "SCG"
             ]
         },
         "URU": {
@@ -1772,7 +1772,7 @@
             "adjacent": [
                 "PRG",
                 "NGA",
-                "SCA",
+                "SCG",
                 "NCU",
                 "RGS",
                 "APA",
@@ -2353,8 +2353,8 @@
     "EU7": {
         "SWT": {
             "pos": [
-                2940,
-                544
+                2945,
+                560
             ],
             "level": "level2",
             "sea": false,
@@ -2367,6 +2367,24 @@
                 "BAV",
                 "TYR",
                 "SWZ"
+            ]
+        },
+        "SWZ": {
+            "pos": [
+                2940,
+                580
+            ],
+            "level": "level3",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "AL",
+                "SWT",
+                "TYR",
+                "VEN",
+                "SVY",
+                "BOU"
             ]
         },
         "BAV": {
