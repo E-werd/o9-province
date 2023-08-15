@@ -1195,16 +1195,16 @@
         },
         "AMP": {
             "pos": [
-                1521,
-                1039
+                2000,
+                1150
             ],
-            "level": "level2",
+            "level": "level1",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
-                "CRI",
-                "NCO"
+                "FRG",
+                "PRA"
             ]
         }
     },
@@ -1385,19 +1385,20 @@
     "SAM5": {
         "ACR": {
             "pos": [
-                1578,
-                1174
+                1690,
+                1320
             ],
-            "level": "level2",
+            "level": "level1",
             "sea": false,
             "seas": [],
             "ocean": true,
             "adjacent": [
                 "LOR",
-                "CPE",
-                "SPE",
+                "WBA",
+                "RON",
                 "BOL",
-                "RON"
+                "SPE",
+                "CPE"
             ]
         },
         "BOL": {
@@ -1716,8 +1717,8 @@
     "SAM9": {
         "SCA": {
             "pos": [
-                2025,
-                1616
+                2000,
+                1610
             ],
             "level": "level2",
             "sea": false,
