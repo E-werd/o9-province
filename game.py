@@ -9,12 +9,13 @@ from data import Data
 from map import Map
 from claim import Claim
 
+
 class Game:
     '''Game class for o9-province'''
     def __init__(self, leveld: Data, mapd: Data, playerd: Data, map: Map) -> None:
         '''Game class for o9-province'''
 
-        # Setup data
+        # Setup timer
         logging.info("Loading data...")
         tic = time.perf_counter()
 
@@ -104,11 +105,14 @@ class Game:
                         self.provinces[prov].seas.append(sea)
 
     def load_data(self) -> None:
+        '''Load all game data in the correct order'''
         self.__load_levels()
         self.__load_mapdata()
         self.__load_players()
 
     def get_province_adjacents(self, province: Province) -> list[str]:
+        '''Get adjacent provinces. Returns list of province names.
+        :province: Province object for which to find adjacents'''
         raw_adjacents: list[str] = []
 
         if (province.ocean): # Check/Add ocean-accessible provinces
@@ -128,6 +132,8 @@ class Game:
         return adjacents
     
     def get_player_adjacents(self, player: Player) -> list[str]:
+        '''Get adjacent provinces to all provinces owned by a player. Returns list of province names.
+        :player: Player object to check against'''
         raw_adjacents: list[str] = []
         owned_provinces: list[str] = []
 
@@ -152,6 +158,9 @@ class Game:
         return adjacents
     
     def get_cost(self, province: Province, player: Player) -> int:
+        '''Gets cost of province claim. Returns cost as int.
+        :province: Province object from which to get cost
+        :player: Player object who wants the cost'''
         adjacents: list[str] = self.get_player_adjacents(player=player)
         if (province.owner == player):
             return 0

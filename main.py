@@ -8,6 +8,7 @@ from data import Data
 from map import Map
 from game import Game
 
+
 class Main:
     '''Main class to run o9-province'''
     def __init__(self) -> None:
