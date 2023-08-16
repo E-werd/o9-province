@@ -47,11 +47,11 @@ class Main:
     def __load_env(self) -> None:
         '''Loads from .env using dotenv'''
         load_dotenv()
-        self.DATAFILE = os.getenv("DATAFILE", default="sample_data/image.json")
-        self.IMAGEFILE = os.getenv("IMAGEFILE", default="sample_data/image.png")
-        self.PLAYERFILE = os.getenv("PLAYERFILE", default="sample_data/players.json")
-        self.LEVELFILE = os.getenv("LEVELFILE", default="sample_data/levels.json")
-        self.FONT = os.getenv("FONT", default="sample_data/unispace.ttf")
+        self.DATAFILE = os.getenv("DATAFILE", default="app/sample_data/image.json")
+        self.IMAGEFILE = os.getenv("IMAGEFILE", default="app/sample_data/image.png")
+        self.PLAYERFILE = os.getenv("PLAYERFILE", default="app/sample_data/players.json")
+        self.LEVELFILE = os.getenv("LEVELFILE", default="app/sample_data/levels.json")
+        self.FONT = os.getenv("FONT", default="app/sample_data/unispace.ttf")
         self.LOGLEVEL = os.getenv("LOGLEVEL", default="error")
 
     def __set_logging(self) -> None:
