@@ -4,9 +4,9 @@ import logging, os
 from dotenv import load_dotenv
 from pathlib import Path
 # Internal
-from data import Data
-from map import Map
-from game import Game
+from core.data import Data
+from core.map import Map
+from core.game import Game
 
 
 class Main:

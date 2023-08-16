@@ -1,5 +1,5 @@
 # Internal
-from color import ColorBase
+from core.color import ColorBase
 
 
 class LevelBase:

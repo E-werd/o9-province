@@ -1,8 +1,8 @@
 # External
 import logging
 # Internal
-from color import ColorBase
-from level import LevelBase
+from core.color import ColorBase
+from core.level import LevelBase
 
 
 class Player:
