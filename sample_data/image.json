@@ -3035,6 +3035,153 @@
             ]
         }
     },
+    "EU15": {
+        "EST": {
+            "pos": [
+                3210,
+                350
+            ],
+            "level": "level1",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "NOV","LAT"
+            ]
+        },
+        "LAT": {
+            "pos": [
+                3220,
+                380
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": true,
+            "adjacent": [
+                "EST","NOV","BEL","LIT"
+            ]
+        },
+        "NOV": {
+            "pos": [
+                3300,
+                400
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "EST","STP","MSK","EBL","LAT"
+            ]
+        },
+        "BEL": {
+            "pos": [
+                3230,
+                430
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "LAT","EBL","KIE","EPL","LIT"
+            ]
+        },
+        "EBL": {
+            "pos": [
+                3280,
+                470
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "NOV","RUB","NUK","KIE","BEL"
+            ]
+        }
+    },
+    "EU16": {
+        "RUB": {
+            "pos": [
+                3360,
+                470
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "EBL","NOV","MSK","CVR","CAU","NRO", "NUK"
+            ]
+        },
+        "NUK": {
+            "pos": [
+                3320,
+                500
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "EBL","RUB","NRO","SUK","KIE"
+            ]
+        },
+        "KIE": {
+            "pos": [
+                3370,
+                550
+            ],
+            "level": "level2",
+            "sea": false,
+            "seas": [],
+            "ocean": false,
+            "adjacent": [
+                "NWU","BEL","EBL","NUK","SUK", "ODE", "MO", "EGL"
+            ]
+        },
+        "SUK": {
+            "pos": [
+                3330,
+                565
+            ],
+            "level": "level1",
+            "sea": true,
+            "seas": ["black"],
+            "ocean": false,
+            "adjacent": [
+                "ODE","KIE","NUK","NRO","CRM"
+            ]
+        },
+        "NRO": {
+            "pos": [
+                3380,
+                570
+            ],
+            "level": "level1",
+            "sea": true,
+            "seas": ["black"],
+            "ocean": false,
+            "adjacent": [
+                "SUK","NUK","RUB","CAU"
+            ]
+        },
+        "CRM": {
+            "pos": [
+                3333,
+                613
+            ],
+            "level": "level2",
+            "sea": true,
+            "seas": ["black"],
+            "ocean": false,
+            "adjacent": [
+                "SUK"
+            ]
+        }
+    },
     "SCA1": {
         "DEN": {
             "pos": [
