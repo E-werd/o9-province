@@ -24,7 +24,7 @@
     "color": null,
     "custom_color": [210, 87, 176],
     "owned": {
-        "regions": ["EU1", "EU2", "EU3", "EU4", "EU5", "EU6", "EU7", "EU8", "EU9", "EU10", "EU11", "EU12", "EU13", "EU14", "SCA1", "SCA2", "SCA3"],
+        "regions": ["EU1", "EU2", "EU3", "EU4", "EU5", "EU6", "EU7", "EU8", "EU9", "EU10", "EU11", "EU12", "EU13", "EU14", "EU15", "EU16", "SCA1", "SCA2", "SCA3"],
         "provinces": []
         }
     },
