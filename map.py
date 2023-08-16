@@ -6,7 +6,9 @@ import numpy as np
 from scipy.ndimage import measurements
 from pathlib import Path
 # Internal
-from datatypes import Player, LevelBase
+from player import Player
+from province import LevelBase
+
 
 class Map:
     '''Class for loading/creating/filling maps'''

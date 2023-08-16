@@ -1,77 +1,13 @@
 # External
 import logging, time
 # Internal
-from datatypes import (ColorBase, Color, LevelBase, Player, Province, Region)
+from province import Province, Region
+from level import LevelBase
+from color import Color, ColorBase
+from player import Player
 from data import Data
 from map import Map
-
-class Status:
-    def __init__(self, name: str, value: int):
-        self.name: str = name
-        self.value: int = value
-
-    def __repr__(self) -> str: return self.__str__() # Printable representation
-    def __str__(self) -> str: return self.name # String representation
-
-class Claim:
-    ok: Status = Status(name="ok", value=1)
-    water: Status = Status(name="water", value=2)
-    self_owned: Status = Status(name="self_owned", value=4)
-    other_owned: Status = Status(name="other_owned", value=8)
-    not_adjacent: Status = Status(name="not_adjacent", value=16)
-
-    list: dict[str, Status] = {"not_adjacent": not_adjacent, # 16
-                               "other_owned": other_owned,   # 8
-                               "self_owned": self_owned,     # 4
-                               "water": water,               # 2
-                               "ok": ok}                     # 1
-    
-    max: int = sum(obj.value for _, obj in list.items())
-
-    def is_valid(code: int) -> bool:       
-        # Code out of range
-        if (code > Claim.max):
-            return False 
-        if (code < 1):
-            return False
-        
-        stats = Claim.check(code=code)
-
-        # Owned by self and other
-        case1 = [Claim.self_owned, Claim.other_owned]
-        if all(s in stats for s in case1):
-            return False
-        
-        # OK but owned by other
-        case2 = [Claim.ok, Claim.other_owned]
-        if all(s in stats for s in case2):
-            return False
-
-        # OK but owned by self
-        case3 = [Claim.ok, Claim.self_owned]
-        if all(s in stats for s in case3):
-            return False
-
-        return True
-
-    def check(code: int) -> list:
-        lst: list[Status] = []
-
-        for name in Claim.list:
-            obj = Claim.list[name]
-            if ( (code // obj.value) == 1):
-                lst.append(obj)
-                code -= obj.value
-
-        return lst
-    
-    def get(status_list: list) -> int:
-        code: int = 0
-        
-        for stat in status_list:
-            code += stat.value
-        
-        return code
+from claim import Claim
 
 class Game:
     '''Game class for o9-province'''
@@ -136,7 +72,7 @@ class Game:
             for reg in player["owned"]["regions"]: # Iterate through regions owned
                 for prov in self.regions[reg].provinces: # Iterate through provinces in the region
                     self.provinces[prov].update_owner(owner=self.players[play])
-            for prov in self.player_data.data[play]["owned"]["provinces"]: # Iterate through provinces owned
+            for prov in player["owned"]["provinces"]: # Iterate through provinces owned
                 self.provinces[prov].update_owner(owner=self.players[play])
 
     def __load_mapdata(self) -> None:
@@ -185,6 +121,10 @@ class Game:
         raw_adjacents += province.adjacent # Add direct adjacents
 
         adjacents = list(dict.fromkeys(raw_adjacents)) # Dedupe into new list
+
+        if province.name in adjacents:
+            adjacents.remove(province.name)
+
         return adjacents
     
     def get_player_adjacents(self, player: Player) -> list[str]:
@@ -240,11 +180,12 @@ class Game:
 
     def start(self) -> None:
         '''Main loop'''
-        # Do the things
+        # Load data, update map, write map
         self.load_data()
         self.update_map()
         self.map.write()
 
+        ### Claim example
         # for i in range(Claim.max + 1):
         #     status = Claim.check(code=i)
         #     if ( Claim.is_valid(code=i) ):
@@ -252,13 +193,18 @@ class Game:
         #     else:
         #         logging.debug(f"Code '{i}' is invalid")
 
+        ### Ocean/Sea example
         # print(f"Ocean provinces: {self.ocean_provs}")
         # for sea in self.sea_provs:
         #     print(f"{sea} sea provinces: {self.sea_provs[sea]}")
 
-        # prov = "QUE"
+        ### Adjacency example
+        # prov = "KS"
         # province = self.provinces[prov]
-        # player = self.players["player2"]
+        # adjacents: list[str] = self.get_province_adjacents(province=province)
+        # print(f"Provinces adjacent to '{province.name}' are: {adjacents}")
+
+        # player = self.players["Hops"]
         # cost = self.get_cost(province=province, player=player)
         # if (cost != 0):
         #     print(f"Cost of {province.name} for {player.name} is {cost} points")
