@@ -1,13 +1,13 @@
 # External
 import logging, time
 # Internal
-from core.province import Province, Region
-from core.level import LevelBase
-from core.color import Color, ColorBase
-from core.player import Player
-from core.data import Data
-from core.map import Map
-from core.claim import Claim
+from app.core.province import Province, Region
+from app.core.level import LevelBase
+from app.core.color import Color, ColorBase
+from app.core.player import Player
+from app.core.data import Data
+from app.core.map import Map
+from app.core.claim import Claim
 
 
 class Game:

@@ -6,8 +6,8 @@ import numpy as np
 from scipy.ndimage import measurements
 from pathlib import Path
 # Internal
-from core.player import Player
-from core.province import LevelBase
+from app.core.player import Player
+from app.core.province import LevelBase
 
 
 class Map:
