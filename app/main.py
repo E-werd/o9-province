@@ -43,6 +43,9 @@ class Main:
                          mapd=self.map_data,
                          playerd=self.player_data,
                          map=self.map)
+        
+        # Start
+        self.game.start()
 
     def __load_env(self) -> None:
         '''Loads from .env using dotenv'''
@@ -61,8 +64,3 @@ class Main:
         datefmt: str = "%Y-%m-%d %H:%M:%S"
         level = logopt.get(self.LOGLEVEL, logging.INFO)
         logging.basicConfig(format=format, datefmt=datefmt, level=level, force=True)
-
-# Starting point
-if __name__ == "__main__":
-    main: Main = Main()
-    main.game.start()

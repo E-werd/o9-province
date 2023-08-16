@@ -3,4 +3,4 @@ This is a work-in-progress for a Discord bot based around a game proposed by Opt
 
 The project is very far from completion, stay tuned.
 
-Run with ```python3 -m app.main``` or ```./run.sh``` as provided.
+Run with ```python3 -m app``` or ```./run.sh``` as provided.

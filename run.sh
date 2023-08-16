@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python3 -m app.main
+python3 -m app
