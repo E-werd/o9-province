@@ -3,6 +3,7 @@ __pycache__
 .env
 cache
 *.txt
+!requirements.txt
 test*.py
 notes.md
 .idea/*
