@@ -1,5 +1,6 @@
 # External
 import logging, time
+import numpy as np
 # Internal
 from app.core.province import Province, Region
 from app.core.level import LevelBase
@@ -12,7 +13,7 @@ from app.core.claim import Claim
 
 class Game:
     '''Game class for o9-province'''
-    def __init__(self, leveld: Data, mapd: Data, playerd: Data, map: Map) -> None:
+    def __init__(self, leveld: Data, maskd: Data, mapd: Data, playerd: Data, map: Map) -> None:
         '''Game class for o9-province'''
 
         # Setup timer
@@ -21,6 +22,7 @@ class Game:
 
         # Setup filedata and map
         self.level_data: Data = leveld
+        self.mask_data: Data = maskd
         self.map_data: Data = mapd
         self.player_data: Data = playerd
         self.map: Map = map
@@ -32,11 +34,10 @@ class Game:
         self.players: dict[str, Player] = {}
         self.ocean_provs: list[str] = []
         self.sea_provs: dict[str, list[str]] = {}
+        self.masks: dict[str, np.ndarray] = {}
 
         # Load in data
-        self.__load_levels()
-        self.__load_mapdata()
-        self.__load_players()
+        self.__load_data()
 
         # Update map to current state
         toc = time.perf_counter()
@@ -52,29 +53,6 @@ class Game:
                                             product=self.level_data.data[level]["product"],
                                             color=level_color)
             self.levels.update({self.level_data.data[level]["name"]: newlevel})
-
-    def __load_players(self) -> None:
-        '''Load player data and set ownership'''
-        for play in self.player_data.data:
-            player = self.player_data.data[play]
-            if (player["custom_color"] != None):
-                r, g, b = player["custom_color"]
-                color = ColorBase(name=play, rgb=(r, g, b))
-                self.players.update({play: Player(name=player["name"], 
-                                                  snowflake=player["snowflake"], 
-                                                  color=color,
-                                                  levels=self.levels)})
-            else:
-                self.players.update({play: Player(name=player["name"], 
-                                                  snowflake=player["snowflake"], 
-                                                  color=Color.list[player["color"]],
-                                                  levels=self.levels)})
-                
-            for reg in player["owned"]["regions"]: # Iterate through regions owned
-                for prov in self.regions[reg].provinces: # Iterate through provinces in the region
-                    self.provinces[prov].update_owner(owner=self.players[play])
-            for prov in player["owned"]["provinces"]: # Iterate through provinces owned
-                self.provinces[prov].update_owner(owner=self.players[play])
 
     def __load_mapdata(self) -> None:
         '''Load data about maps'''
@@ -104,11 +82,60 @@ class Game:
                         self.provinces[prov].sea = True
                         self.provinces[prov].seas.append(sea)
 
-    def load_data(self) -> None:
+    def __load_players(self) -> None:
+        '''Load player data and set ownership'''
+        for play in self.player_data.data:
+            player = self.player_data.data[play]
+            if (player["custom_color"] != None):
+                r, g, b = player["custom_color"]
+                color = ColorBase(name=play, rgb=(r, g, b))
+                self.players.update({play: Player(name=player["name"], 
+                                                  snowflake=player["snowflake"], 
+                                                  color=color,
+                                                  levels=self.levels)})
+            else:
+                self.players.update({play: Player(name=player["name"], 
+                                                  snowflake=player["snowflake"], 
+                                                  color=Color.list[player["color"]],
+                                                  levels=self.levels)})
+                
+            for reg in player["owned"]["regions"]: # Iterate through regions owned
+                for prov in self.regions[reg].provinces: # Iterate through provinces in the region
+                    self.provinces[prov].update_owner(owner=self.players[play])
+            for prov in player["owned"]["provinces"]: # Iterate through provinces owned
+                self.provinces[prov].update_owner(owner=self.players[play])
+
+    def __load_masks(self) -> None:
+        tic = time.perf_counter()
+        logging.info("Loading mask data...")
+
+        if self.mask_data.data == {}:
+            # Missing, generate mask data
+            masks: dict = {}
+            for prov in self.provinces:
+                logging.debug(f"**Generating mask: {prov}")
+                msk = self.map.get_mask(self.provinces[prov].pos_xy)
+                masks.update({prov: msk})
+
+            # Push generated data to file
+            self.mask_data.data = masks
+            self.mask_data.write_data()
+
+            # Load mask data
+            self.masks = self.mask_data.data
+        else:
+            # Load mask data
+            self.masks = self.mask_data.data
+
+        toc = time.perf_counter()
+        logging.info(f"Mask loading completed! {toc - tic:0.4f}s")
+
+    def __load_data(self) -> None:
         '''Load all game data in the correct order'''
         self.__load_levels()
         self.__load_mapdata()
         self.__load_players()
+        self.__load_masks()
 
     def get_province_adjacents(self, province: Province) -> list[str]:
         '''Get adjacent provinces. Returns list of province names.
@@ -182,15 +209,14 @@ class Game:
         self.map.add_levels(levels=self.levels) # Send level data to map
         logging.info("Filling map from data...")
         for prov in self.provinces.values():
-            self.map.fill(seed_point=prov.pos_xy, new_color=prov.get_color().rgb)
+            self.map.fill_mask(mask=self.masks[prov.name], new_color=prov.get_color().rgb)
 
         toc = time.perf_counter()
         logging.info(f"Filling completed! {toc - tic:0.4f}s")
 
     def start(self) -> None:
         '''Main loop'''
-        # Load data, update map, write map
-        self.load_data()
+        # update map, write map
         self.update_map()
         self.map.write()
 

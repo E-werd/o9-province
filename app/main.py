@@ -16,6 +16,7 @@ class Main:
         print("Setting up environment...")
         self.DATAFILE: str = ""
         self.IMAGEFILE: str = ""
+        self.MASKFILE: str = ""
         self.PLAYERFILE: str = ""
         self.LEVELFILE: str = ""
         self.LOGLEVEL: str = ""
@@ -28,18 +29,21 @@ class Main:
         # Create Path objects for files
         self.datafile_path: Path = Path(self.DATAFILE).resolve()
         self.imagefile_path: Path = Path(self.IMAGEFILE).resolve()
+        self.maskfile_path: Path = Path(self.MASKFILE).resolve()
         self.playerfile_path: Path = Path(self.PLAYERFILE).resolve()
         self.levelfile_path: Path = Path(self.LEVELFILE).resolve()
         self.font_path: Path = Path(self.FONT).resolve()
 
         # Setup filedata and map
-        self.level_data: Data = Data(file=self.levelfile_path)
-        self.map_data: Data = Data(file=self.datafile_path)
-        self.player_data: Data = Data(file=self.playerfile_path)
+        self.level_data: Data = Data(file=self.levelfile_path, source=Data.Source.json)
+        self.mask_data: Data = Data(file=self.maskfile_path, source=Data.Source.npz)
+        self.map_data: Data = Data(file=self.datafile_path, source=Data.Source.json)
+        self.player_data: Data = Data(file=self.playerfile_path, source=Data.Source.json)
         self.map: Map = Map(font=self.font_path, in_image=self.imagefile_path)
 
         # Setup game
         self.game = Game(leveld=self.level_data,
+                         maskd=self.mask_data,
                          mapd=self.map_data,
                          playerd=self.player_data,
                          map=self.map)
@@ -52,6 +56,7 @@ class Main:
         load_dotenv()
         self.DATAFILE = os.getenv("DATAFILE", default="app/sample_data/image.json")
         self.IMAGEFILE = os.getenv("IMAGEFILE", default="app/sample_data/image.png")
+        self.MASKFILE = os.getenv("MASKFILE", default="app/sample_data/image.npz")
         self.PLAYERFILE = os.getenv("PLAYERFILE", default="app/sample_data/players.json")
         self.LEVELFILE = os.getenv("LEVELFILE", default="app/sample_data/levels.json")
         self.FONT = os.getenv("FONT", default="app/sample_data/unispace.ttf")

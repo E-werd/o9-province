@@ -1,5 +1,6 @@
 # External
 import json, logging
+import numpy as np
 from pathlib import Path
 
 class Data:
@@ -8,10 +9,12 @@ class Data:
         '''Container class for data sources. Use 'types' for iteration.'''
         class Type:
             '''Container class for individual data sources'''
-            def __init__(self, name: str, full: str) -> None:
+            def __init__(self, name: str, full: str, ext: str) -> None:
                 self.name: str = name
                 self.full: str = full
-        json: Type = Type(name="json", full="json data")
+                self.ext: str = ext
+        json: Type = Type(name="json", full="json data", ext=".json")
+        npz: Type = Type(name="npz", full="NumPy data archive", ext=".npz")
         types: dict[str, Type] = {"json": json}
 
     def __init__(self, file: Path, source: Source.Type = Source.json) -> None:
@@ -27,6 +30,8 @@ class Data:
         match self.source:
             case Data.Source.json:
                 return self.__load_json(path=path)
+            case Data.Source.npz:
+                return self.__load_npz(path=path)
             case _: return {} # This should never happen. Update loop with new data sources.
 
     def __load_json(self, path: str) -> dict:
@@ -35,6 +40,16 @@ class Data:
             logging.info(f"Loading data from file: {self.path.__str__()}")
             with open(file=path, mode="r", encoding="utf-8") as f:
                 return json.load(f)
+        except Exception as e:
+            logging.error(f"*** File load error: {str(e)}")
+            logging.warning(f"Assuming file is empty or missing, returning empty dataset.")
+            return {}
+        
+    def __load_npz(self, path: str) -> dict:
+        '''Buffers NumPy data from self.path into self.data'''
+        try:
+            logging.info(f"Loading data from file: {self.path.__str__()}")
+            return np.load(file=path)
         except Exception as e:
             logging.error(f"*** File load error: {str(e)}")
             logging.warning(f"Assuming file is empty or missing, returning empty dataset.")
@@ -49,6 +64,14 @@ class Data:
         except Exception as e:
             logging.error(f"*** File write error: {str(e)}")
 
+    def __write_npz(self) -> None:
+        '''Writes NumPy data to self.path from self.data'''
+        try:
+            logging.info(f"Writing data to file: {self.path.__str__()}")
+            np.savez(file=self.path, **self.data)
+        except Exception as e:
+            logging.error(f"*** File write error: {str(e)}")
+
     def load_data(self, path: str) -> dict:
         '''Load from data source to buffer'''
         self.__load_data(path=path)
@@ -57,4 +80,5 @@ class Data:
         '''Write buffer to data source'''
         match self.source:
             case Data.Source.json: self.__write_json()
+            case Data.Source.npz: self.__write_npz()
             case _: return # This should never happen. Update loop with new data sources.
