@@ -68,7 +68,7 @@ class Data:
         '''Writes NumPy data to self.path from self.data'''
         try:
             logging.info(f"Writing data to file: {self.path.__str__()}")
-            np.savez(file=self.path, **self.data)
+            np.savez_compressed(file=self.path, **self.data)
         except Exception as e:
             logging.error(f"*** File write error: {str(e)}")
 
